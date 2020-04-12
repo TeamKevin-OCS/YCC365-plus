@@ -1,0 +1,23 @@
+# netstat -tulpn
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 0.0.0.0:8001            0.0.0.0:*               LISTEN      215/p2pcam
+tcp        0      0 0.0.0.0:3201            0.0.0.0:*               LISTEN      154/tees
+tcp        0      0 0.0.0.0:554             0.0.0.0:*               LISTEN      215/p2pcam
+tcp        0      0 0.0.0.0:843             0.0.0.0:*               LISTEN      215/p2pcam
+tcp        0      0 0.0.0.0:6670            0.0.0.0:*               LISTEN      215/p2pcam
+tcp        0      0 127.0.0.1:9008          0.0.0.0:*               LISTEN      215/p2pcam
+tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      215/p2pcam
+tcp        0      0 0.0.0.0:23              0.0.0.0:*               LISTEN      245/telnetd
+tcp        0      0 0.0.0.0:5050            0.0.0.0:*               LISTEN      215/p2pcam
+tcp        0      0 0.0.0.0:7101            0.0.0.0:*               LISTEN      215/p2pcam
+tcp        0      0 0.0.0.0:7103            0.0.0.0:*               LISTEN      215/p2pcam
+udp        0      0 0.0.0.0:9999            0.0.0.0:*                           215/p2pcam
+udp        0      0 0.0.0.0:24114           0.0.0.0:*                           215/p2pcam
+udp        0      0 0.0.0.0:24115           0.0.0.0:*                           215/p2pcam
+udp        0      0 0.0.0.0:7998            0.0.0.0:*                           215/p2pcam
+udp        0      0 0.0.0.0:8001            0.0.0.0:*                           215/p2pcam
+udp        0      0 0.0.0.0:8002            0.0.0.0:*                           215/p2pcam
+udp        0      0 0.0.0.0:3702            0.0.0.0:*                           215/p2pcam
+udp        0      0 0.0.0.0:8888            0.0.0.0:*                           215/p2pcam
+ 

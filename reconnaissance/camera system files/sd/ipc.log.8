@@ -1,0 +1,907 @@
+
+---------------------------- Dump of /tmp/closelicamera.log ---------------------------
+2020-03-08 13:35:10.597258 [373] [WorkLogManager.cpp(248) TruncateLog]Trace: file length(3799) is allowed!
+2020-03-08 13:35:10.599063 [373] [WorkLogManager.cpp(401) WriteWorkLog]Trace: Write new work log end, "srel,12|lve,2020-03-08_13:35:10|chn,0|strm,0|act,bgn|cnt,1", 3858B
+2020-03-08 13:35:10.601030 [373] [RealStream.cpp(2982) HandleClientCmd]Trace: 877770: clientcmd package received with type 1
+2020-03-08 13:35:10.602624 [373] [WorkLogManager.cpp(484) GetWorkLog]Trace: Scan to get work log start
+2020-03-08 13:35:10.603788 [373] [WorkLogManager.cpp(533) GetWorkLog]Trace: item "srel,12|lve,2020-03-08_13:35:10|chn,0|strm,0|act,bgn|cnt,1;" scanned
+2020-03-08 13:35:10.604894 [373] [WorkLogManager.cpp(493) GetWorkLog]Trace: read to end!
+2020-03-08 13:35:10.606273 [373] [WorkLogManager.cpp(557) GetWorkLog]Trace: to send idx array is [3846 0 0]
+2020-03-08 13:35:10.607572 [373] [WorkLogManager.cpp(559) GetWorkLog]Trace: Scan to get work log stop, 59B scanned with id 1583670910606
+2020-03-08 13:35:10.608863 [373] [RealStream.cpp(1384) CheckSendDeviceLog]Trace: requestid:29,304a2693c02415836709106080055
+2020-03-08 13:35:10.610568 [373] [RealStream.cpp(1425) ParseMsgItems]Trace: get item srel,12|lve,2020-03-08_13:35:10|chn,0|strm,0|act,bgn|cnt,1
+2020-03-08 13:35:10.613354 [373] [RealStream.cpp(1391) CheckSendDeviceLog]Trace: work log 1_134 sended
+2020-03-08 13:35:10.615112 [373] [WorkLogManager.cpp(230) WriteIdxLog]Trace: Update idx array to [3846 0 0]
+2020-03-08 13:35:10.616711 [373] [WorkLogManager.cpp(590) WorkLogSended]Trace: After send items with id 1583670910606, sucess=1, ret=1
+2020-03-08 13:35:10.618263 [373] [RealStream.cpp(2098) NonBlockingSendDataProc]Trace: 0x877770: start to send real stream data to relay.
+2020-03-08 13:35:10.625394 [373] [RealStream.cpp(2118) NonBlockingSendDataProc]Trace: 877770: get latest I 8ba15c...
+2020-03-08 13:35:10.630713 [373] [StreamQos.cpp(55) Start]Trace: 0x878f38: start__, channel = 0-0, mode=0,1,120,120
+2020-03-08 13:35:10.632258 [373] [RealStream.cpp(2176) NonBlockingSendDataProc]Trace: 877770: enter into sending data loop
+2020-03-08 13:35:10.645139 [373] [RealStream.cpp(2463) NonBlockingSendDataProc]Trace: 877770[640*352]:sending I frame, starttime 1148029[1583670908794], seq 1772, size 7133, delay 1851, recording 0, ignore key 0, ignore nonkey 0, flag:0.
+2020-03-08 13:35:10.951321 [373] [RealStream.cpp(2588) HandleServerCmd]Trace: 877770: receive server cmd, type is 33
+2020-03-08 13:35:10.952704 [373] [RealStream.cpp(2672) HandleServerCmd]Trace: 877770: receive xmpp msg from applc_f9bf57de3b5e, cmdid is 9907682:1, channelno is -1, msg is {"msgTimeStamp":1583670911,"msgSession":1000090,"msgSequence":0,"msgCategory":"camera","msgContent":{"request":1793,"subRequest":152,"requestParams":{"Relay_live_count":1,"Max_count":3}}}
+2020-03-08 13:35:10.954631 [373] [ServerMsgProcess.cpp(49) ProcessMessageEvent]Trace: message={"msgTimeStamp":1583670911,"msgSession":1000090,"msgSequence":0,"msgCategory":"camera","msgContent":{"request":1793,"subRequest":152,"requestParams":{"Relay_live_count":1,"Max_count":3}}}, src_id={
+   "cmdid" : 9907682,
+   "deviceid" : "applc_f9bf57de3b5e"
+}
+, msgtype=0.
+2020-03-08 13:35:10.956965 [276] [FullrelayMsg.cpp(425) ThreadProcess]Trace: try to get message in queue immediately!
+2020-03-08 13:35:10.959203 [276] [FullrelayMsg.cpp(360) ProcessMessage]Trace: #### fullrelay
+2020-03-08 13:35:10.971079 [276] [FullrelayMsg.cpp(70) OnXMPPSetDeviceConfiguration]Trace: ####Begin___ subreq: 0098
+2020-03-08 13:35:10.972585 [276] [VideoTidings.cpp(143) GetLiveCount]Trace: get live count,relay_live_count=1,p2p_live_count=0,max_count=3.
+2020-03-08 13:35:10.974679 [276] [WorkLogManager.cpp(358) WriteWorkLog]Trace: Write new work log start
+2020-03-08 13:35:10.975754 [276] [WorkLogManager.cpp(248) TruncateLog]Trace: file length(3858) is allowed!
+2020-03-08 13:35:10.977350 [276] [WorkLogManager.cpp(401) WriteWorkLog]Trace: Write new work log end, "cfig,9|set,2020-03-08_13:35:10|sub,152|res,1", 3903B
+2020-03-08 13:35:10.979897 [276] [FullrelayMsg.cpp(282) OnXMPPSetDeviceConfiguration]Trace: Send message to {
+   "cmdid" : 9907682,
+   "deviceid" : "applc_f9bf57de3b5e"
+}
+, type:0 : {"msgCategory":"camera","msgContent":{"response":0,"responseParams":{"Max_count":3,"P2P_live_count":0,"Relay_live_count":1},"responseRequest":1793,"responseSubRequest":152},"msgSequence":1,"msgSession":1000090,"msgTimeStamp":1583670910}
+
+2020-03-08 13:35:10.981999 [276] [MutilStreams.cpp(989) SendInfo2Server]Trace: bFullrelayMsg:1.peerid:{
+   "cmdid" : 9907682,
+   "deviceid" : "applc_f9bf57de3b5e"
+}
+.channeltype:0
+2020-03-08 13:35:10.983277 [276] [StreamMgr.cpp(206) SendXMPPMessage]Trace: bFullRelayMsg:1
+2020-03-08 13:35:10.985064 [276] [RealStream.cpp(4319) SendXMPPMessage]Trace: 877770: to send xmpp msg(7ab880) to applc_f9bf57de3b5e, cmdid is 9907682:1, timeout is 3000, breuqest 0, channelno 0, msg is {"msgCategory":"camera","msgContent":{"response":0,"responseParams":{"Max_count":3,"P2P_live_count":0,"Relay_live_count":1},"responseRequest":1793,"responseSubRequest":152},"msgSequence":1,"msgSession":1000090,"msgTimeStamp":1583670910}
+
+2020-03-08 13:35:10.969720 [373] [Common.cpp(441) CustomerControlCB]Trace: no customer instance
+2020-03-08 13:35:10.993541 [373] [RealStream.cpp(3122) NonBlockingSendXmppMsgCmd]Trace: 877770: xmpp msg 7ab880 bsended 1, breleased 0
+2020-03-08 13:35:11.100609 [276] [RealStream.cpp(4333) SendXMPPMessage]Trace: 877770: send xmpp msg 7ab880 bfinished is 1, breleased is 1
+2020-03-08 13:35:11.102023 [276] [FullrelayMsg.cpp(289) OnXMPPSetDeviceConfiguration]Trace: End___
+2020-03-08 13:35:11.630858 [373] [WorkLogManager.cpp(484) GetWorkLog]Trace: Scan to get work log start
+2020-03-08 13:35:11.632213 [373] [WorkLogManager.cpp(533) GetWorkLog]Trace: item "cfig,9|set,2020-03-08_13:35:10|sub,152|res,1;" scanned
+2020-03-08 13:35:11.633531 [373] [WorkLogManager.cpp(493) GetWorkLog]Trace: read to end!
+2020-03-08 13:35:11.634723 [373] [WorkLogManager.cpp(557) GetWorkLog]Trace: to send idx array is [3891 0 0]
+2020-03-08 13:35:11.635983 [373] [WorkLogManager.cpp(559) GetWorkLog]Trace: Scan to get work log stop, 45B scanned with id 1583670911634
+2020-03-08 13:35:11.637350 [373] [RealStream.cpp(1384) CheckSendDeviceLog]Trace: requestid:29,304a2693c02415836709116370056
+2020-03-08 13:35:11.638853 [373] [RealStream.cpp(1425) ParseMsgItems]Trace: get item cfig,9|set,2020-03-08_13:35:10|sub,152|res,1
+2020-03-08 13:35:11.642630 [373] [RealStream.cpp(1391) CheckSendDeviceLog]Trace: work log 1_113 sended
+2020-03-08 13:35:11.644240 [373] [WorkLogManager.cpp(230) WriteIdxLog]Trace: Update idx array to [3891 0 0]
+2020-03-08 13:35:11.645779 [373] [WorkLogManager.cpp(590) WorkLogSended]Trace: After send items with id 1583670911634, sucess=1, ret=1
+2020-03-08 13:35:11.791688 [371] [DeviceStream.cpp(279) statistics]Trace: v[0,0](27.58/58.17)Kbps 8.00fps, PTS(27.58/58.17)Kbps 8.00fps
+2020-03-08 13:35:11.794708 [371] [RealStream.cpp(3915) SetExternalStreamData]Trace: 877770[0:0][640*352]: Get I cpacket external, size: 7044, starttime: 1151029, num: 1796, frames: 24, at 1583670911794, fisheye:0
+2020-03-08 13:35:11.802873 [373] [RealStream.cpp(2404) NonBlockingSendDataProc]Trace: 877770[0, 0][640*352]:SEND GOP(starttime=1148029)3000(ms), 24 video frames,150 audio frames, total size: 41205(11655)(byte), cost 152(ms), recording 0, flag:0, cur bufsize:76371 
+2020-03-08 13:35:11.814529 [373] [RealStream.cpp(2463) NonBlockingSendDataProc]Trace: 877770[640*352]:sending I frame, starttime 1151029[1583670911794], seq 1796, size 7044, delay 20, recording 0, ignore key 0, ignore nonkey 0, flag:0.
+2020-03-08 13:35:12.130257 [263] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-08 13:35:12.990745 [373] [RealStream.cpp(2588) HandleServerCmd]Trace: 877770: receive server cmd, type is 33
+2020-03-08 13:35:12.992195 [373] [RealStream.cpp(2672) HandleServerCmd]Trace: 877770: receive xmpp msg from applc_f9bf57de3b5e, cmdid is 8522943:1, channelno is -1, msg is {"msgTimeStamp":1583670913,"msgSession":1000091,"msgSequence":0,"msgCategory":"camera","msgContent":{"request":1793,"subRequest":82,"requestParams":{"value":0}}}
+2020-03-08 13:35:12.994242 [373] [ServerMsgProcess.cpp(49) ProcessMessageEvent]Trace: message={"msgTimeStamp":1583670913,"msgSession":1000091,"msgSequence":0,"msgCategory":"camera","msgContent":{"request":1793,"subRequest":82,"requestParams":{"value":0}}}, src_id={
+   "cmdid" : 8522943,
+   "deviceid" : "applc_f9bf57de3b5e"
+}
+, msgtype=0.
+2020-03-08 13:35:12.996919 [276] [FullrelayMsg.cpp(425) ThreadProcess]Trace: try to get message in queue immediately!
+2020-03-08 13:35:13.001574 [373] [Common.cpp(441) CustomerControlCB]Trace: no customer instance
+2020-03-08 13:35:12.999351 [276] [FullrelayMsg.cpp(360) ProcessMessage]Trace: #### fullrelay
+2020-03-08 13:35:13.006199 [276] [FullrelayMsg.cpp(70) OnXMPPSetDeviceConfiguration]Trace: ####Begin___ subreq: 0052
+2020-03-08 13:35:13.007609 [276] [PtzTidings.cpp(232) SetLens]Trace: subrequest(0x00000052) value(0) step(0).
+2020-03-08 13:35:13.009196 [276] [Ptz.cpp(116) StopMove]Trace: stop to roll!
+2020-03-08 13:35:13.012155 [276] [PtzTidings.cpp(279) SetLens]Trace: set front success!
+2020-03-08 13:35:13.014297 [276] [WorkLogManager.cpp(358) WriteWorkLog]Trace: Write new work log start
+2020-03-08 13:35:13.015342 [276] [WorkLogManager.cpp(248) TruncateLog]Trace: file length(3903) is allowed!
+2020-03-08 13:35:13.016966 [276] [WorkLogManager.cpp(401) WriteWorkLog]Trace: Write new work log end, "cfig,9|set,2020-03-08_13:35:13|sub,82|res,1", 3947B
+2020-03-08 13:35:13.018166 [276] [FullrelayMsg.cpp(289) OnXMPPSetDeviceConfiguration]Trace: End___
+2020-03-08 13:35:13.030269 [373] [WorkLogManager.cpp(484) GetWorkLog]Trace: Scan to get work log start
+2020-03-08 13:35:13.034311 [373] [WorkLogManager.cpp(533) GetWorkLog]Trace: item "cfig,9|set,2020-03-08_13:35:13|sub,82|res,1;" scanned
+2020-03-08 13:35:13.035682 [373] [WorkLogManager.cpp(493) GetWorkLog]Trace: read to end!
+2020-03-08 13:35:13.037297 [373] [WorkLogManager.cpp(557) GetWorkLog]Trace: to send idx array is [3935 0 0]
+2020-03-08 13:35:13.041820 [373] [WorkLogManager.cpp(559) GetWorkLog]Trace: Scan to get work log stop, 44B scanned with id 1583670913037
+2020-03-08 13:35:13.044031 [373] [RealStream.cpp(1384) CheckSendDeviceLog]Trace: requestid:29,304a2693c02415836709130430057
+2020-03-08 13:35:13.045928 [373] [RealStream.cpp(1425) ParseMsgItems]Trace: get item cfig,9|set,2020-03-08_13:35:13|sub,82|res,1
+2020-03-08 13:35:13.051146 [373] [RealStream.cpp(1391) CheckSendDeviceLog]Trace: work log 1_112 sended
+2020-03-08 13:35:13.052858 [373] [WorkLogManager.cpp(230) WriteIdxLog]Trace: Update idx array to [3935 0 0]
+2020-03-08 13:35:13.054257 [373] [WorkLogManager.cpp(590) WorkLogSended]Trace: After send items with id 1583670913037, sucess=1, ret=1
+2020-03-08 13:35:13.057111 [373] [RealStream.cpp(2588) HandleServerCmd]Trace: 877770: receive server cmd, type is 33
+2020-03-08 13:35:13.058413 [373] [RealStream.cpp(2672) HandleServerCmd]Trace: 877770: receive xmpp msg from applc_f9bf57de3b5e, cmdid is 6962136:1, channelno is -1, msg is {"msgTimeStamp":1583670913,"msgSession":1000092,"msgSequence":0,"msgCategory":"camera","msgContent":{"request":1793,"subRequest":82,"requestParams":{"value":3}}}
+2020-03-08 13:35:13.060797 [373] [ServerMsgProcess.cpp(49) ProcessMessageEvent]Trace: message={"msgTimeStamp":1583670913,"msgSession":1000092,"msgSequence":0,"msgCategory":"camera","msgContent":{"request":1793,"subRequest":82,"requestParams":{"value":3}}}, src_id={
+   "cmdid" : 6962136,
+   "deviceid" : "applc_f9bf57de3b5e"
+}
+, msgtype=0.
+2020-03-08 13:35:13.064448 [276] [FullrelayMsg.cpp(425) ThreadProcess]Trace: try to get message in queue immediately!
+2020-03-08 13:35:13.072216 [373] [Common.cpp(441) CustomerControlCB]Trace: no customer instance
+2020-03-08 13:35:13.069905 [276] [FullrelayMsg.cpp(360) ProcessMessage]Trace: #### fullrelay
+2020-03-08 13:35:13.078610 [276] [FullrelayMsg.cpp(70) OnXMPPSetDeviceConfiguration]Trace: ####Begin___ subreq: 0052
+2020-03-08 13:35:13.079838 [276] [PtzTidings.cpp(232) SetLens]Trace: subrequest(0x00000052) value(3) step(0).
+2020-03-08 13:35:13.086250 [276] [PtzTidings.cpp(279) SetLens]Trace: set front success!
+2020-03-08 13:35:13.088193 [276] [WorkLogManager.cpp(358) WriteWorkLog]Trace: Write new work log start
+2020-03-08 13:35:13.089426 [276] [WorkLogManager.cpp(248) TruncateLog]Trace: file length(3947) is allowed!
+2020-03-08 13:35:13.091372 [276] [WorkLogManager.cpp(401) WriteWorkLog]Trace: Write new work log end, "cfig,9|set,2020-03-08_13:35:13|sub,82|res,1", 3991B
+2020-03-08 13:35:13.092585 [276] [FullrelayMsg.cpp(289) OnXMPPSetDeviceConfiguration]Trace: End___
+2020-03-08 13:35:13.230686 [373] [RealStream.cpp(2588) HandleServerCmd]Trace: 877770: receive server cmd, type is 33
+2020-03-08 13:35:13.231993 [373] [RealStream.cpp(2672) HandleServerCmd]Trace: 877770: receive xmpp msg from applc_f9bf57de3b5e, cmdid is 3401718:1, channelno is -1, msg is {"msgTimeStamp":1583670913,"msgSession":1000093,"msgSequence":0,"msgCategory":"camera","msgContent":{"request":1793,"subRequest":82,"requestParams":{"value":0}}}
+2020-03-08 13:35:13.233970 [373] [ServerMsgProcess.cpp(49) ProcessMessageEvent]Trace: message={"msgTimeStamp":1583670913,"msgSession":1000093,"msgSequence":0,"msgCategory":"camera","msgContent":{"request":1793,"subRequest":82,"requestParams":{"value":0}}}, src_id={
+   "cmdid" : 3401718,
+   "deviceid" : "applc_f9bf57de3b5e"
+}
+, msgtype=0.
+2020-03-08 13:35:13.236410 [276] [FullrelayMsg.cpp(425) ThreadProcess]Trace: try to get message in queue immediately!
+2020-03-08 13:35:13.238771 [276] [FullrelayMsg.cpp(360) ProcessMessage]Trace: #### fullrelay
+2020-03-08 13:35:13.241972 [373] [Common.cpp(441) CustomerControlCB]Trace: no customer instance
+2020-03-08 13:35:13.245538 [276] [FullrelayMsg.cpp(70) OnXMPPSetDeviceConfiguration]Trace: ####Begin___ subreq: 0052
+2020-03-08 13:35:13.247068 [276] [PtzTidings.cpp(232) SetLens]Trace: subrequest(0x00000052) value(0) step(0).
+2020-03-08 13:35:13.248596 [276] [Ptz.cpp(116) StopMove]Trace: stop to roll!
+2020-03-08 13:35:13.251527 [276] [PtzTidings.cpp(279) SetLens]Trace: set front success!
+2020-03-08 13:35:13.253550 [276] [WorkLogManager.cpp(358) WriteWorkLog]Trace: Write new work log start
+2020-03-08 13:35:13.254695 [276] [WorkLogManager.cpp(248) TruncateLog]Trace: file length(3991) is allowed!
+2020-03-08 13:35:13.256380 [276] [WorkLogManager.cpp(401) WriteWorkLog]Trace: Write new work log end, "cfig,9|set,2020-03-08_13:35:13|sub,82|res,1", 4035B
+2020-03-08 13:35:13.257694 [276] [FullrelayMsg.cpp(289) OnXMPPSetDeviceConfiguration]Trace: End___
+2020-03-08 13:35:14.070188 [373] [WorkLogManager.cpp(484) GetWorkLog]Trace: Scan to get work log start
+2020-03-08 13:35:14.071555 [373] [WorkLogManager.cpp(533) GetWorkLog]Trace: item "cfig,9|set,2020-03-08_13:35:13|sub,82|res,1;" scanned
+2020-03-08 13:35:14.072701 [373] [WorkLogManager.cpp(533) GetWorkLog]Trace: item "cfig,9|set,2020-03-08_13:35:13|sub,82|res,1;" scanned
+2020-03-08 13:35:14.073823 [373] [WorkLogManager.cpp(493) GetWorkLog]Trace: read to end!
+2020-03-08 13:35:14.074919 [373] [WorkLogManager.cpp(557) GetWorkLog]Trace: to send idx array is [4023 0 0]
+2020-03-08 13:35:14.076098 [373] [WorkLogManager.cpp(559) GetWorkLog]Trace: Scan to get work log stop, 88B scanned with id 1583670914074
+2020-03-08 13:35:14.077367 [373] [RealStream.cpp(1384) CheckSendDeviceLog]Trace: requestid:29,304a2693c02415836709140770058
+2020-03-08 13:35:14.078613 [373] [RealStream.cpp(1425) ParseMsgItems]Trace: get item cfig,9|set,2020-03-08_13:35:13|sub,82|res,1
+2020-03-08 13:35:14.079858 [373] [RealStream.cpp(1425) ParseMsgItems]Trace: get item cfig,9|set,2020-03-08_13:35:13|sub,82|res,1
+2020-03-08 13:35:14.081993 [373] [RealStream.cpp(1391) CheckSendDeviceLog]Trace: work log 2_166 sended
+2020-03-08 13:35:14.083613 [373] [WorkLogManager.cpp(230) WriteIdxLog]Trace: Update idx array to [4023 0 0]
+2020-03-08 13:35:14.084997 [373] [WorkLogManager.cpp(590) WorkLogSended]Trace: After send items with id 1583670914074, sucess=1, ret=1
+2020-03-08 13:35:14.791758 [371] [DeviceStream.cpp(279) statistics]Trace: v[0,0](31.21/58.09)Kbps 8.00fps, PTS(31.21/58.09)Kbps 8.00fps
+2020-03-08 13:35:14.794758 [371] [RealStream.cpp(3915) SetExternalStreamData]Trace: 877770[0:0][640*352]: Get I cpacket external, size: 7523, starttime: 1154029, num: 1820, frames: 24, at 1583670914794, fisheye:0
+2020-03-08 13:35:14.801789 [373] [RealStream.cpp(2404) NonBlockingSendDataProc]Trace: 877770[0, 0][640*352]:SEND GOP(starttime=1151029)3000(ms), 24 video frames,150 audio frames, total size: 42623(13073)(byte), cost 110(ms), recording 0, flag:0, cur bufsize:78098 
+2020-03-08 13:35:14.809683 [373] [RealStream.cpp(2463) NonBlockingSendDataProc]Trace: 877770[640*352]:sending I frame, starttime 1154029[1583670914794], seq 1820, size 7523, delay 15, recording 0, ignore key 0, ignore nonkey 0, flag:0.
+2020-03-08 13:35:15.140281 [263] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-08 13:35:15.793718 [371] [RtspBufferManager.cpp(811) CreateNode]Trace: [0:0] idle=582,buffer=0,create=582,destroy=0, relay
+2020-03-08 13:35:15.796955 [371] [RtspBufferManager.cpp(811) CreateNode]Trace: [-1:-1] idle=61,buffer=405,create=466,destroy=0, webclient
+2020-03-08 13:35:17.791395 [371] [DeviceStream.cpp(279) statistics]Trace: v[0,0](29.50/58.01)Kbps 8.00fps, PTS(29.51/58.01)Kbps 8.00fps
+2020-03-08 13:35:17.794466 [371] [RealStream.cpp(3915) SetExternalStreamData]Trace: 877770[0:0][640*352]: Get I cpacket external, size: 7132, starttime: 1157029, num: 1844, frames: 24, at 1583670917794, fisheye:0
+2020-03-08 13:35:18.150275 [263] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-08 13:35:19.164878 [371] [RtspBufferManager.cpp(262) HandleWriteBufferSmartAVC]Trace: 8879336: streamstat: total size:2718(Bytes), timespan:10000(ms), count:150.
+2020-03-08 13:35:19.167229 [371] [RtspBufferManager.cpp(262) HandleWriteBufferSmartAVC]Trace: 8906888: streamstat: total size:7756(Bytes), timespan:8000(ms), count:428.
+2020-03-08 13:35:20.791844 [371] [DeviceStream.cpp(279) statistics]Trace: v[0,0](27.59/57.93)Kbps 8.00fps, PTS(27.58/57.93)Kbps 8.00fps
+2020-03-08 13:35:20.794811 [371] [RealStream.cpp(3915) SetExternalStreamData]Trace: 877770[0:0][640*352]: Get I cpacket external, size: 7130, starttime: 1160029, num: 1868, frames: 24, at 1583670920794, fisheye:0
+2020-03-08 13:35:21.175267 [263] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-08 13:35:23.791837 [371] [DeviceStream.cpp(279) statistics]Trace: v[0,0](27.51/57.84)Kbps 7.99fps, PTS(27.53/57.84)Kbps 8.00fps
+2020-03-08 13:35:23.794816 [371] [RealStream.cpp(3915) SetExternalStreamData]Trace: 877770[0:0][640*352]: Get I cpacket external, size: 7201, starttime: 1163029, num: 1892, frames: 24, at 1583670923794, fisheye:0
+2020-03-08 13:35:24.180441 [263] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-08 13:35:25.640605 [568] [StreamQos.cpp(189) DoStats]Trace: 878f38: streamstat in 15006ms. IN(872/(v)120), OUT(451), DROP(0), BUFFERED(525)
+2020-03-08 13:35:26.628819 [237] [MemoryPool.cpp(77) alloc_cells]Trace: this(0x6b2170) cell_size(512) pool_bytes(295424) all_bytes(754176)
+2020-03-08 13:35:26.791465 [371] [DeviceStream.cpp(279) statistics]Trace: v[0,0](28.02/57.76)Kbps 8.00fps, PTS(28.02/57.76)Kbps 8.00fps
+2020-03-08 13:35:26.794487 [371] [RealStream.cpp(3915) SetExternalStreamData]Trace: 877770[0:0][640*352]: Get I cpacket external, size: 7134, starttime: 1166029, num: 1916, frames: 24, at 1583670926794, fisheye:0
+2020-03-08 13:35:27.190267 [263] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-08 13:35:29.791562 [371] [DeviceStream.cpp(279) statistics]Trace: v[0,0](27.43/57.68)Kbps 8.00fps, PTS(27.43/57.68)Kbps 8.00fps
+2020-03-08 13:35:29.794572 [371] [RealStream.cpp(3915) SetExternalStreamData]Trace: 877770[0:0][640*352]: Get I cpacket external, size: 7094, starttime: 1169029, num: 1940, frames: 24, at 1583670929794, fisheye:0
+2020-03-08 13:35:30.200233 [263] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-08 13:35:32.792101 [371] [DeviceStream.cpp(279) statistics]Trace: v[0,0](27.01/57.60)Kbps 8.00fps, PTS(27.01/57.60)Kbps 8.00fps
+2020-03-08 13:35:32.795199 [371] [RealStream.cpp(3915) SetExternalStreamData]Trace: 877770[0:0][640*352]: Get I cpacket external, size: 7124, starttime: 1172029, num: 1964, frames: 24, at 1583670932795, fisheye:0
+2020-03-08 13:35:33.210401 [263] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-08 13:35:33.269094 [371] [RtspBufferManager.cpp(811) CreateNode]Trace: [0:0] idle=92,buffer=374,create=466,destroy=0, p2plive
+2020-03-08 13:35:34.673629 [371] [RtspBufferManager.cpp(262) HandleWriteBufferSmartAVC]Trace: 9918168: streamstat: total size:8264(Bytes), timespan:8000(ms), count:456.
+2020-03-08 13:35:35.791418 [371] [DeviceStream.cpp(279) statistics]Trace: v[0,0](27.40/57.51)Kbps 8.00fps, PTS(27.40/57.51)Kbps 8.00fps
+2020-03-08 13:35:35.794455 [371] [RealStream.cpp(3915) SetExternalStreamData]Trace: 877770[0:0][640*352]: Get I cpacket external, size: 7166, starttime: 1175029, num: 1988, frames: 24, at 1583670935794, fisheye:0
+2020-03-08 13:35:36.220335 [263] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-08 13:35:36.790738 [373] [ConnectMgr.cpp(1721) NonBlockingSSLWrite]Trace: 0x8c0398[720p:38]:non-blocking ssl write data time out! datasize=197,leftlen=197
+2020-03-08 13:35:36.793896 [373] [WorkLogManager.cpp(358) WriteWorkLog]Trace: Write new work log start
+2020-03-08 13:35:36.795375 [373] [WorkLogManager.cpp(248) TruncateLog]Trace: file length(4035) is allowed!
+2020-03-08 13:35:36.797514 [373] [WorkLogManager.cpp(401) WriteWorkLog]Trace: Write new work log end, "srel,12|off,2020-03-08_13:35:36|by,wt|exp,timeout", 4085B
+2020-03-08 13:35:36.799258 [373] [RealStream.cpp(2447) NonBlockingSendDataProc]Error: 877770: cannot send video/audio data, with time 20209!
+2020-03-08 13:35:36.801932 [373] [MutilStreams.cpp(838) SetConfigCb]Trace: send stream data failed, need to check network status now.
+2020-03-08 13:35:36.803196 [373] [LeCamCore.cpp(515) ExternalMessageHandle]Trace: Begin___, subtype: 6, data:0x692c4e50, len:4
+2020-03-08 13:35:36.804449 [373] [LeCamCore.cpp(480) DealWithMySelfOnLineStatus]Trace: status: 0
+2020-03-08 13:35:36.805567 [373] [DeviceStatus.cpp(479) StateCbk2App]Trace: status 0x0107: STATUS_LOGOUTTED, data: 0
+2020-03-08 13:35:36.915089 [371] [RealStream.cpp(3969) SetExternalStreamData]Trace: 877770: spend 86(ms) to process streaming data, llipcamtime=1583670936828, frame size:160
+2020-03-08 13:35:37.021741 [373] [DeviceStatus.cpp(457) DevOnStatus]Trace: DevOnStatus: status(0x107) data(0) done.
+2020-03-08 13:35:37.023119 [373] [LeCamCore.cpp(600) ExternalMessageHandle]Trace: End___
+2020-03-08 13:35:37.024170 [373] [RealStream.cpp(3171) CheckRelayConnected]Trace: 877770: notify online 0...
+2020-03-08 13:35:37.025274 [373] [StreamQos.cpp(92) Stop]Trace: 0x878f38: stop__.
+2020-03-08 13:35:37.033308 [373] [ConnectMgr.cpp(1357) ShutdownConnection]Trace: 0x8c0398[720p:38]: ShutdownConnection SocketID
+
+--------------------- dump of ps ----------------------------
+  PID USER       VSZ STAT COMMAND
+    1 root      1116 S    {linuxrc} init
+    2 root         0 SW   [kthreadd]
+    3 root         0 SW   [ksoftirqd/0]
+    4 root         0 SW   [kworker/0:0]
+    5 root         0 SW   [kworker/u:0]
+    6 root         0 SW<  [khelper]
+    7 root         0 SW<  [netns]
+    8 root         0 SW   [sync_supers]
+    9 root         0 SW   [bdi-default]
+   10 root         0 SW<  [kblockd]
+   11 root         0 SW   [khubd]
+   13 root         0 SW<  [cfg80211]
+   14 root         0 SW   [kworker/u:1]
+   15 root         0 SW<  [rpciod]
+   16 root         0 SW   [kswapd0]
+   17 root         0 SWN  [ksmd]
+   18 root         0 SW   [fsnotify_mark]
+   19 root         0 SW<  [nfsiod]
+   20 root         0 SW<  [crypto]
+   33 root         0 SW   [mtdblock0]
+   34 root         0 SW   [mtdblock1]
+   35 root         0 SW   [mtdblock2]
+   36 root         0 SW   [mtdblock3]
+   37 root         0 SW   [mtdblock4]
+   40 root         0 SW   [mmcqd/0]
+   41 root         0 SW<  [deferwq]
+   75 root         0 SWN  [jffs2_gcd_mtd4]
+   99 root         0 SW   [gk_debug]
+  100 root         0 SW   [encoder]
+  143 root         0 SW   [flush-179:0]
+  153 root       628 S    /home/tees -s -v -b 20 -e ps -e ifconfig; route -n -
+  180 root         0 SW   [RTW_CMD_THREAD]
+  207 root       584 S    /home/rsyscall.goke
+  213 root      1120 S    {start.sh} /bin/sh /home/start.sh
+  214 root      231m S    /p2pcam/p2pcam
+  230 root      1112 S    /usr/sbin/telnetd
+  259 root         0 SW   [kworker/0:2]
+  357 root      1156 S    wpa_supplicant -B -iwlan0 -Dwext -c /home/wpa_suppli
+  394 root         0 SW   [flush-mtd-unmap]
+  418 root         0 SW   [kworker/0:1]
+  567 root      1116 S    /bin/login --
+  574 root      1112 S    sh -c ps
+  575 root      1116 R    ps
+
+--------------------- dump of ifconfig; route -n ----------------------------
+eth0      Link encap:Ethernet  HWaddr 30:4A:26:93:C0:24  
+          UP BROADCAST PROMISC MULTICAST  MTU:1450  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+          Interrupt:1 
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          UP LOOPBACK RUNNING  MTU:16436  Metric:1
+          RX packets:108 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:108 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:8226 (8.0 KiB)  TX bytes:8226 (8.0 KiB)
+
+wlan0     Link encap:Ethernet  HWaddr 30:4A:26:93:C0:24  
+          inet addr:192.168.0.12  Bcast:192.168.0.255  Mask:255.255.255.0
+          UP BROADCAST RUNNING MULTICAST  MTU:1450  Metric:1
+          RX packets:20464 errors:0 dropped:5175 overruns:0 frame:0
+          TX packets:20890 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:2139381 (2.0 MiB)  TX bytes:10843073 (10.3 MiB)
+
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+0.0.0.0         192.168.0.1     0.0.0.0         UG    0      0        0 wlan0
+192.168.0.0     0.0.0.0         255.255.255.0   U     0      0        0 wlan0
+224.0.0.0       0.0.0.0         240.0.0.0       U     0      0        0 wlan0
+
+--------------------- dump of wpa_cli status ----------------------------
+Selected interface 'wlan0'
+bssid=64:d1:a3:3b:84:9b
+ssid=TeamKevin
+id=0
+mode=station
+pairwise_cipher=NONE
+group_cipher=NONE
+key_mgmt=NONE
+wpa_state=COMPLETED
+ip_address=192.168.0.12
+address=30:4a:26:93:c0:24
+
+--------------------- dump of mount ----------------------------
+rootfs on / type rootfs (rw)
+/dev/root on / type squashfs (ro,relatime)
+proc on /proc type proc (rw,relatime)
+tmpfs on /dev type tmpfs (rw,relatime)
+tmpfs on /tmp type tmpfs (rw,relatime)
+sysfs on /sys type sysfs (rw,relatime)
+tmpfs on /tmp type tmpfs (rw,relatime)
+devpts on /dev/pts type devpts (rw,relatime,mode=600,ptmxmode=000)
+/dev/mtdblock3 on /p2pcam type squashfs (ro,relatime)
+/dev/mtdblock4 on /home type jffs2 (rw,relatime)
+/dev/mmcblk0p1 on /tmp/mnt/mmc01/0 type vfat (rw,noatime,fmask=0022,dmask=0022,codepage=cp437,iocharset=iso8859-1,shortname=mixed,errors=continue)
+
+--------------------- dump of uptime ----------------------------
+ 13:35:37 up 19 min,  load average: 1.35, 1.61, 1.26
+
+--------------------- dump of df ----------------------------
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/root                 1152      1152         0 100% /
+tmpfs                    15908         0     15908   0% /dev
+tmpfs                    15908       248     15660   2% /tmp
+tmpfs                    15908       248     15660   2% /tmp
+/dev/mtdblock3            1920      1920         0 100% /p2pcam
+/dev/mtdblock4            2496      2204       292  88% /home
+/dev/mmcblk0p1        31147648    120240  31027408   0% /tmp/mnt/mmc01/0
+
+--------------------- dump of netstat -napt ----------------------------
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 0.0.0.0:8001            0.0.0.0:*               LISTEN      214/p2pcam
+tcp        0      0 0.0.0.0:3201            0.0.0.0:*               LISTEN      153/tees
+tcp        0      0 0.0.0.0:554             0.0.0.0:*               LISTEN      214/p2pcam
+tcp        0      0 0.0.0.0:843             0.0.0.0:*               LISTEN      214/p2pcam
+tcp        0      0 0.0.0.0:6670            0.0.0.0:*               LISTEN      214/p2pcam
+tcp        0      0 127.0.0.1:9008          0.0.0.0:*               LISTEN      214/p2pcam
+tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      214/p2pcam
+tcp        0      0 0.0.0.0:23              0.0.0.0:*               LISTEN      230/telnetd
+tcp        0      0 0.0.0.0:5050            0.0.0.0:*               LISTEN      214/p2pcam
+tcp        0      0 0.0.0.0:7101            0.0.0.0:*               LISTEN      214/p2pcam
+tcp        0      0 0.0.0.0:7103            0.0.0.0:*               LISTEN      214/p2pcam
+tcp        0  53678 192.168.0.12:46239      8.209.80.69:50920       FIN_WAIT1   -
+
+--------------------- dump of free ----------------------------
+             total         used         free       shared      buffers
+Mem:         31816        30800         1016            0          864
+-/+ buffers:              29936         1880
+Swap:            0            0            0
+
+---------------------------- Dump of log -----------------------------
+===
+gk_isp_daynight sensorModel 32770 isday = 1
+getVideoStandard : 0
+[gk_isp_daynight]gadi_venc_set_framerate:streamid:0,fps:12 
+[gk_isp_daynight]gadi_venc_set_framerate:streamid:1,fps:12 
+gk_isp_daynight: set day mode
+----------------->sensorModel == GADI_ISP_SENSOR_GC1034, turn to day!
+sensorType2Name, type=20
+try section isp_gc1034_day...
+process image.ini section: isp_gc1034_day
+ae.gainMax = 18
+#####IR CUT in Day Mode2.
+========v2 pthread statck size 65536===
+start get vi frame
+TransmitStatistics = No
+LiveCtrl = Yes
+APModePlay = Yes
+APModePlay = Yes
+AudioEncode = G711A
+inlanPlay = Yes
+gk_isp_daynight sensorModel 32770 isday = 0
+getVideoStandard : 0
+[gk_isp_daynight]gadi_venc_set_framerate:streamid:0,fps:8 
+[gk_isp_daynight]gadi_venc_set_framerate:streamid:1,fps:8 
+gk_isp_daynight: set night mode
+----------------->sensorModel == GADI_ISP_SENSOR_GC1034, turn to night, gainMax=20!
+sensorType2Name, type=20
+try section isp_gc1034_night...
+process image.ini section: isp_gc1034_night
+ae.gainMax = 24
+#####IR CUT in Night Mode2.
+[OnStatus]--------status: 0x101
+[OnStatus]--------device have no account!
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+[1970-01-01 01:00:27] [statusCtrl] Reset Button Pressed 1!
+[1970-01-01 01:00:28] [statusCtrl] Reset Button Pressed 2!
+[1970-01-01 01:00:28] [statusCtrl] Reset Button Pressed 3!
+SoftAPThread terminated.
+[1970-01-01 01:00:29] [statusCtrl] Reset Button Pressed 4!
+------playSound /tmp/VOICE/Please_configure_camera_by_AP_hotspot_or_scanning_code.wav
+playHiAudioFile start /tmp/VOICE/Please_configure_camera_by_AP_hotspot_or_scanning_code.wav..
+=============>DevVideo_GetSize called
+getMainStreamVideoSize: w 1280 h 720 [res = 0x0]
+------playSound /tmp/VOICE/Please_configure_camera_by_AP_hotspot_or_scanning_code.wav over
+gk_isp_daynight sensorModel 32770 isday = 1
+getVideoStandard : 0
+[gk_isp_daynight]gadi_venc_set_framerate:streamid:0,fps:12 
+[gk_isp_daynight]gadi_venc_set_framerate:streamid:1,fps:12 
+gk_isp_daynight: set day mode
+----------------->sensorModel == GADI_ISP_SENSOR_GC1034, turn to day!
+sensorType2Name, type=20
+try section isp_gc1034_day...
+process image.ini section: isp_gc1034_day
+ae.gainMax = 18
+#####IR CUT in Day Mode2.
+---qrcode_key = e1
+---usr kevin@jordivanlaarhoven.nl
+---pass zB1ymvY7
+---ssid TeamKevin
+---wifipass 
+---locale 1en_US|6
+---wifi_mode 0
+------playSound /tmp/VOICE/di.wav
+playHiAudioFile start /tmp/VOICE/di.wav..
+playHiAudioFile start /tmp/VOICE/di.wav..
+------playSound /tmp/VOICE/di.wav over
+playSound: /tmp/VOICE/Qrcode_ok.wav not existed
+QrcodeWIfiThread over!
+WaitForWifiInfo goes here! g_smartlink_mode = 2
+########setCloseliWifiInfo ssid TeamKevin and passwd !
+gk_isp_daynight sensorModel 32770 isday = 0
+getVideoStandard : 0
+[gk_isp_daynight]gadi_venc_set_framerate:streamid:0,fps:8 
+[gk_isp_daynight]gadi_venc_set_framerate:streamid:1,fps:8 
+gk_isp_daynight: set night mode
+----------------->sensorModel == GADI_ISP_SENSOR_GC1034, turn to night, gainMax=20!
+sensorType2Name, type=20
+try section isp_gc1034_night...
+process image.ini section: isp_gc1034_night
+ae.gainMax = 24
+#####IR CUT in Night Mode2.
+####### found security mode [0]
+##########getWifiSecurityType  [0]
+Wifi C98D6óɹA6! pWlanParam->essid = TeamKevin
+【wpa_supplicant_config】: ssid TeamKevin passwd 
+pWlanParam->security = 0, NO passwd!!
+----------->Wifi configuration got
+initWlanIf start......[dhcp 1]
+ ------playSound /tmp/VOICE/Please_wait_for_WiFi_connecting.wav
+playHiAudioFile start /tmp/VOICE/Please_wait_for_WiFi_connecting.wav..
+initWlanIf OK......
+ Connected to wpa_supplicant.
+OK
+
+wpa state: 1
+<3>CTRL-EVENT-DISCONNECTED bssid=00:00:00:00:00:00 reason=0
+wpa state: 1
+<3>CTRL-EVENT-BSS-ADDED 0 0c:9d:92:aa:bd:40
+wpa state: 1
+<3>CTRL-EVENT-BSS-ADDED 1 0c:9d:92:aa:bd:41
+wpa state: 1
+<3>CTRL-EVENT-BSS-ADDED 2 5a:d3:43:ab:c9:69
+wpa state: 1
+<3>CTRL-EVENT-BSS-ADDED 3 d8:9d:67:e3:14:54
+wpa state: 1
+<3>CTRL-EVENT-BSS-ADDED 4 90:5c:44:29:c0:93
+wpa state: 1
+<3>CTRL-EVENT-BSS-ADDED 5 92:5c:14:29:c0:93
+wpa state: 1
+<3>CTRL-EVENT-BSS-ADDED 6 70:9f:2d:9a:0a:26
+wpa state: 1
+<3>CTRL-EVENT-BSS-ADDED 7 b0:4e:26:36:ea:83
+wpa state: 1
+<3>CTRL-EVENT-BSS-ADDED 8 80:2a:a8:03:79:16
+wpa state: 1
+<3>CTRL-EVENT-BSS-ADDED 9 84:16:f9:87:e5:1e
+wpa state: 1
+<3>CTRL-EVENT-BSS-ADDED 10 10:7b:44:96:f9:94
+wpa state: 1
+<3>CTRL-EVENT-BSS-ADDED 11 4e:1b:86:4c:c9:2f
+wpa state: 1
+<3>CTRL-EVENT-BSS-ADDED 12 e8:de:27:fb:96:73
+wpa state: 1
+<3>CTRL-EVENT-BSS-ADDED 13 5a:d3:43:94:1b:31
+wpa state: 1
+<3>CTRL-EVENT-BSS-ADDED 14 24:d3:f2:93:f2:30
+wpa state: 1
+<3>CTRL-EVENT-BSS-ADDED 15 ac:22:05:62:7d:0a
+wpa state: 1
+<3>CTRL-EVENT-BSS-ADDED 16 64:d1:a3:3b:84:9b
+wpa state: 1
+<3>CTRL-EVENT-BSS-ADDED 17 ac:cf:23:14:b2:10
+wpa state: 1
+<3>CTRL-EVENT-SCAN-RESULTS 
+wpa state: 2
+<3>Trying to associate with 64:d1:a3:3b:84:9b (SSID='TeamKevin' freq=2462 MHz)
+wpa state: 1
+wlan0 is linked.
+========v2 pthread statck size 65536===
+start udhcpc on wlan0........
+------playSound /tmp/VOICE/Please_wait_for_WiFi_connecting.wav over
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+<3>Associated with 64:d1:a3:3b:84:9b
+wpa state: 1
+<3>CTRL-EVENT-CONNECTED - Connection to 64:d1:a3:3b:84:9b completed (auth) [id=0 id_str=]
+wpa state: 4
+----------- check wifi state : 4 --------
+GatherWifiSetting end+++++++++++++++++++++++++
+
+
+eye+ : wait for lan ok 0S
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+wlan0: ip = 192.168.0.12, subnet = 255.255.255.0, router = 192.168.0.1, dns = 192.168.0.1 
+router is set
+************set_gateway : 192.168.0.1
+del_gateway ioctl error and errno=3
+dns server address 1 = 192.168.0.1
+dns server address 2 = 0.0.0.0
+Write dns server address 1 ok.
+set dns ok without restart.
+------playSound /tmp/VOICE/WiFi_connect_success.wav
+playHiAudioFile start /tmp/VOICE/WiFi_connect_success.wav..
+time synced.
+--------------------->gateway init start ret[0]: moduleid[eyeplus_ipc_gk_008],deviceid[304a2693c024], /home/iot.ini, /home/ca-bundle-add-closeli.crt, serial[AJWL190711101DPH7YHUVB9O4Y068638]
+========v2 pthread statck size 65536===
+RegisterDevice info->locale ,isSupportAllId 1
+设置区域为海外
+-----------CloseliCamera_IsRegister: 1116
+Device's binding status: 1116, user: kevin@jordivanlaarhoven.nl
+closeli CC_ERR_UNREGISTER
+closeliInit:等待配置账户, lanMode = 0
+Begin___, mode: 1, username: kevin@jordivanlaarhoven.nl,locale: 1en_US|6, reg mode=1
+---->RegisterDevice mode:0, ser:AJWL190711101DPH7YHUVB9O4Y068638, usr:kevin@jordivanlaarhoven.nl, pass:zB1ymvY7, qkey:e1 locale:1en_US|6
+------------>gateway status: 1
+remote hello ret =========  
+GetConnectedWifi: -----ssid: TeamKevin
+connect: Network is unreachable
+remote hello ret =========  
+SupportPTZ = Yes
+NoWiFi = No
+NoMicphone = No
+NoLed = Yes
+FishEye = No
+--------------DevSystem_GetMacAddr MAC: 304a2693c024
+NoWiFi = No
+NoWiFi = No
+AudioEncode = G711A
+NoMicphone = No
+SDCard = Yes
+Buzzer = Yes
+GetDefaultConfig, get Buzzer: {"status":"Off", "buzzTime":"30"}
+SupportPTZ = Yes
+GetDefaultConfig, get PtzPosition: {"status":"Off", "pos":{"pan": "0.500", "tilt": "0.500", "zoom": "0"}, "time":"30"}
+GetDefaultConfig, get Definition: isDefaultSd 1
+{"value":"SD"}
+GetDefaultConfig, get Antiflicker: {"value":"50"}
+GetDefaultConfig, get Image: {"mode":"0"}
+GetDefaultConfig, get DeviceType: {"gateway":"Off"}
+Light = No
+support autotracking
+AutoTracking = Yes
+GetDefaultConfig, get AutoTracking: {"value":"Off"}
+TimestampOsd = Yes
+GetDefaultConfig, get TimestampOsd: TimestampOsd setting On
+{"value":"On"}
+GetDefaultConfig, get SoundDetect: {"status":"On"}
+GetDefaultConfig, get MotionDetect: {"sensitivity":"On", "region":"On"}
+NoWiFi = No
+SoundDetect = Yes
+NoMicphone = No
+NoLed = Yes
+Buzzer = Yes
+FullDuplexSpeech = No
+TimestampOsd = Yes
+SDCard = Yes
+SupportPTZ = Yes
+LiveCtrl = Yes
+SpeechRecognition = No
+Light = No
+support autotracking
+AutoTracking = Yes
+PeopleDetection = No
+connect: Network is unreachable
+SupportPTZ = Yes
+NoWiFi = No
+NoMicphone = No
+NoLed = Yes
+FishEye = No
+GetDefaultConfig, get DeviceType: {"gateway":"Off"}
+CloseliCamera_RegisterDevice ret = 0
+【printRegisterInfo】success!
+saveCloudini 1
+[2020-03-08 13:17:14] [saveData2File] saveData2File: write [/home/cloud.ini] data [542]
+[2020-03-08 13:17:14] [saveData2File] saveData2File: write [/home/cloud_oversea.ini] data [542]
+timeAllowSdRecord, record:0
+doSdRecMode mode:0
+[OnStatus]--------status: 0x103
+[OnStatus]--------logging!
+==============>SetAntiflicker called frequence = 50
+p_devcfg_param->camSensorPara.powerLineFrequencyMode 0 setPowerFrequency 0
+==============>Rotate called angle = 0
+cameraMirror same mirror, do not effect!
+=============>SetQuality called quality = 0 chan = 1
+video sensitivity(80)
+gk_md_stop
+_run_pda = 0======
+pda_thread exit.
+gkdt0
+GKDT_Uninit
+gkdt1
+gk_md_start
+Buzzer = Yes
+OnBuzzer: on=0, time=30
+SupportPTZ = Yes
+SetPresetPosition: on:0, position:0.500000,0.500000,0.000000, timeout:30
+[FUN]pda_thread [LINE]1814  face detection init ok
+SDCard = Yes
+APP SetRecordMode: mode=2
+device setSdRecordMode: mode=1
+doSdRecMode mode:1
+on: 1
+[2020-03-08 13:17:14] [setMicStatus] micStatus already in status [1], do not config again
+audio sensitivity(90)
+==============>SetNightMode mode = 2
+-------------timezone is 3600
+setTimezone fd 38
+SetTimezone buf GMT-01:00
+
+current time = Sun Mar  8 13:17:14 2020
+
+set time!!!!!
+Light = No
+support autotracking
+AutoTracking = Yes
+SetAutoTracking value: 0
+[OnStatus]--------status: 0x106
+[OnStatus]--------logout server success!
+=============>DevVideo_GetSize called
+getSubStreamVideoSize: w 640 h 352 [res = 0x0]
+getSubStreamVideoSize: w 640 h 352 [res = 0x0]
+[E0,1]------playSound /tmp/VOICE/WiFi_connect_success.wav over
+-------------_StartRecord -------event=2---
+GetFreeSpace(/mnt/mmc01/0)
+Free Space: 30304 M, avail:30304 M, total: 30416M
+status = 2, sdir: 2020-03-08, idate: 7E40308, FindDirNode: 1
+FindDirNode: 1
+GetRecordPath: /mnt/mmc01/0/2020-03-08/20200308-131715M.mp4.rec
+fs:, pWriter = 0x4a1a14
+######### _StartRecord: chn=0, file=/mnt/mmc01/0/2020-03-08/20200308-131715M.mp4.rec, wdata=0x7b7998
+GetDefaultConfig, get MotionDetect: {"sensitivity":"On", "region":"On"}
+NoWiFi = No
+SoundDetect = Yes
+NoMicphone = No
+NoLed = Yes
+Buzzer = Yes
+FullDuplexSpeech = No
+TimestampOsd = Yes
+SDCard = Yes
+SupportPTZ = Yes
+LiveCtrl = Yes
+SpeechRecognition = No
+Light = No
+support autotracking
+AutoTracking = Yes
+PeopleDetection = No
+---------------SetServicePlan plan 2 days 0
+[OnStatus]--------status: 0x104
+[OnStatus]--------logon server success!
+GetConnectedWifi: -----ssid: TeamKevin
+inlanPlay = Yes
+------playSound /tmp/VOICE/Internet_connected_Welcome_to_use_cloud_camera.wav
+remote hello ret =========  
+**********register success*********
+thumb..closeliSdcardEvent status: 3
+playHiAudioFile start /tmp/VOICE/Internet_connected_Welcome_to_use_cloud_camera.wav..
+connect: Network is unreachable
+storage is ready.
+==============>SetAntiflicker called frequence = 50
+p_devcfg_param->camSensorPara.powerLineFrequencyMode 0 setPowerFrequency 0
+==============>Rotate called angle = 0
+cameraMirror same mirror, do not effect!
+=============>SetQuality called quality = 0 chan = 1
+video sensitivity(80)
+gk_md_stop
+_run_pda = 0======
+pda_thread exit.
+gkdt0
+GKDT_Uninit
+gkdt1
+gk_md_start
+[FUN]pda_thread [LINE]1814  face detection init ok
+Buzzer = Yes
+OnBuzzer: on=0, time=30
+SupportPTZ = Yes
+SetPresetPosition: on:0, position:0.500000,0.500000,0.000000, timeout:30
+SDCard = Yes
+APP SetRecordMode: mode=2
+device setSdRecordMode: mode=1
+sd record already in mode [1], do not config again
+on: 1
+[2020-03-08 13:17:21] [setMicStatus] micStatus already in status [1], do not config again
+audio sensitivity(90)
+==============>SetNightMode mode = 2
+-------------timezone is 3600
+setTimezone fd 49
+SetTimezone buf GMT-01:00
+
+current time = Sun Mar  8 13:17:21 2020
+
+set time!!!!!
+Light = No
+support autotracking
+AutoTracking = Yes
+SetAutoTracking value: 0
+trackStatus already in status [1], do not config again
+[OnStatus]--------status: 0x104
+[OnStatus]--------logon server success!
+==============>SetNightMode mode = 2
+[OnStatus]--------status: 0x107
+[OnStatus]--------wakeup!
+=============>DevVideo_GetSize called
+getSubStreamVideoSize: w 640 h 352 [res = 0x0]
+[E0,0]------playSound /tmp/VOICE/Internet_connected_Welcome_to_use_cloud_camera.wav over
+[E0,1]thumb..thumb..[E0,0][E0,1][E0,0][E0,1]MaxP2PClientNum = 3
+thumb..[E0,0][E1,1][E0,1]thumb..[E0,0][E0,1][E0,0][E0,1]thumb..[E0,0][E0,1][E0,0][E0,1]thumb..[E0,0][E0,1]thumb..[E0,0][E0,1][E0,0][E0,1]thumb..[E0,0][E0,1][E0,0][E0,1][E1,0][E0,0][E0,1]thumb..[E0,0][E1,1]thumb..[E0,1][E0,0][E0,1][E1,0]thumb..[E0,0][E0,1][E1,1][E0,0]thumb..[E0,1][E1,0][E1,1][E1,0]thumb..[E0,0][E0,1][E0,0][E0,1]thumb..[E0,0][E0,1]thumb..[E0,0][E0,1][E0,0][E0,1]thumb..[E0,0][E0,1][E0,0][E0,1]thumb..[E0,0][E0,1]OnNotice(LiveStart)
+[E1,1]MaxP2PClientNum = 3
+GetConnectedWifi: -----ssid: TeamKevin
+getMemUse = 100
+MaxP2PClientNum = 3
+MoveContinuousely, x=0.050000, y=0.000000, z=0.000000
+MoveContinuousely, x=0.000000, y=-0.100000, z=0.000000
+[E0,0]MoveContinuousely, x=0.050000, y=0.000000, z=0.000000
+thumb..MoveContinuousely, x=0.050000, y=0.000000, z=0.000000
+[E1,0]MoveContinuousely, x=-0.050000, y=0.000000, z=0.000000
+[E0,1][E0,0]MoveContinuousely, x=0.000000, y=0.100000, z=0.000000
+MoveContinuousely, x=0.000000, y=0.100000, z=0.000000
+MoveContinuousely, x=0.050000, y=0.000000, z=0.000000
+[E0,1]thumb..[E0,0]exceed limit(100M/600s): len=11014874, tlen=600
+stop recording due to limit reached.
+StopRecord...
+******* file size = 11019369, tlen = 600 secs.
+-------------_StartRecord -------event=2---
+GetFreeSpace(/mnt/mmc01/0)
+Free Space: 30304 M, avail:30304 M, total: 30416M
+status = 2, sdir: 2020-03-08, idate: 7E40308, FindDirNode: 1
+FindDirNode: 1
+GetRecordPath: /mnt/mmc01/0/2020-03-08/20200308-132715M.mp4.rec
+fs:, pWriter = 0x4a1a14
+######### _StartRecord: chn=0, file=/mnt/mmc01/0/2020-03-08/20200308-132715M.mp4.rec, wdata=0x7b7998
+[E0,1][E0,0][E0,1]thumb..[E0,0][E0,1]MaxP2PClientNum = 3
+thumb..thumb..OnNotice(LiveStop)
+OnNotice(LiveStart)
+[E0,0][E0,1]thumb..[E0,0][E0,1]OnNotice(LiveStop)
+OnNotice(LiveStart)
+[E0,0][E0,1][E0,0][E0,1]OnNotice(LiveStop)
+thumb..OnNotice(LiveStart)
+[E0,0][E0,1][E0,0]OnNotice(LiveStop)
+OnNotice(LiveStart)
+thumb..stop recording due to not scheduled...
+queue notification of file: /mnt/mmc01/0/2020-03-08/20200308-132715M.mp4.rec, event=2
+StopRecord...
+******* file size = 2259800, tlen = 188 secs.
+[E0,1]-------------_StartRecord -------event=2---
+GetFreeSpace(/mnt/mmc01/0)
+Free Space: 30304 M, avail:30304 M, total: 30416M
+status = 2, sdir: 2020-03-08, idate: 7E40308, FindDirNode: 1
+FindDirNode: 1
+GetRecordPath: /mnt/mmc01/0/2020-03-08/20200308-133025M.mp4.rec
+fs:, pWriter = 0x4a1a14
+######### _StartRecord: chn=0, file=/mnt/mmc01/0/2020-03-08/20200308-133025M.mp4.rec, wdata=0x7b7998
+[E0,0][E0,1]OnNotice(LiveStop)
+OnNotice(LiveStart)
+thumb..[E0,0][E0,1][E0,0][OnStatus]--------status: 0x106
+[OnStatus]--------logout server success!
+thumb..OnNotice(LiveStop)
+[OnStatus]--------status: 0x104
+[OnStatus]--------logon server success!
+GetConnectedWifi: -----ssid: TeamKevin
+inlanPlay = Yes
+GetDefaultConfig, get MotionDetect: {"sensitivity":"On", "region":"On"}
+NoWiFi = No
+SoundDetect = Yes
+NoMicphone = No
+NoLed = Yes
+Buzzer = Yes
+FullDuplexSpeech = No
+TimestampOsd = Yes
+SDCard = Yes
+SupportPTZ = Yes
+LiveCtrl = Yes
+SpeechRecognition = No
+Light = No
+support autotracking
+AutoTracking = Yes
+PeopleDetection = No
+OnNotice(LiveStart)
+==============>SetAntiflicker called frequence = 50
+p_devcfg_param->camSensorPara.powerLineFrequencyMode 0 setPowerFrequency 0
+==============>Rotate called angle = 0
+cameraMirror same mirror, do not effect!
+=============>SetQuality called quality = 0 chan = 1
+video sensitivity(80)
+gk_md_stop
+_run_pda = 0======
+pda_thread exit.
+gkdt0
+GKDT_Uninit
+gkdt1
+gk_md_start
+[FUN]pda_thread [LINE]1814  face detection init ok
+Buzzer = Yes
+OnBuzzer: on=0, time=30
+SupportPTZ = Yes
+SetPresetPosition: on:0, position:0.500000,0.500000,0.000000, timeout:30
+SDCard = Yes
+APP SetRecordMode: mode=2
+device setSdRecordMode: mode=1
+sd record already in mode [1], do not config again
+on: 1
+[2020-03-08 13:31:27] [setMicStatus] micStatus already in status [1], do not config again
+audio sensitivity(90)
+==============>SetNightMode mode = 2
+-------------timezone is 3600
+setTimezone fd 55
+SetTimezone buf GMT-01:00
+
+current time = Sun Mar  8 13:31:27 2020
+
+set time!!!!!
+Light = No
+support autotracking
+AutoTracking = Yes
+SetAutoTracking value: 0
+trackStatus already in status [1], do not config again
+[OnStatus]--------status: 0x104
+[OnStatus]--------logon server success!
+==============>SetNightMode mode = 2
+[OnStatus]--------status: 0x107
+[OnStatus]--------wakeup!
+=============>DevVideo_GetSize called
+getSubStreamVideoSize: w 640 h 352 [res = 0x0]
+stop recording due to not scheduled...
+queue notification of file: /mnt/mmc01/0/2020-03-08/20200308-133025M.mp4.rec, event=2
+StopRecord...
+******* file size = 872928, tlen = 73 secs.
+[E0,1]-------------_StartRecord -------event=2---
+GetFreeSpace(/mnt/mmc01/0)
+Free Space: 30288 M, avail:30288 M, total: 30416M
+status = 2, sdir: 2020-03-08, idate: 7E40308, FindDirNode: 1
+FindDirNode: 1
+GetRecordPath: /mnt/mmc01/0/2020-03-08/20200308-133146M.mp4.rec
+fs:, pWriter = 0x4a1a14
+######### _StartRecord: chn=0, file=/mnt/mmc01/0/2020-03-08/20200308-133146M.mp4.rec, wdata=0x7b7998
+thumb..[OnStatus]--------status: 0x106
+[OnStatus]--------logout server success!
+OnNotice(LiveStop)
+[OnStatus]--------status: 0x104
+[OnStatus]--------logon server success!
+GetConnectedWifi: -----ssid: TeamKevin
+inlanPlay = Yes
+OnNotice(LiveStart)
+OnNotice(LiveStop)
+[E0,0][E0,1]OnNotice(LiveStart)
+thumb..[E0,0][E0,1][E0,0][OnStatus]--------status: 0x106
+[OnStatus]--------logout server success!
+thumb..OnNotice(LiveStop)
+[OnStatus]--------status: 0x104
+[OnStatus]--------logon server success!
+inlanPlay = Yes
+GetConnectedWifi: -----ssid: TeamKevin
+OnNotice(LiveStart)
+stop recording due to not scheduled...
+queue notification of file: /mnt/mmc01/0/2020-03-08/20200308-133146M.mp4.rec, event=2
+StopRecord...
+******* file size = 975998, tlen = 82 secs.
+[E0,1]-------------_StartRecord -------event=2---
+GetFreeSpace(/mnt/mmc01/0)
+Free Space: 30288 M, avail:30288 M, total: 30416M
+status = 2, sdir: 2020-03-08, idate: 7E40308, FindDirNode: 1
+FindDirNode: 1
+GetRecordPath: /mnt/mmc01/0/2020-03-08/20200308-133305M.mp4.rec
+fs:, pWriter = 0x4a1a14
+######### _StartRecord: chn=0, file=/mnt/mmc01/0/2020-03-08/20200308-133305M.mp4.rec, wdata=0x7b7998
+OnNotice(LiveStop)
+OnNotice(LiveStart)
+thumb..[E0,0][E0,1][E0,0][E0,1][OnStatus]--------status: 0x106
+[OnStatus]--------logout server success!
+thumb..[E0,0]OnNotice(LiveStop)
+[OnStatus]--------status: 0x104
+[OnStatus]--------logon server success!
+inlanPlay = Yes
+GetConnectedWifi: -----ssid: TeamKevin
+OnNotice(LiveStart)
+MoveContinuousely, x=0.000000, y=0.100000, z=0.000000
+MoveContinuousely, x=-0.050000, y=0.000000, z=0.000000
+stop recording due to not scheduled...
+queue notification of file: /mnt/mmc01/0/2020-03-08/20200308-133305M.mp4.rec, event=2
+StopRecord...
+******* file size = 834011, tlen = 70 secs.
+[E0,1]-------------_StartRecord -------event=2---
+GetFreeSpace(/mnt/mmc01/0)
+Free Space: 30288 M, avail:30288 M, total: 30416M
+status = 2, sdir: 2020-03-08, idate: 7E40308, FindDirNode: 1
+FindDirNode: 1
+GetRecordPath: /mnt/mmc01/0/2020-03-08/20200308-133414M.mp4.rec
+fs:, pWriter = 0x4a1a14
+######### _StartRecord: chn=0, file=/mnt/mmc01/0/2020-03-08/20200308-133414M.mp4.rec, wdata=0x7b7998
+[E0,0]thumb..[OnStatus]--------status: 0x106
+[OnStatus]--------logout server success!
+OnNotice(LiveStop)
+[OnStatus]--------status: 0x104
+[OnStatus]--------logon server success!
+GetConnectedWifi: -----ssid: TeamKevin
+inlanPlay = Yes
+OnNotice(LiveStart)
+[E0,1][E0,0][E0,1]thumb..[E0,0][E0,1][OnStatus]--------status: 0x106
+[OnStatus]--------logout server success!
+OnNotice(LiveStop)
+[OnStatus]--------status: 0x104
+[OnStatus]--------logon server success!
+inlanPlay = Yes
+GetConnectedWifi: -----ssid: TeamKevin
+OnNotice(LiveStart)
+MoveContinuousely, x=0.000000, y=0.100000, z=0.000000
+thumb..[E0,0][OnStatus]--------status: 0x106
+[OnStatus]--------logout server success!

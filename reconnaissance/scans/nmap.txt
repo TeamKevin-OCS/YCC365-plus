@@ -1,0 +1,248 @@
+nmap -v -A 192.168.1.235
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-04-06 19:54 CEST
+NSE: Loaded 151 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 19:54
+Completed NSE at 19:54, 0.00s elapsed
+Initiating NSE at 19:54
+Completed NSE at 19:54, 0.00s elapsed
+Initiating NSE at 19:54
+Completed NSE at 19:54, 0.00s elapsed
+Initiating Ping Scan at 19:54
+Scanning 192.168.1.235 [2 ports]
+Completed Ping Scan at 19:54, 0.20s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 19:54
+Completed Parallel DNS resolution of 1 host. at 19:54, 0.00s elapsed
+Initiating Connect Scan at 19:54
+Scanning 192.168.1.235 [1000 ports]
+Discovered open port 554/tcp on 192.168.1.235
+Discovered open port 80/tcp on 192.168.1.235
+Discovered open port 23/tcp on 192.168.1.235
+Discovered open port 8001/tcp on 192.168.1.235
+Discovered open port 5050/tcp on 192.168.1.235
+Discovered open port 7103/tcp on 192.168.1.235
+Discovered open port 843/tcp on 192.168.1.235
+Completed Connect Scan at 19:55, 27.69s elapsed (1000 total ports)                                                       
+Initiating Service scan at 19:55                                                                                         
+Scanning 7 services on 192.168.1.235                                                                                     
+Completed Service scan at 19:56, 94.35s elapsed (7 services on 1 host)                                                   
+NSE: Script scanning 192.168.1.235.                                                                                      
+Initiating NSE at 19:56                                                                                                                
+Completed NSE at 19:57, 11.78s elapsed                                                                                                 
+Initiating NSE at 19:57                                                                                                                
+Completed NSE at 19:57, 1.23s elapsed                                                                                                            
+Initiating NSE at 19:57                                                                                                                          
+Completed NSE at 19:57, 0.00s elapsed                                                                                                            
+Nmap scan report for 192.168.1.235
+Host is up (0.046s latency).
+Not shown: 993 filtered ports
+PORT     STATE SERVICE    VERSION
+23/tcp   open  telnet     BusyBox telnetd
+80/tcp   open  http       Ginatex-HTTPServer
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.1 401 Unauthorized
+|     Server: Ginatex-HTTPServer
+|     Date: Mon Apr 6 18:55:08 2020
+|     WWW-Authenticate: Basic realm="Onvif"
+|     Pragma: no-cache
+|     Cache-Control: no-cache
+|     Content-Type: text/html
+|     <?xml version="1.0" encoding="UTF-8" ?>
+|     <ResponseStatus version="1.0" xmlns="http://www.ginatex.com/ver10/XMLSchema">
+|     <requestURL>/nice%20ports%2C/Tri%6Eity.txt%2ebak</requestURL>
+|     <statusCode>4</statusCode>
+|     <statusString>Invalid Operation - Unauthorized</statusString>
+|     </ResponseStatus>
+|   GetRequest: 
+|     HTTP/1.0 302 Redirect
+|     Server: Ginatex-HTTPServer
+|     Date: Mon Apr 6 18:55:03 2020
+|     Pragma: no-cache
+|     Cache-Control: no-cache
+|     Content-Type: text/html
+|     Location: http://IPCamera/index.asp
+|     <html><head></head><body>
+|     This document has moved to a new <a href="http://IPCamera/index.asp">location</a>.
+|     Please update your documents to reflect the new location.
+|     </body></html>
+|   HTTPOptions, RTSPRequest: 
+|     HTTP/1.1 400 Page not found
+|     Server: Ginatex-HTTPServer
+|     Date: Mon Apr 6 18:55:03 2020
+|     Pragma: no-cache
+|     Cache-Control: no-cache
+|     Content-Type: text/html
+|     <html><head><title>Document Error: Page not found</title></head>
+|     <body><h2>Access Error: Page not found</h2>
+|_    <p>Bad request type</p></body></html>
+| http-methods: 
+|_  Supported Methods: GET HEAD
+|_http-server-header: Ginatex-HTTPServer
+554/tcp  open  rtsp
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.1 404 Not Found
+|     Server: TAS-Tech IPCam
+|     Date: Tue, 6 Apr 120 17:55:18 GMT
+|     Content-Length: 9
+|     Cache-Control: no-cache
+|     Found
+|   GetRequest: 
+|     HTTP/1.1 404 Not Found
+|     Server: TAS-Tech IPCam
+|     Date: Tue, 6 Apr 120 17:55:03 GMT
+|     Content-Length: 9
+|     Cache-Control: no-cache
+|     Found
+|   HTTPOptions: 
+|     HTTP/1.1 405 Method Not Allowed
+|     Server: TAS-Tech IPCam
+|     Date: Tue, 6 Apr 120 17:55:13 GMT
+|     Content-Length: 18
+|     Cache-Control: no-cache
+|     Method Not Allowed
+|   RTSPRequest: 
+|     RTSP/1.0 200 OK
+|     CSeq: 0
+|     Server: TAS-Tech Streaming Server V100R001
+|_    Public: DESCRIBE, SET_PARAMETER, SETUP, TEARDOWN, PAUSE, PLAY
+|_rtsp-methods: ERROR: Script execution failed (use -d to debug)
+843/tcp  open  unknown
+| fingerprint-strings: 
+|   DNSStatusRequestTCP, GenericLines, GetRequest, HTTPOptions, Help, JavaRMI, LANDesk-RC, LDAPBindReq, LPDString, NCP, RTSPRequest, TerminalServer, X11Probe, afp: 
+|_    <cross-domain-policy> <allow-access-from domain="" to-ports="" /> </cross-domain-policy>
+5050/tcp open  mmcc?
+7103/tcp open  tcpwrapped
+8001/tcp open  rtsp
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.1 404 Not Found
+|     Server: TAS-Tech IPCam
+|     Date: Tue, 6 Apr 120 17:55:08 GMT
+|     Content-Length: 9
+|     Cache-Control: no-cache
+|     Found
+|   GetRequest: 
+|     HTTP/1.1 404 Not Found
+|     Server: TAS-Tech IPCam
+|     Date: Tue, 6 Apr 120 17:55:03 GMT
+|     Content-Length: 9
+|     Cache-Control: no-cache
+|     Found
+|   HTTPOptions: 
+|     HTTP/1.1 405 Method Not Allowed
+|     Server: TAS-Tech IPCam
+|     Date: Tue, 6 Apr 120 17:55:13 GMT
+|     Content-Length: 18
+|     Cache-Control: no-cache
+|     Method Not Allowed
+|   RTSPRequest: 
+|     RTSP/1.0 200 OK
+|     CSeq: 0
+|     Server: TAS-Tech Streaming Server V100R001
+|_    Public: DESCRIBE, SET_PARAMETER, SETUP, TEARDOWN, PAUSE, PLAY
+|_rtsp-methods: ERROR: Script execution failed (use -d to debug)
+4 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port80-TCP:V=7.80%I=7%D=4/6%Time=5E8B6D0E%P=x86_64-pc-linux-gnu%r(GetRe
+SF:quest,180,"HTTP/1\.0\x20302\x20Redirect\r\nServer:\x20Ginatex-HTTPServe
+SF:r\r\nDate:\x20Mon\x20Apr\x20\x206\x2018:55:03\x202020\r\nPragma:\x20no-
+SF:cache\r\nCache-Control:\x20no-cache\r\nContent-Type:\x20text/html\r\nLo
+SF:cation:\x20http://IPCamera/index\.asp\r\n\r\n<html><head></head><body>\
+SF:r\n\t\tThis\x20document\x20has\x20moved\x20to\x20a\x20new\x20<a\x20href
+SF:=\"http://IPCamera/index\.asp\">location</a>\.\r\n\t\tPlease\x20update\
+SF:x20your\x20documents\x20to\x20reflect\x20the\x20new\x20location\.\r\n\t
+SF:\t</body></html>\r\n\r\n")%r(HTTPOptions,13B,"HTTP/1\.1\x20400\x20Page\
+SF:x20not\x20found\r\nServer:\x20Ginatex-HTTPServer\r\nDate:\x20Mon\x20Apr
+SF:\x20\x206\x2018:55:03\x202020\r\nPragma:\x20no-cache\r\nCache-Control:\
+SF:x20no-cache\r\nContent-Type:\x20text/html\r\n\r\n<html><head><title>Doc
+SF:ument\x20Error:\x20Page\x20not\x20found</title></head>\r\n\t\t<body><h2
+SF:>Access\x20Error:\x20Page\x20not\x20found</h2>\r\n\t\t<p>Bad\x20request
+SF:\x20type</p></body></html>\r\n\r\n")%r(RTSPRequest,13B,"HTTP/1\.1\x2040
+SF:0\x20Page\x20not\x20found\r\nServer:\x20Ginatex-HTTPServer\r\nDate:\x20
+SF:Mon\x20Apr\x20\x206\x2018:55:03\x202020\r\nPragma:\x20no-cache\r\nCache
+SF:-Control:\x20no-cache\r\nContent-Type:\x20text/html\r\n\r\n<html><head>
+SF:<title>Document\x20Error:\x20Page\x20not\x20found</title></head>\r\n\t\
+SF:t<body><h2>Access\x20Error:\x20Page\x20not\x20found</h2>\r\n\t\t<p>Bad\
+SF:x20request\x20type</p></body></html>\r\n\r\n")%r(FourOhFourRequest,1E5,
+SF:"HTTP/1\.1\x20401\x20Unauthorized\r\nServer:\x20Ginatex-HTTPServer\r\nD
+SF:ate:\x20Mon\x20Apr\x20\x206\x2018:55:08\x202020\r\nWWW-Authenticate:\x2
+SF:0Basic\x20realm=\"Onvif\"\r\nPragma:\x20no-cache\r\nCache-Control:\x20n
+SF:o-cache\r\nContent-Type:\x20text/html\r\n\r\n<\?xml\x20version=\"1\.0\"
+SF:\x20encoding=\"UTF-8\"\x20\?>\n<ResponseStatus\x20version=\"1\.0\"\x20x
+SF:mlns=\"http://www\.ginatex\.com/ver10/XMLSchema\">\n<requestURL>/nice%2
+SF:0ports%2C/Tri%6Eity\.txt%2ebak</requestURL>\n<statusCode>4</statusCode>
+SF:\n<statusString>Invalid\x20Operation\x20-\x20Unauthorized</statusString
+SF:>\n</ResponseStatus>\n\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port554-TCP:V=7.80%I=7%D=4/6%Time=5E8B6D13%P=x86_64-pc-linux-gnu%r(GetR
+SF:equest,8A,"HTTP/1\.1\x20404\x20Not\x20Found\r\nServer:\x20TAS-Tech\x20I
+SF:PCam\r\nDate:\x20Tue,\x206\x20Apr\x20120\x2017:55:03\x20GMT\r\nContent-
+SF:Length:\x209\r\nCache-Control:\x20no-cache\r\n\r\nNot\x20Found")%r(RTSP
+SF:Request,87,"RTSP/1\.0\x20200\x20OK\r\nCSeq:\x200\r\nServer:\x20TAS-Tech
+SF:\x20Streaming\x20Server\x20V100R001\r\nPublic:\x20DESCRIBE,\x20SET_PARA
+SF:METER,\x20SETUP,\x20TEARDOWN,\x20PAUSE,\x20PLAY\r\n\r\n")%r(HTTPOptions
+SF:,9D,"HTTP/1\.1\x20405\x20Method\x20Not\x20Allowed\r\nServer:\x20TAS-Tec
+SF:h\x20IPCam\r\nDate:\x20Tue,\x206\x20Apr\x20120\x2017:55:13\x20GMT\r\nCo
+SF:ntent-Length:\x2018\r\nCache-Control:\x20no-cache\r\n\r\nMethod\x20Not\
+SF:x20Allowed")%r(FourOhFourRequest,8A,"HTTP/1\.1\x20404\x20Not\x20Found\r
+SF:\nServer:\x20TAS-Tech\x20IPCam\r\nDate:\x20Tue,\x206\x20Apr\x20120\x201
+SF:7:55:18\x20GMT\r\nContent-Length:\x209\r\nCache-Control:\x20no-cache\r\
+SF:n\r\nNot\x20Found");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port843-TCP:V=7.80%I=7%D=4/6%Time=5E8B6D0E%P=x86_64-pc-linux-gnu%r(Gene
+SF:ricLines,5B,"<cross-domain-policy>\x20<allow-access-from\x20domain=\"\*
+SF:\"\x20to-ports=\"\*\"\x20/>\x20</cross-domain-policy>\0")%r(GetRequest,
+SF:5B,"<cross-domain-policy>\x20<allow-access-from\x20domain=\"\*\"\x20to-
+SF:ports=\"\*\"\x20/>\x20</cross-domain-policy>\0")%r(HTTPOptions,5B,"<cro
+SF:ss-domain-policy>\x20<allow-access-from\x20domain=\"\*\"\x20to-ports=\"
+SF:\*\"\x20/>\x20</cross-domain-policy>\0")%r(RTSPRequest,5B,"<cross-domai
+SF:n-policy>\x20<allow-access-from\x20domain=\"\\"\x20to-ports=\"\\"\x20
+SF:/>\x20</cross-domain-policy>\0")%r(DNSStatusRequestTCP,5B,"<cross-domai
+SF:n-policy>\x20<allow-access-from\x20domain=\"\\"\x20to-ports=\"\\"\x20
+SF:/>\x20</cross-domain-policy>\0")%r(Help,5B,"<cross-domain-policy>\x20<a
+SF:llow-access-from\x20domain=\"\\"\x20to-ports=\"\\"\x20/>\x20</cross-d
+SF:omain-policy>\0")%r(X11Probe,5B,"<cross-domain-policy>\x20<allow-access
+SF:-from\x20domain=\"\\"\x20to-ports=\"\\"\x20/>\x20</cross-domain-polic
+SF:y>\0")%r(LPDString,5B,"<cross-domain-policy>\x20<allow-access-from\x20d
+SF:omain=\"\\"\x20to-ports=\"\\"\x20/>\x20</cross-domain-policy>\0")%r(L
+SF:DAPBindReq,5B,"<cross-domain-policy>\x20<allow-access-from\x20domain=\"
+SF:\\"\x20to-ports=\"\\"\x20/>\x20</cross-domain-policy>\0")%r(LANDesk-R
+SF:C,5B,"<cross-domain-policy>\x20<allow-access-from\x20domain=\"\*\"\x20t
+SF:o-ports=\"\*\"\x20/>\x20</cross-domain-policy>\0")%r(TerminalServer,5B,
+SF:"<cross-domain-policy>\x20<allow-access-from\x20domain=\"\*\"\x20to-por
+SF:ts=\"\*\"\x20/>\x20</cross-domain-policy>\0")%r(NCP,5B,"<cross-domain-p
+SF:olicy>\x20<allow-access-from\x20domain=\"\\"\x20to-ports=\"\\"\x20/>\
+SF:x20</cross-domain-policy>\0")%r(JavaRMI,5B,"<cross-domain-policy>\x20<a
+SF:llow-access-from\x20domain=\"\\"\x20to-ports=\"\\"\x20/>\x20</cross-d
+SF:omain-policy>\0")%r(afp,5B,"<cross-domain-policy>\x20<allow-access-from
+SF:\x20domain=\"\\"\x20to-ports=\"\\"\x20/>\x20</cross-domain-policy>\0"
+SF:);
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port8001-TCP:V=7.80%I=7%D=4/6%Time=5E8B6D13%P=x86_64-pc-linux-gnu%r(Get
+SF:Request,8A,"HTTP/1\.1\x20404\x20Not\x20Found\r\nServer:\x20TAS-Tech\x20
+SF:IPCam\r\nDate:\x20Tue,\x206\x20Apr\x20120\x2017:55:03\x20GMT\r\nContent
+SF:-Length:\x209\r\nCache-Control:\x20no-cache\r\n\r\nNot\x20Found")%r(Fou
+SF:rOhFourRequest,8A,"HTTP/1\.1\x20404\x20Not\x20Found\r\nServer:\x20TAS-T
+SF:ech\x20IPCam\r\nDate:\x20Tue,\x206\x20Apr\x20120\x2017:55:08\x20GMT\r\n
+SF:Content-Length:\x209\r\nCache-Control:\x20no-cache\r\n\r\nNot\x20Found"
+SF:)%r(HTTPOptions,9D,"HTTP/1\.1\x20405\x20Method\x20Not\x20Allowed\r\nSer
+SF:ver:\x20TAS-Tech\x20IPCam\r\nDate:\x20Tue,\x206\x20Apr\x20120\x2017:55:
+SF:13\x20GMT\r\nContent-Length:\x2018\r\nCache-Control:\x20no-cache\r\n\r\
+SF:nMethod\x20Not\x20Allowed")%r(RTSPRequest,87,"RTSP/1\.0\x20200\x20OK\r\
+SF:nCSeq:\x200\r\nServer:\x20TAS-Tech\x20Streaming\x20Server\x20V100R001\r
+SF:\nPublic:\x20DESCRIBE,\x20SET_PARAMETER,\x20SETUP,\x20TEARDOWN,\x20PAUS
+SF:E,\x20PLAY\r\n\r\n");
+Service Info: Host: localhost
+
+NSE: Script Post-scanning.
+Initiating NSE at 19:57
+Completed NSE at 19:57, 0.00s elapsed
+Initiating NSE at 19:57
+Completed NSE at 19:57, 0.00s elapsed
+Initiating NSE at 19:57
+Completed NSE at 19:57, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 136.20 seconds

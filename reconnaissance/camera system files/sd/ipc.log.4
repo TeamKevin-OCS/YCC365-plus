@@ -1,0 +1,838 @@
+
+---------------------------- Dump of /tmp/closelicamera.log ---------------------------
+1970-01-01 01:03:19.970599 [283] [ConnectMgr.cpp(1255) ConnectRelayServer]Trace: 0x13aaa40: enter into non-blocking connect, SocketID(-1)
+1970-01-01 01:03:19.976829 [283] [ConfigData.cpp(201) GetStreamConfig]Trace: get stream-c0.s0 config.
+1970-01-01 01:03:19.978464 [283] [ConnectMgr.cpp(972) AssignRelayIp]Trace: sleep 10(s) to assign relay ip.
+1970-01-01 01:03:20.682090 [288] [EventFilter.cpp(181) NotifyDetect]Trace: tag=0,  stop tagtime=197000.
+1970-01-01 01:03:20.683746 [288] [RealStream.cpp(4816) SetEvent]Trace: 13a20a8:event(0) stop,   time=197000.
+1970-01-01 01:03:20.782997 [281] [DeviceStream.cpp(279) statistics]Trace: v[0,0](395.09/451.60)Kbps 11.84fps, PTS(395.09/451.60)Kbps 11.84fps
+1970-01-01 01:03:20.785158 [281] [RealStream.cpp(3789) SetExternalStreamData]Trace: time[0] is invalid, drop the frame
+1970-01-01 01:03:22.710248 [277] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+1970-01-01 01:03:22.842104 [335] [LECAMImpl.cpp(460) FormatURLString]Info: <<<<<< size: 168 <<<<<<<<<<<< jsonObject=%7B%22deviceid%22%3A%22xxxxS_304a2693c024%22%7D%0A&_urlencode=1&_urlencodeParams=jsonObject&accessKey=6f425be2-e27&signature=1c23be7d0f4a7b3cbdc68f88e95948e7
+1970-01-01 01:03:22.861075 [335] [HttpHandle.cpp(142) handle]Error: 6 - Couldn't resolve host name -- https://esd.icloseli.com./lecam/sigV2/support/getUtcTime
+1970-01-01 01:03:22.862448 [335] [OpenCore.cpp(354) AchieveServerUTCTime]Trace: errorcode = 6.
+1970-01-01 01:03:22.863575 [335] [SystemTime.cpp(159) GetSystemTime]Trace: res(0), server time(0)
+1970-01-01 01:03:23.190306 [288] [EventFilter.cpp(181) NotifyDetect]Trace: tag=0, start tagtime=200000.
+1970-01-01 01:03:23.191873 [288] [RealStream.cpp(4816) SetEvent]Trace: 13a20a8:event(0) start,   time=200000.
+1970-01-01 01:03:23.823026 [281] [DeviceStream.cpp(279) statistics]Trace: v[0,0](475.80/452.01)Kbps 11.84fps, PTS(475.80/452.01)Kbps 11.84fps
+1970-01-01 01:03:23.825220 [281] [RealStream.cpp(3789) SetExternalStreamData]Trace: time[0] is invalid, drop the frame
+1970-01-01 01:03:25.720411 [277] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+1970-01-01 01:03:26.862868 [281] [DeviceStream.cpp(279) statistics]Trace: v[0,0](319.22/449.78)Kbps 11.84fps, PTS(319.22/449.78)Kbps 11.84fps
+1970-01-01 01:03:26.864988 [281] [RealStream.cpp(3789) SetExternalStreamData]Trace: time[0] is invalid, drop the frame
+1970-01-01 01:03:27.781331 [336] [InLanPlay.cpp(284) sTimerProc]Trace: Begin___
+1970-01-01 01:03:27.782800 [336] [InLanPlay.cpp(169) UpdateAuthKey]Trace: Begin___
+1970-01-01 01:03:27.806758 [336] [InLanPlay.cpp(115) GetInlanValue]Trace: inlan value=43200**5050*http:///?.
+1970-01-01 01:03:27.808142 [336] [InLanPlay.cpp(177) UpdateAuthKey]Trace: inlanPlay string: 43200**5050*http:///?
+1970-01-01 01:03:27.829312 [336] [InLanPlay.cpp(211) UpdateAuthKey]Trace: local ip port is : :5050
+1970-01-01 01:03:27.830662 [336] [InLanPlay.cpp(228) UpdateAuthKey]Trace: No ip address.
+1970-01-01 01:03:27.831917 [336] [InLanPlay.cpp(277) UpdateAuthKey]Trace: End___, Set timer(30 secs)
+1970-01-01 01:03:27.833151 [336] [InLanPlay.cpp(289) sTimerProc]Trace: End___
+1970-01-01 01:03:27.872080 [337] [LECAMImpl.cpp(460) FormatURLString]Info: <<<<<< size: 168 <<<<<<<<<<<< jsonObject=%7B%22deviceid%22%3A%22xxxxS_304a2693c024%22%7D%0A&_urlencode=1&_urlencodeParams=jsonObject&accessKey=6f425be2-e27&signature=1c23be7d0f4a7b3cbdc68f88e95948e7
+1970-01-01 01:03:27.885658 [337] [HttpHandle.cpp(142) handle]Error: 6 - Couldn't resolve host name -- https://esd.icloseli.com./lecam/sigV2/support/getUtcTime
+1970-01-01 01:03:27.887088 [337] [OpenCore.cpp(354) AchieveServerUTCTime]Trace: errorcode = 6.
+1970-01-01 01:03:27.888871 [337] [SystemTime.cpp(159) GetSystemTime]Trace: res(0), server time(0)
+1970-01-01 01:03:28.730463 [277] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+1970-01-01 01:03:29.900386 [281] [DeviceStream.cpp(279) statistics]Trace: v[0,0](907.81/457.34)Kbps 11.84fps, PTS(907.81/457.34)Kbps 11.84fps
+1970-01-01 01:03:29.902534 [281] [RealStream.cpp(3789) SetExternalStreamData]Trace: time[0] is invalid, drop the frame
+1970-01-01 01:03:30.180300 [283] [OpenCore.cpp(365) RelayServerIpAndPort]Trace: Begin___
+1970-01-01 01:03:30.181695 [283] [OpenCore.cpp(369) RelayServerIpAndPort]Trace: streamname(720p)channelno(-1)region(NULL)
+1970-01-01 01:03:30.184584 [283] [LECAMImpl.cpp(460) FormatURLString]Info: <<<<<< size: 256 <<<<<<<<<<<< jsonObject=%7B%22channelName%22%3A%22720p%22%2C%22deviceid%22%3A%22xxxxS_304a2693c024%22%2C%22token%22%3A%2294c4183ce9f1471ca8dae8899c4ccf4f%22%7D%0A&_urlencode=1&_urlencodeParams=jsonObject&accessKey=6f425be2-e27&signature=3b0c7d3a1cbd608acb2d02c866ece0c5
+1970-01-01 01:03:30.187076 [283] [HttpHandle.cpp(118) handle]Info: CURL_SSLVERSION_TLSv1_2 -- /p2pcam/ca-bundle-add-closeli.crt
+1970-01-01 01:03:30.196031 [283] [HttpHandle.cpp(142) handle]Error: 6 - Couldn't resolve host name -- https://esd.icloseli.com./lookup/sigV2/assignRelayIp
+1970-01-01 01:03:30.197506 [283] [OpenCore.cpp(391) RelayServerIpAndPort]Error: can not get relay ip, ret value: 6
+1970-01-01 01:03:30.201420 [283] [OpenCore.cpp(401) RelayServerIpAndPort]Trace: End___, ret: 6
+1970-01-01 01:03:30.202622 [283] [ConnectMgr.cpp(985) AssignRelayIp]Error: 0x13aaa40[720p]: cannot get relay server ip
+1970-01-01 01:03:30.204038 [283] [ConnectMgr.cpp(1194) SetupTcpConnect]Trace: 0x13aaa40[720p]:relay_connect: assign relay ip failed, err=-16.
+1970-01-01 01:03:31.740330 [277] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+1970-01-01 01:03:32.903657 [338] [LECAMImpl.cpp(460) FormatURLString]Info: <<<<<< size: 168 <<<<<<<<<<<< jsonObject=%7B%22deviceid%22%3A%22xxxxS_304a2693c024%22%7D%0A&_urlencode=1&_urlencodeParams=jsonObject&accessKey=6f425be2-e27&signature=1c23be7d0f4a7b3cbdc68f88e95948e7
+1970-01-01 01:03:32.914112 [338] [HttpHandle.cpp(142) handle]Error: 6 - Couldn't resolve host name -- https://esd.icloseli.com./lecam/sigV2/support/getUtcTime
+1970-01-01 01:03:32.915572 [338] [OpenCore.cpp(354) AchieveServerUTCTime]Trace: errorcode = 6.
+1970-01-01 01:03:32.916719 [338] [SystemTime.cpp(159) GetSystemTime]Trace: res(0), server time(0)
+1970-01-01 01:03:32.941624 [281] [DeviceStream.cpp(279) statistics]Trace: v[0,0](667.98/460.76)Kbps 11.84fps, PTS(667.98/460.76)Kbps 11.84fps
+1970-01-01 01:03:32.943805 [281] [RealStream.cpp(3789) SetExternalStreamData]Trace: time[0] is invalid, drop the frame
+1970-01-01 01:03:33.241764 [286] [LeCamCore.cpp(401) FiniteStateMachineMsgHandle]Trace: msg type(7): yes, excute task: fail!
+1970-01-01 01:03:33.244785 [286] [LECAMImpl.cpp(460) FormatURLString]Info: <<<<<< size: 158 <<<<<<<<<<<< deviceId=xxxxS_304a2693c024&token=NULL&useremail=kevin%40jordivanlaarhoven.nl&apiVersion=1.0&accessKey=6f425be2-e27&signature=126f4b230e9d768a0408da4450cf4587
+1970-01-01 01:03:33.247699 [286] [HttpHandle.cpp(118) handle]Info: CURL_SSLVERSION_TLSv1_2 -- /p2pcam/ca-bundle-add-closeli.crt
+1970-01-01 01:03:33.264647 [286] [HttpHandle.cpp(142) handle]Error: 6 - Couldn't resolve host name -- https://esd.icloseli.com./lecam/openapiSig/device/deviceListNew
+1970-01-01 01:03:33.266015 [286] [OpenCore.cpp(455) CheckDeviceValid]Error: get list fail: 6.
+1970-01-01 01:03:33.267137 [286] [OpenCore.cpp(501) CheckDeviceValid]Trace: mac(xxxxS_304a2693c024), username(kevin@jordivanlaarhoven.nl) iRet(6), res(0), valid(0)
+1970-01-01 01:03:34.270473 [286] [LeCamCore.cpp(401) FiniteStateMachineMsgHandle]Trace: msg type(7): yes, excute task: fail!
+1970-01-01 01:03:34.273033 [286] [LECAMImpl.cpp(460) FormatURLString]Info: <<<<<< size: 158 <<<<<<<<<<<< deviceId=xxxxS_304a2693c024&token=NULL&useremail=kevin%40jordivanlaarhoven.nl&apiVersion=1.0&accessKey=6f425be2-e27&signature=126f4b230e9d768a0408da4450cf4587
+1970-01-01 01:03:34.275542 [286] [HttpHandle.cpp(118) handle]Info: CURL_SSLVERSION_TLSv1_2 -- /p2pcam/ca-bundle-add-closeli.crt
+1970-01-01 01:03:34.288996 [286] [HttpHandle.cpp(142) handle]Error: 6 - Couldn't resolve host name -- https://esd.icloseli.com./lecam/openapiSig/device/deviceListNew
+1970-01-01 01:03:34.296130 [286] [OpenCore.cpp(455) CheckDeviceValid]Error: get list fail: 6.
+1970-01-01 01:03:34.298483 [286] [OpenCore.cpp(501) CheckDeviceValid]Trace: mac(xxxxS_304a2693c024), username(kevin@jordivanlaarhoven.nl) iRet(6), res(0), valid(0)
+1970-01-01 01:03:34.750274 [277] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+1970-01-01 01:03:35.981173 [281] [DeviceStream.cpp(279) statistics]Trace: v[0,0](889.25/467.61)Kbps 11.84fps, PTS(889.25/467.61)Kbps 11.84fps
+1970-01-01 01:03:35.983337 [281] [RealStream.cpp(3789) SetExternalStreamData]Trace: time[0] is invalid, drop the frame
+1970-01-01 01:03:36.310350 [286] [LeCamCore.cpp(401) FiniteStateMachineMsgHandle]Trace: msg type(7): yes, excute task: fail!
+1970-01-01 01:03:36.313035 [286] [LECAMImpl.cpp(460) FormatURLString]Info: <<<<<< size: 158 <<<<<<<<<<<< deviceId=xxxxS_304a2693c024&token=NULL&useremail=kevin%40jordivanlaarhoven.nl&apiVersion=1.0&accessKey=6f425be2-e27&signature=126f4b230e9d768a0408da4450cf4587
+1970-01-01 01:03:36.315716 [286] [HttpHandle.cpp(118) handle]Info: CURL_SSLVERSION_TLSv1_2 -- /p2pcam/ca-bundle-add-closeli.crt
+1970-01-01 01:03:36.329713 [286] [HttpHandle.cpp(142) handle]Error: 6 - Couldn't resolve host name -- https://esd.icloseli.com./lecam/openapiSig/device/deviceListNew
+1970-01-01 01:03:36.335154 [286] [OpenCore.cpp(455) CheckDeviceValid]Error: get list fail: 6.
+1970-01-01 01:03:36.336468 [286] [OpenCore.cpp(501) CheckDeviceValid]Trace: mac(xxxxS_304a2693c024), username(kevin@jordivanlaarhoven.nl) iRet(6), res(0), valid(0)
+1970-01-01 01:03:37.760224 [277] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+1970-01-01 01:03:37.922002 [339] [LECAMImpl.cpp(460) FormatURLString]Info: <<<<<< size: 168 <<<<<<<<<<<< jsonObject=%7B%22deviceid%22%3A%22xxxxS_304a2693c024%22%7D%0A&_urlencode=1&_urlencodeParams=jsonObject&accessKey=6f425be2-e27&signature=1c23be7d0f4a7b3cbdc68f88e95948e7
+1970-01-01 01:03:37.936591 [339] [HttpHandle.cpp(142) handle]Error: 6 - Couldn't resolve host name -- https://esd.icloseli.com./lecam/sigV2/support/getUtcTime
+1970-01-01 01:03:37.938097 [339] [OpenCore.cpp(354) AchieveServerUTCTime]Trace: errorcode = 6.
+1970-01-01 01:03:37.939322 [339] [SystemTime.cpp(159) GetSystemTime]Trace: res(0), server time(0)
+1970-01-01 01:03:39.021517 [281] [DeviceStream.cpp(279) statistics]Trace: v[0,0](652.12/470.51)Kbps 11.84fps, PTS(652.12/470.51)Kbps 11.84fps
+1970-01-01 01:03:39.023672 [281] [RealStream.cpp(3789) SetExternalStreamData]Trace: time[0] is invalid, drop the frame
+1970-01-01 01:03:39.740405 [278] [P2PNew.cpp(53) P2PLogCb]Trace: ####p2p_log:M=CLP2P;V=c7ab521e;L=info;FC=getIceServerInfo;MSG=get ice server info
+
+1970-01-01 01:03:39.742122 [278] [P2PNew.cpp(1163) SendP2PMsg]Trace: send p2p msg, type:3
+1970-01-01 01:03:39.743341 [278] [RealStream.cpp(5788) SendP2PMsg]Trace: 13a20a8: to send P2P msg from  to server, msg:{
+   "serverType" : 3,
+   "userId" : "OFbZTr"
+}
+
+1970-01-01 01:03:40.340499 [286] [LeCamCore.cpp(401) FiniteStateMachineMsgHandle]Trace: msg type(7): yes, excute task: fail!
+1970-01-01 01:03:40.343233 [286] [LECAMImpl.cpp(460) FormatURLString]Info: <<<<<< size: 158 <<<<<<<<<<<< deviceId=xxxxS_304a2693c024&token=NULL&useremail=kevin%40jordivanlaarhoven.nl&apiVersion=1.0&accessKey=6f425be2-e27&signature=126f4b230e9d768a0408da4450cf4587
+1970-01-01 01:03:40.345755 [286] [HttpHandle.cpp(118) handle]Info: CURL_SSLVERSION_TLSv1_2 -- /p2pcam/ca-bundle-add-closeli.crt
+1970-01-01 01:03:40.354763 [286] [HttpHandle.cpp(142) handle]Error: 6 - Couldn't resolve host name -- https://esd.icloseli.com./lecam/openapiSig/device/deviceListNew
+1970-01-01 01:03:40.356173 [286] [OpenCore.cpp(455) CheckDeviceValid]Error: get list fail: 6.
+1970-01-01 01:03:40.357321 [286] [OpenCore.cpp(501) CheckDeviceValid]Trace: mac(xxxxS_304a2693c024), username(kevin@jordivanlaarhoven.nl) iRet(6), res(0), valid(0)
+1970-01-01 01:03:40.400412 [283] [ConnectMgr.cpp(972) AssignRelayIp]Trace: sleep 5(s) to assign relay ip.
+1970-01-01 01:03:40.770556 [277] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+1970-01-01 01:03:42.047205 [281] [DeviceStream.cpp(279) statistics]Trace: v[0,0](926.01/477.47)Kbps 12.00fps, PTS(926.01/477.47)Kbps 12.00fps
+1970-01-01 01:03:42.049510 [281] [RealStream.cpp(3789) SetExternalStreamData]Trace: time[0] is invalid, drop the frame
+1970-01-01 01:03:42.963851 [340] [LECAMImpl.cpp(460) FormatURLString]Info: <<<<<< size: 168 <<<<<<<<<<<< jsonObject=%7B%22deviceid%22%3A%22xxxxS_304a2693c024%22%7D%0A&_urlencode=1&_urlencodeParams=jsonObject&accessKey=6f425be2-e27&signature=1c23be7d0f4a7b3cbdc68f88e95948e7
+1970-01-01 01:03:42.978611 [340] [HttpHandle.cpp(142) handle]Error: 6 - Couldn't resolve host name -- https://esd.icloseli.com./lecam/sigV2/support/getUtcTime
+1970-01-01 01:03:42.980213 [340] [OpenCore.cpp(354) AchieveServerUTCTime]Trace: errorcode = 6.
+1970-01-01 01:03:42.981509 [340] [SystemTime.cpp(159) GetSystemTime]Trace: res(0), server time(0)
+1970-01-01 01:03:43.780920 [277] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+1970-01-01 01:03:45.101690 [281] [DeviceStream.cpp(279) statistics]Trace: v[0,0](813.19/482.65)Kbps 11.69fps, PTS(813.19/482.65)Kbps 11.69fps
+1970-01-01 01:03:45.103842 [281] [RealStream.cpp(3789) SetExternalStreamData]Trace: time[0] is invalid, drop the frame
+1970-01-01 01:03:45.500258 [283] [OpenCore.cpp(365) RelayServerIpAndPort]Trace: Begin___
+1970-01-01 01:03:45.501512 [283] [OpenCore.cpp(369) RelayServerIpAndPort]Trace: streamname(720p)channelno(-1)region(NULL)
+1970-01-01 01:03:45.504215 [283] [LECAMImpl.cpp(460) FormatURLString]Info: <<<<<< size: 256 <<<<<<<<<<<< jsonObject=%7B%22channelName%22%3A%22720p%22%2C%22deviceid%22%3A%22xxxxS_304a2693c024%22%2C%22token%22%3A%2294c4183ce9f1471ca8dae8899c4ccf4f%22%7D%0A&_urlencode=1&_urlencodeParams=jsonObject&accessKey=6f425be2-e27&signature=3b0c7d3a1cbd608acb2d02c866ece0c5
+1970-01-01 01:03:45.506759 [283] [HttpHandle.cpp(118) handle]Info: CURL_SSLVERSION_TLSv1_2 -- /p2pcam/ca-bundle-add-closeli.crt
+1970-01-01 01:03:45.516133 [283] [HttpHandle.cpp(142) handle]Error: 6 - Couldn't resolve host name -- https://esd.icloseli.com./lookup/sigV2/assignRelayIp
+1970-01-01 01:03:45.517707 [283] [OpenCore.cpp(391) RelayServerIpAndPort]Error: can not get relay ip, ret value: 6
+1970-01-01 01:03:45.518868 [283] [OpenCore.cpp(401) RelayServerIpAndPort]Trace: End___, ret: 6
+1970-01-01 01:03:45.520516 [283] [ConnectMgr.cpp(985) AssignRelayIp]Error: 0x13aaa40[720p]: cannot get relay server ip
+1970-01-01 01:03:45.521820 [283] [ConnectMgr.cpp(1194) SetupTcpConnect]Trace: 0x13aaa40[720p]:relay_connect: assign relay ip failed, err=-16.
+1970-01-01 01:03:46.790423 [277] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+1970-01-01 01:03:47.991973 [341] [LECAMImpl.cpp(460) FormatURLString]Info: <<<<<< size: 168 <<<<<<<<<<<< jsonObject=%7B%22deviceid%22%3A%22xxxxS_304a2693c024%22%7D%0A&_urlencode=1&_urlencodeParams=jsonObject&accessKey=6f425be2-e27&signature=1c23be7d0f4a7b3cbdc68f88e95948e7
+1970-01-01 01:03:48.009341 [341] [HttpHandle.cpp(142) handle]Error: 6 - Couldn't resolve host name -- https://esd.icloseli.com./lecam/sigV2/support/getUtcTime
+1970-01-01 01:03:48.014822 [341] [OpenCore.cpp(354) AchieveServerUTCTime]Trace: errorcode = 6.
+1970-01-01 01:03:48.016187 [341] [SystemTime.cpp(159) GetSystemTime]Trace: res(0), server time(0)
+1970-01-01 01:03:48.060347 [281] [DeviceStream.cpp(279) statistics]Trace: v[0,0](729.34/486.26)Kbps 12.16fps, PTS(729.34/486.26)Kbps 12.16fps
+1970-01-01 01:03:48.062503 [281] [RealStream.cpp(3789) SetExternalStreamData]Trace: time[0] is invalid, drop the frame
+1970-01-01 01:03:48.375028 [286] [LeCamCore.cpp(401) FiniteStateMachineMsgHandle]Trace: msg type(7): yes, excute task: fail!
+1970-01-01 01:03:48.378525 [286] [LECAMImpl.cpp(460) FormatURLString]Info: <<<<<< size: 158 <<<<<<<<<<<< deviceId=xxxxS_304a2693c024&token=NULL&useremail=kevin%40jordivanlaarhoven.nl&apiVersion=1.0&accessKey=6f425be2-e27&signature=126f4b230e9d768a0408da4450cf4587
+1970-01-01 01:03:48.382086 [286] [HttpHandle.cpp(118) handle]Info: CURL_SSLVERSION_TLSv1_2 -- /p2pcam/ca-bundle-add-closeli.crt
+1970-01-01 01:03:48.391831 [286] [HttpHandle.cpp(142) handle]Error: 6 - Couldn't resolve host name -- https://esd.icloseli.com./lecam/openapiSig/device/deviceListNew
+1970-01-01 01:03:48.393488 [286] [OpenCore.cpp(455) CheckDeviceValid]Error: get list fail: 6.
+1970-01-01 01:03:48.394693 [286] [OpenCore.cpp(501) CheckDeviceValid]Trace: mac(xxxxS_304a2693c024), username(kevin@jordivanlaarhoven.nl) iRet(6), res(0), valid(0)
+1970-01-01 01:03:49.760385 [278] [P2PNew.cpp(53) P2PLogCb]Trace: ####p2p_log:M=CLP2P;V=c7ab521e;L=info;FC=handerICEServerInfo;MSG=get ice server error: timeout
+
+1970-01-01 01:03:49.806267 [277] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+1970-01-01 01:03:51.100740 [281] [DeviceStream.cpp(279) statistics]Trace: v[0,0](708.43/489.55)Kbps 11.84fps, PTS(708.67/489.55)Kbps 11.84fps
+1970-01-01 01:03:51.102910 [281] [RealStream.cpp(3789) SetExternalStreamData]Trace: time[0] is invalid, drop the frame
+1970-01-01 01:03:52.820425 [277] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+1970-01-01 01:03:53.022309 [342] [LECAMImpl.cpp(460) FormatURLString]Info: <<<<<< size: 168 <<<<<<<<<<<< jsonObject=%7B%22deviceid%22%3A%22xxxxS_304a2693c024%22%7D%0A&_urlencode=1&_urlencodeParams=jsonObject&accessKey=6f425be2-e27&signature=1c23be7d0f4a7b3cbdc68f88e95948e7
+1970-01-01 01:03:53.033139 [342] [HttpHandle.cpp(142) handle]Error: 6 - Couldn't resolve host name -- https://esd.icloseli.com./lecam/sigV2/support/getUtcTime
+1970-01-01 01:03:53.034705 [342] [OpenCore.cpp(354) AchieveServerUTCTime]Trace: errorcode = 6.
+1970-01-01 01:03:53.035906 [342] [SystemTime.cpp(159) GetSystemTime]Trace: res(0), server time(0)
+1970-01-01 01:03:54.139882 [281] [DeviceStream.cpp(279) statistics]Trace: v[0,0](514.06/489.90)Kbps 11.85fps, PTS(513.89/489.90)Kbps 11.84fps
+1970-01-01 01:03:54.142805 [281] [RealStream.cpp(3789) SetExternalStreamData]Trace: time[0] is invalid, drop the frame
+1970-01-01 01:03:55.721856 [283] [ConnectMgr.cpp(972) AssignRelayIp]Trace: sleep 5(s) to assign relay ip.
+1970-01-01 01:03:55.830243 [277] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+1970-01-01 01:03:57.180213 [281] [DeviceStream.cpp(279) statistics]Trace: v[0,0](240.12/486.31)Kbps 11.84fps, PTS(240.12/486.31)Kbps 11.84fps
+1970-01-01 01:03:57.182353 [281] [RealStream.cpp(3789) SetExternalStreamData]Trace: time[0] is invalid, drop the frame
+1970-01-01 01:03:57.850660 [355] [InLanPlay.cpp(284) sTimerProc]Trace: Begin___
+1970-01-01 01:03:57.855724 [355] [InLanPlay.cpp(169) UpdateAuthKey]Trace: Begin___
+1970-01-01 01:03:57.857367 [355] [InLanPlay.cpp(115) GetInlanValue]Trace: inlan value=43200**5050*http:///?.
+1970-01-01 01:03:57.858689 [355] [InLanPlay.cpp(177) UpdateAuthKey]Trace: inlanPlay string: 43200**5050*http:///?
+1970-01-01 01:03:57.859841 [355] [InLanPlay.cpp(211) UpdateAuthKey]Trace: local ip port is : :5050
+1970-01-01 01:03:57.884307 [355] [InLanPlay.cpp(228) UpdateAuthKey]Trace: No ip address.
+1970-01-01 01:03:57.885930 [355] [InLanPlay.cpp(277) UpdateAuthKey]Trace: End___, Set timer(30 secs)
+1970-01-01 01:03:57.887068 [355] [InLanPlay.cpp(289) sTimerProc]Trace: End___
+1970-01-01 01:03:58.066387 [358] [LECAMImpl.cpp(460) FormatURLString]Info: <<<<<< size: 168 <<<<<<<<<<<< jsonObject=%7B%22deviceid%22%3A%22xxxxS_304a2693c024%22%7D%0A&_urlencode=1&_urlencodeParams=jsonObject&accessKey=6f425be2-e27&signature=1c23be7d0f4a7b3cbdc68f88e95948e7
+1970-01-01 01:03:58.245018 [358] [HttpHandle.cpp(142) handle]Error: 6 - Couldn't resolve host name -- https://esd.icloseli.com./lecam/sigV2/support/getUtcTime
+1970-01-01 01:03:58.246572 [358] [OpenCore.cpp(354) AchieveServerUTCTime]Trace: errorcode = 6.
+1970-01-01 01:03:58.247762 [358] [SystemTime.cpp(159) GetSystemTime]Trace: res(0), server time(0)
+1970-01-01 01:03:58.841132 [277] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+
+--------------------- dump of ps ----------------------------
+  PID USER       VSZ STAT COMMAND
+    1 root      1116 S    {linuxrc} init
+    2 root         0 SW   [kthreadd]
+    3 root         0 SW   [ksoftirqd/0]
+    4 root         0 SW   [kworker/0:0]
+    5 root         0 SW   [kworker/u:0]
+    6 root         0 SW<  [khelper]
+    7 root         0 SW<  [netns]
+    8 root         0 SW   [sync_supers]
+    9 root         0 SW   [bdi-default]
+   10 root         0 SW<  [kblockd]
+   11 root         0 SW   [khubd]
+   12 root         0 SW   [kworker/0:1]
+   13 root         0 SW<  [cfg80211]
+   14 root         0 SW   [kworker/u:1]
+   15 root         0 SW<  [rpciod]
+   16 root         0 DW   [kswapd0]
+   17 root         0 SWN  [ksmd]
+   18 root         0 SW   [fsnotify_mark]
+   19 root         0 SW<  [nfsiod]
+   20 root         0 SW<  [crypto]
+   33 root         0 SW   [mtdblock0]
+   34 root         0 SW   [mtdblock1]
+   35 root         0 SW   [mtdblock2]
+   36 root         0 SW   [mtdblock3]
+   37 root         0 SW   [mtdblock4]
+   40 root         0 SW   [mmcqd/0]
+   41 root         0 SW<  [deferwq]
+   75 root         0 SWN  [jffs2_gcd_mtd4]
+   99 root         0 SW   [gk_debug]
+  100 root         0 SW   [encoder]
+  143 root         0 SW   [flush-179:0]
+  153 root       628 S    /home/tees -s -v -b 20 -e ps -e ifconfig; route -n -
+  180 root         0 SW   [RTW_CMD_THREAD]
+  207 root       584 S    /home/rsyscall.goke
+  213 root      1120 S    {start.sh} /bin/sh /home/start.sh
+  215 root      223m S    /p2pcam/p2pcam
+  237 root      1196 S    wpa_supplicant -B -iwlan0 -Dwext -c /home/wpa_suppli
+  239 root         0 SW   [flush-mtd-unmap]
+  244 root      1112 S    /usr/sbin/telnetd
+  260 root         0 SW   [kworker/0:2]
+  333 root      1116 S    /bin/login --
+  372 root      1112 S    sh -c ps
+  373 root      1116 R    ps
+
+--------------------- dump of ifconfig; route -n ----------------------------
+eth0      Link encap:Ethernet  HWaddr 30:4A:26:93:C0:24  
+          UP BROADCAST PROMISC MULTICAST  MTU:1450  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+          Interrupt:1 
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          UP LOOPBACK RUNNING  MTU:16436  Metric:1
+          RX packets:748 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:748 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:56866 (55.5 KiB)  TX bytes:56866 (55.5 KiB)
+
+wlan0     Link encap:Ethernet  HWaddr 30:4A:26:93:C0:24  
+          UP BROADCAST MULTICAST  MTU:1450  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+
+--------------------- dump of wpa_cli status ----------------------------
+Selected interface 'wlan0'
+wpa_state=SCANNING
+address=30:4a:26:93:c0:24
+
+--------------------- dump of mount ----------------------------
+rootfs on / type rootfs (rw)
+/dev/root on / type squashfs (ro,relatime)
+proc on /proc type proc (rw,relatime)
+tmpfs on /dev type tmpfs (rw,relatime)
+tmpfs on /tmp type tmpfs (rw,relatime)
+sysfs on /sys type sysfs (rw,relatime)
+tmpfs on /tmp type tmpfs (rw,relatime)
+devpts on /dev/pts type devpts (rw,relatime,mode=600,ptmxmode=000)
+/dev/mtdblock3 on /p2pcam type squashfs (ro,relatime)
+/dev/mtdblock4 on /home type jffs2 (rw,relatime)
+/dev/mmcblk0p1 on /tmp/mnt/mmc01/0 type vfat (rw,noatime,fmask=0022,dmask=0022,codepage=cp437,iocharset=iso8859-1,shortname=mixed,errors=continue)
+
+--------------------- dump of uptime ----------------------------
+ 01:04:00 up 4 min,  load average: 1.56, 0.84, 0.35
+
+--------------------- dump of df ----------------------------
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/root                 1152      1152         0 100% /
+tmpfs                    15908         0     15908   0% /dev
+tmpfs                    15908       692     15216   4% /tmp
+tmpfs                    15908       692     15216   4% /tmp
+/dev/mtdblock3            1920      1920         0 100% /p2pcam
+/dev/mtdblock4            2496      2184       312  88% /home
+/dev/mmcblk0p1        31147648    263600  30884048   1% /tmp/mnt/mmc01/0
+
+--------------------- dump of netstat -napt ----------------------------
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 0.0.0.0:8001            0.0.0.0:*               LISTEN      215/p2pcam
+tcp        0      0 0.0.0.0:3201            0.0.0.0:*               LISTEN      153/tees
+tcp        0      0 0.0.0.0:554             0.0.0.0:*               LISTEN      215/p2pcam
+tcp        0      0 0.0.0.0:6670            0.0.0.0:*               LISTEN      215/p2pcam
+tcp        0      0 127.0.0.1:9008          0.0.0.0:*               LISTEN      215/p2pcam
+tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      215/p2pcam
+tcp        0      0 0.0.0.0:23              0.0.0.0:*               LISTEN      244/telnetd
+tcp        0      0 0.0.0.0:7101            0.0.0.0:*               LISTEN      215/p2pcam
+tcp        0      0 0.0.0.0:7103            0.0.0.0:*               LISTEN      215/p2pcam
+
+--------------------- dump of free ----------------------------
+             total         used         free       shared      buffers
+Mem:         31816        30660         1156            0         7288
+-/+ buffers:              23372         8444
+Swap:            0            0            0
+
+---------------------------- Dump of log -----------------------------
+nterface_name = wlan0
+not valid ip: 
+eye+ : wait for lan ok 76S
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+eye+ : wait for lan ok 80S
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+eye+ : wait for lan ok 84S
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+eye+ : wait for lan ok 88S
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+eye+ : wait for lan ok 92S
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+eye+ : wait for lan ok 96S
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+eye+ : wait for lan ok 100S
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+cur 163, total:723, max!
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+eye+ : wait for lan ok 104S
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+eye+ : wait for lan ok 108S
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+eye+ : wait for lan ok 112S
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+eye+ : wait for lan ok 116S
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+eye+ : wait for lan ok 120S
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+eye+ : wait for lan ok 124S
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+eye+ : wait for lan ok 128S
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+eye+ : wait for lan ok 132S
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+eye+ : wait for lan ok 136S
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+eye+ : wait for lan ok 140S
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+eye+ : wait for lan ok 144S
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+eye+ : wait for lan ok 148S
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+eye+ : wait for lan ok 152S
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+eye+ : wait for lan ok 156S
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+eye+ : wait for lan ok 160S
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+eye+ : wait for lan ok 164S
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+eye+ : wait for lan ok 168S
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+[E0,0]get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+eye+ : wait for lan ok 172S
+[E0,1]get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+eye+ : wait for lan ok 176S
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+eye+ : wait for lan ok 180S
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+eye+ : wait for lan ok 184S
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+eye+ : wait for lan ok 188S
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+eye+ : wait for lan ok 192S
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+eye+ : wait for lan ok 196S
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+eye+ : wait for lan ok 200S
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+eye+ : wait for lan ok 204S
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+[1970-01-01 01:03:55] [statusCtrl] Reset Button Pressed 1!
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+[1970-01-01 01:03:55] [statusCtrl] Reset Button Pressed 2!
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+eye+ : wait for lan ok 208S
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+[1970-01-01 01:03:58] [statusCtrl] Reset Button Pressed 1!
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+[1970-01-01 01:03:58] [statusCtrl] Reset Button Pressed 2!
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 
+[1970-01-01 01:03:59] [statusCtrl] Reset Button Pressed 3!
+get_ipaddr ioctl error and errno=99 interface_name = wlan0
+not valid ip: 

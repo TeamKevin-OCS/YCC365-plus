@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DeviceInfo version="1.0">
+<DeviceClass>0</DeviceClass>
+<OemCode>0</OemCode>
+<BoardType>1007</BoardType>
+<FirmwareIdent>eyeplus_ipc_gk_008</FirmwareIdent>
+<Manufacturer>RS</Manufacturer>
+<Model>GK7102</Model>
+<GPIO>
+<BlueLed>15_0x00000000_0_1</BlueLed>
+<ReLed>15_0x00000000_0_1</ReLed>
+<BoardReset>53_0x00000000_0_0</BoardReset>
+<SpeakerCtrl>33_0x00000000_0_0</SpeakerCtrl>
+<IrCtrl>12_0x00000000_0_1</IrCtrl>
+<IrCut1B>44_0x00000000_0_1</IrCut1B>
+<IrCut2B>39_0x00000000_0_1</IrCut2B>
+</GPIO>

@@ -1,0 +1,2 @@
+ # uname -a
+Linux localhost 3.4.43-gk #45 PREEMPT Mon Jun 17 17:06:05 CST 2019 armv6l GNU/Linux

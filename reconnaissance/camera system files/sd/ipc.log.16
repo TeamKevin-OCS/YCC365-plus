@@ -1,0 +1,852 @@
+
+---------------------------- Dump of /tmp/closelicamera.log ---------------------------
+2020-03-15 14:38:20.392489 [288] [ServerMsgProcess.cpp(49) ProcessMessageEvent]Trace: message={"msgTimeStamp":1584279500,"msgSession":1000109,"msgSequence":0,"msgCategory":"camera","msgContent":{"request":1793,"subRequest":82,"requestParams":{"value":0}}}, src_id={
+   "cmdid" : 2667457,
+   "deviceid" : "applc_f9bf57de3b5e"
+}
+, msgtype=0.
+2020-03-15 14:38:20.395621 [289] [FullrelayMsg.cpp(425) ThreadProcess]Trace: try to get message in queue immediately!
+2020-03-15 14:38:20.397925 [289] [FullrelayMsg.cpp(360) ProcessMessage]Trace: #### fullrelay
+2020-03-15 14:38:20.399184 2020-03-15 14:38:20.401226 [288] [Common.cpp(441) CustomerControlCB]Trace: no customer instance
+[289] [FullrelayMsg.cpp(70) OnXMPPSetDeviceConfiguration]Trace: ####Begin___ subreq: 0052
+2020-03-15 14:38:20.405445 [289] [PtzTidings.cpp(232) SetLens]Trace: subrequest(0x00000052) value(0) step(0).
+2020-03-15 14:38:20.407014 [289] [Ptz.cpp(116) StopMove]Trace: stop to roll!
+2020-03-15 14:38:20.409915 [289] [PtzTidings.cpp(279) SetLens]Trace: set front success!
+2020-03-15 14:38:20.411975 [289] [WorkLogManager.cpp(358) WriteWorkLog]Trace: Write new work log start
+2020-03-15 14:38:20.412970 [289] [WorkLogManager.cpp(248) TruncateLog]Trace: file length(1011) is allowed!
+2020-03-15 14:38:20.414578 [289] [WorkLogManager.cpp(401) WriteWorkLog]Trace: Write new work log end, "cfig,9|set,2020-03-15_14:38:20|sub,82|res,1", 1055B
+2020-03-15 14:38:20.415775 [289] [FullrelayMsg.cpp(289) OnXMPPSetDeviceConfiguration]Trace: End___
+2020-03-15 14:38:20.503414 [288] [RealStream.cpp(2588) HandleServerCmd]Trace: 173df10: receive server cmd, type is 33
+2020-03-15 14:38:20.504885 [288] [RealStream.cpp(2672) HandleServerCmd]Trace: 173df10: receive xmpp msg from applc_f9bf57de3b5e, cmdid is 3275787:1, channelno is -1, msg is {"msgTimeStamp":1584279500,"msgSession":1000110,"msgSequence":0,"msgCategory":"camera","msgContent":{"request":1793,"subRequest":82,"requestParams":{"value":1}}}
+2020-03-15 14:38:20.506927 [288] [ServerMsgProcess.cpp(49) ProcessMessageEvent]Trace: message={"msgTimeStamp":1584279500,"msgSession":1000110,"msgSequence":0,"msgCategory":"camera","msgContent":{"request":1793,"subRequest":82,"requestParams":{"value":1}}}, src_id={
+   "cmdid" : 3275787,
+   "deviceid" : "applc_f9bf57de3b5e"
+}
+, msgtype=0.
+2020-03-15 14:38:20.511215 [288] [Common.cpp(441) CustomerControlCB]Trace: no customer instance
+2020-03-15 14:38:20.509331 [289] [FullrelayMsg.cpp(425) ThreadProcess]Trace: try to get message in queue immediately!
+2020-03-15 14:38:20.517470 [289] [FullrelayMsg.cpp(360) ProcessMessage]Trace: #### fullrelay
+2020-03-15 14:38:20.518833 [289] [FullrelayMsg.cpp(70) OnXMPPSetDeviceConfiguration]Trace: ####Begin___ subreq: 0052
+2020-03-15 14:38:20.520152 [289] [PtzTidings.cpp(232) SetLens]Trace: subrequest(0x00000052) value(1) step(0).
+2020-03-15 14:38:20.522923 [289] [PtzTidings.cpp(279) SetLens]Trace: set front success!
+2020-03-15 14:38:20.524937 [289] [WorkLogManager.cpp(358) WriteWorkLog]Trace: Write new work log start
+2020-03-15 14:38:20.526126 [289] [WorkLogManager.cpp(248) TruncateLog]Trace: file length(1055) is allowed!
+2020-03-15 14:38:20.527886 [289] [WorkLogManager.cpp(401) WriteWorkLog]Trace: Write new work log end, "cfig,9|set,2020-03-15_14:38:20|sub,82|res,1", 1099B
+2020-03-15 14:38:20.529165 [289] [FullrelayMsg.cpp(289) OnXMPPSetDeviceConfiguration]Trace: End___
+2020-03-15 14:38:20.570381 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:38:20.697337 [288] [WorkLogManager.cpp(484) GetWorkLog]Trace: Scan to get work log start
+2020-03-15 14:38:20.702052 [288] [WorkLogManager.cpp(533) GetWorkLog]Trace: item "cfig,9|set,2020-03-15_14:38:20|sub,82|res,1;" scanned
+2020-03-15 14:38:20.703204 [288] [WorkLogManager.cpp(533) GetWorkLog]Trace: item "cfig,9|set,2020-03-15_14:38:20|sub,82|res,1;" scanned
+2020-03-15 14:38:20.704332 [288] [WorkLogManager.cpp(493) GetWorkLog]Trace: read to end!
+2020-03-15 14:38:20.705453 [288] [WorkLogManager.cpp(557) GetWorkLog]Trace: to send idx array is [1087 0 0]
+2020-03-15 14:38:20.706663 [288] [WorkLogManager.cpp(559) GetWorkLog]Trace: Scan to get work log stop, 88B scanned with id 1584279500705
+2020-03-15 14:38:20.708078 [288] [RealStream.cpp(1384) CheckSendDeviceLog]Trace: requestid:29,304a2693c02415842795007070011
+2020-03-15 14:38:20.709371 [288] [RealStream.cpp(1425) ParseMsgItems]Trace: get item cfig,9|set,2020-03-15_14:38:20|sub,82|res,1
+2020-03-15 14:38:20.712363 [288] [RealStream.cpp(1425) ParseMsgItems]Trace: get item cfig,9|set,2020-03-15_14:38:20|sub,82|res,1
+2020-03-15 14:38:20.715050 [288] [RealStream.cpp(1391) CheckSendDeviceLog]Trace: work log 2_166 sended
+2020-03-15 14:38:20.716734 [288] [WorkLogManager.cpp(230) WriteIdxLog]Trace: Update idx array to [1087 0 0]
+2020-03-15 14:38:20.718238 [288] [WorkLogManager.cpp(590) WorkLogSended]Trace: After send items with id 1584279500705, sucess=1, ret=1
+2020-03-15 14:38:21.183336 [288] [RealStream.cpp(2588) HandleServerCmd]Trace: 173df10: receive server cmd, type is 33
+2020-03-15 14:38:21.184749 [288] [RealStream.cpp(2672) HandleServerCmd]Trace: 173df10: receive xmpp msg from applc_f9bf57de3b5e, cmdid is 7798876:1, channelno is -1, msg is {"msgTimeStamp":1584279501,"msgSession":1000111,"msgSequence":0,"msgCategory":"camera","msgContent":{"request":1793,"subRequest":82,"requestParams":{"value":0}}}
+2020-03-15 14:38:21.188063 [288] [ServerMsgProcess.cpp(49) ProcessMessageEvent]Trace: message={"msgTimeStamp":1584279501,"msgSession":1000111,"msgSequence":0,"msgCategory":"camera","msgContent":{"request":1793,"subRequest":82,"requestParams":{"value":0}}}, src_id={
+   "cmdid" : 7798876,
+   "deviceid" : "applc_f9bf57de3b5e"
+}
+, msgtype=0.
+2020-03-15 14:38:21.191783 [289] [FullrelayMsg.cpp(425) ThreadProcess]Trace: try to get message in queue immediately!
+2020-03-15 14:38:21.194758 [289] [FullrelayMsg.cpp(360) ProcessMessage]Trace: #### fullrelay
+2020-03-15 14:38:21.195913 [289] [FullrelayMsg.cpp(70) OnXMPPSetDeviceConfiguration]Trace: ####Begin___ subreq: 0052
+2020-03-15 14:38:21.197260 [253] [MemoryPool.cpp(77) alloc_cells]Trace: this(0x157f1d0) cell_size(32768) pool_bytes(32768) all_bytes(546304)
+2020-03-15 14:38:21.208198 [288] [Common.cpp(441) CustomerControlCB]Trace: no customer instance
+2020-03-15 14:38:21.199799 [289] [PtzTidings.cpp(232) SetLens]Trace: subrequest(0x00000052) value(0) step(0).
+2020-03-15 14:38:21.212028 [289] [Ptz.cpp(116) StopMove]Trace: stop to roll!
+2020-03-15 14:38:21.214927 [289] [PtzTidings.cpp(279) SetLens]Trace: set front success!
+2020-03-15 14:38:21.216811 [289] [WorkLogManager.cpp(358) WriteWorkLog]Trace: Write new work log start
+2020-03-15 14:38:21.222928 [289] [WorkLogManager.cpp(248) TruncateLog]Trace: file length(1099) is allowed!
+2020-03-15 14:38:21.224732 [289] [WorkLogManager.cpp(401) WriteWorkLog]Trace: Write new work log end, "cfig,9|set,2020-03-15_14:38:21|sub,82|res,1", 1143B
+2020-03-15 14:38:21.225930 [289] [FullrelayMsg.cpp(289) OnXMPPSetDeviceConfiguration]Trace: End___
+2020-03-15 14:38:21.322255 [253] [MemoryPool.cpp(77) alloc_cells]Trace: this(0x157f1b8) cell_size(16384) pool_bytes(98304) all_bytes(562688)
+2020-03-15 14:38:21.742274 [288] [WorkLogManager.cpp(484) GetWorkLog]Trace: Scan to get work log start
+2020-03-15 14:38:21.743610 [288] [WorkLogManager.cpp(533) GetWorkLog]Trace: item "cfig,9|set,2020-03-15_14:38:21|sub,82|res,1;" scanned
+2020-03-15 14:38:21.744764 [288] [WorkLogManager.cpp(493) GetWorkLog]Trace: read to end!
+2020-03-15 14:38:21.745906 [288] [WorkLogManager.cpp(557) GetWorkLog]Trace: to send idx array is [1131 0 0]
+2020-03-15 14:38:21.747081 [288] [WorkLogManager.cpp(559) GetWorkLog]Trace: Scan to get work log stop, 44B scanned with id 1584279501745
+2020-03-15 14:38:21.748350 [288] [RealStream.cpp(1384) CheckSendDeviceLog]Trace: requestid:29,304a2693c02415842795017480012
+2020-03-15 14:38:21.749643 [288] [RealStream.cpp(1425) ParseMsgItems]Trace: get item cfig,9|set,2020-03-15_14:38:21|sub,82|res,1
+2020-03-15 14:38:21.753329 [288] [RealStream.cpp(1391) CheckSendDeviceLog]Trace: work log 1_112 sended
+2020-03-15 14:38:21.756390 [288] [WorkLogManager.cpp(230) WriteIdxLog]Trace: Update idx array to [1131 0 0]
+2020-03-15 14:38:21.758182 [288] [WorkLogManager.cpp(590) WorkLogSended]Trace: After send items with id 1584279501745, sucess=1, ret=1
+2020-03-15 14:38:22.322352 [253] [MemoryPool.cpp(77) alloc_cells]Trace: this(0x157f1d0) cell_size(32768) pool_bytes(65536) all_bytes(595456)
+2020-03-15 14:38:22.324720 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](225.07/37.95)Kbps 7.98fps, PTS(225.59/37.95)Kbps 8.00fps
+2020-03-15 14:38:22.328036 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 16270, starttime: 1081181, num: 2982, frames: 24, at 1584279502326, fisheye:0
+2020-03-15 14:38:22.332429 [288] [RealStream.cpp(2404) NonBlockingSendDataProc]Trace: 173df10[0, 0][1280*720]:SEND GOP(starttime=1078181)3000(ms), 24 video frames,150 audio frames, total size: 117262(87712)(byte), cost 239(ms), recording 0, flag:0, cur bufsize:164266 
+2020-03-15 14:38:22.358504 [288] [RealStream.cpp(2463) NonBlockingSendDataProc]Trace: 173df10[1280*720]:sending I frame, starttime 1081181[1584279502326], seq 2982, size 16270, delay 32, recording 0, ignore key 0, ignore nonkey 0, flag:0.
+2020-03-15 14:38:23.422651 [288] [RealStream.cpp(2588) HandleServerCmd]Trace: 173df10: receive server cmd, type is 33
+2020-03-15 14:38:23.423960 [288] [RealStream.cpp(2672) HandleServerCmd]Trace: 173df10: receive xmpp msg from applc_f9bf57de3b5e, cmdid is 4025457:1, channelno is -1, msg is {"msgTimeStamp":1584279503,"msgSession":1000112,"msgSequence":0,"msgCategory":"camera","msgContent":{"request":1793,"subRequest":82,"requestParams":{"value":0}}}
+2020-03-15 14:38:23.427649 [288] [ServerMsgProcess.cpp(49) ProcessMessageEvent]Trace: message={"msgTimeStamp":1584279503,"msgSession":1000112,"msgSequence":0,"msgCategory":"camera","msgContent":{"request":1793,"subRequest":82,"requestParams":{"value":0}}}, src_id={
+   "cmdid" : 4025457,
+   "deviceid" : "applc_f9bf57de3b5e"
+}
+, msgtype=0.
+2020-03-15 14:38:23.430444 [289] [FullrelayMsg.cpp(425) ThreadProcess]Trace: try to get message in queue immediately!
+2020-03-15 14:38:23.433493 [289] [FullrelayMsg.cpp(360) ProcessMessage]Trace: #### fullrelay
+2020-03-15 14:38:23.434787 [289] [FullrelayMsg.cpp(70) OnXMPPSetDeviceConfiguration]Trace: ####Begin___ subreq: 0052
+2020-03-15 14:38:23.436996 [289] [PtzTidings.cpp(232) SetLens]Trace: subrequest(0x00000052) value(0) step(0).
+2020-03-15 14:38:23.439142 [289] [Ptz.cpp(116) StopMove]Trace: stop to roll!
+2020-03-15 14:38:23.442034 [288] [Common.cpp(441) CustomerControlCB]Trace: no customer instance
+2020-03-15 14:38:23.445228 [289] [PtzTidings.cpp(279) SetLens]Trace: set front success!
+2020-03-15 14:38:23.451383 [289] [WorkLogManager.cpp(358) WriteWorkLog]Trace: Write new work log start
+2020-03-15 14:38:23.452444 [289] [WorkLogManager.cpp(248) TruncateLog]Trace: file length(1143) is allowed!
+2020-03-15 14:38:23.455443 [289] [WorkLogManager.cpp(401) WriteWorkLog]Trace: Write new work log end, "cfig,9|set,2020-03-15_14:38:23|sub,82|res,1", 1187B
+2020-03-15 14:38:23.456784 [289] [FullrelayMsg.cpp(289) OnXMPPSetDeviceConfiguration]2020-03-15 14:38:23.462395 [286] [RtspBufferManager.cpp(811) CreateNode]Trace: [0:0] idle=581,buffer=1,create=582,destroy=0, relay
+2020-03-15 14:38:23.464279 [286] [RtspBufferManager.cpp(811) CreateNode]Trace: [0:0] idle=52,buffer=414,create=466,destroy=0, p2plive
+Trace: End___
+2020-03-15 14:38:23.467725 [288] [RealStream.cpp(2588) HandleServerCmd]Trace: 173df10: receive server cmd, type is 33
+2020-03-15 14:38:23.468989 [288] [RealStream.cpp(2672) HandleServerCmd]Trace: 173df10: receive xmpp msg from applc_f9bf57de3b5e, cmdid is 4093187:1, channelno is -1, msg is {"msgTimeStamp":1584279503,"msgSession":1000113,"msgSequence":0,"msgCategory":"camera","msgContent":{"request":1793,"subRequest":82,"requestParams":{"value":3}}}
+2020-03-15 14:38:23.471169 [288] [ServerMsgProcess.cpp(49) ProcessMessageEvent]Trace: message={"msgTimeStamp":1584279503,"msgSession":1000113,"msgSequence":0,"msgCategory":"camera","msgContent":{"request":1793,"subRequest":82,"requestParams":{"value":3}}}, src_id={
+   "cmdid" : 4093187,
+   "deviceid" : "applc_f9bf57de3b5e"
+}
+, msgtype=0.
+2020-03-15 14:38:23.473695 [289] [FullrelayMsg.cpp(425) ThreadProcess]Trace: try to get message in queue immediately!
+2020-03-15 14:38:23.475764 [289] [FullrelayMsg.cpp(360) ProcessMessage]Trace: #### fullrelay
+2020-03-15 14:38:23.476939 [289] [FullrelayMsg.cpp(70) OnXMPPSetDeviceConfiguration]Trace: ####Begin___ subreq: 0052
+2020-03-15 14:38:23.481349 [288] [Common.cpp(441) CustomerControlCB]Trace: no customer instance
+2020-03-15 14:38:23.483102 [288] [WorkLogManager.cpp(484) GetWorkLog]Trace: Scan to get work log start
+2020-03-15 14:38:23.484297 [288] [WorkLogManager.cpp(533) GetWorkLog]Trace: item "cfig,9|set,2020-03-15_14:38:23|sub,82|res,1;" scanned
+2020-03-15 14:38:23.485418 [288] [WorkLogManager.cpp(493) GetWorkLog]Trace: read to end!
+2020-03-15 14:38:23.486603 [288] [WorkLogManager.cpp(557) GetWorkLog]Trace: to send idx array is [1175 0 0]
+2020-03-15 14:38:23.487779 [288] [WorkLogManager.cpp(559) GetWorkLog]Trace: Scan to get work log stop, 44B scanned with id 1584279503486
+2020-03-15 14:38:23.489092 [288] 2020-03-15 14:38:23.478169 [289] [PtzTidings.cpp(232) SetLens]Trace: subrequest(0x00000052) value(3) step(0).
+2020-03-15 14:38:23.492063 [289] [PtzTidings.cpp(279) SetLens]Trace: set front success!
+2020-03-15 14:38:23.493993 [289] [WorkLogManager.cpp(358) WriteWorkLog]Trace: Write new work log start
+2020-03-15 14:38:23.495167 [289] [WorkLogManager.cpp(248) TruncateLog]Trace: file length(1187) is allowed!
+2020-03-15 14:38:23.496833 [289] [WorkLogManager.cpp(401) WriteWorkLog]Trace: Write new work log end, "cfig,9|set,2020-03-15_14:38:23|sub,82|res,1", 1231B
+2020-03-15 14:38:23.504882 [289] [FullrelayMsg.cpp(289) OnXMPPSetDeviceConfiguration]Trace: End___
+[RealStream.cpp(1384) CheckSendDeviceLog]Trace: requestid:29,304a2693c02415842795034880013
+2020-03-15 14:38:23.507488 [288] [RealStream.cpp(1425) ParseMsgItems]Trace: get item cfig,9|set,2020-03-15_14:38:23|sub,82|res,1
+2020-03-15 14:38:23.511139 [288] [RealStream.cpp(1391) CheckSendDeviceLog]Trace: work log 1_112 sended
+2020-03-15 14:38:23.513001 [288] [WorkLogManager.cpp(230) WriteIdxLog]Trace: Update idx array to [1175 0 0]
+2020-03-15 14:38:23.514590 [288] [WorkLogManager.cpp(590) WorkLogSended]Trace: After send items with id 1584279503486, sucess=1, ret=1
+2020-03-15 14:38:23.571940 [286] [RtspBufferManager.cpp(262) HandleWriteBufferSmartAVC]Trace: 24917096: streamstat: total size:7629(Bytes), timespan:8000(ms), count:421.
+2020-03-15 14:38:23.574470 [288] [RealStream.cpp(2588) HandleServerCmd]Trace: 173df10: receive server cmd, type is 33
+2020-03-15 14:38:23.575837 [288] [RealStream.cpp(2672) HandleServerCmd]Trace: 173df10: receive xmpp msg from applc_f9bf57de3b5e, cmdid is 8449817:1, channelno is -1, msg is {"msgTimeStamp":1584279503,"msgSession":1000114,"msgSequence":0,"msgCategory":"camera","msgContent":{"request":1793,"subRequest":82,"requestParams":{"value":0}}}
+2020-03-15 14:38:23.581116 [288] [ServerMsgProcess.cpp(49) ProcessMessageEvent]Trace: message={"msgTimeStamp":1584279503,"msgSession":1000114,"msgSequence":0,"msgCategory":"camera","msgContent":{"request":1793,"subRequest":82,"requestParams":{"value":0}}}, src_id={
+   "cmdid" : 8449817,
+   "deviceid" : "applc_f9bf57de3b5e"
+}
+, msgtype=0.
+2020-03-15 14:38:23.584191 [288] [Common.cpp(441) CustomerControlCB]Trace: no customer instance
+2020-03-15 14:38:23.591143 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:38:23.592632 [289] [FullrelayMsg.cpp(425) ThreadProcess]Trace: try to get message in queue immediately!
+2020-03-15 14:38:23.594660 [289] [FullrelayMsg.cpp(360) ProcessMessage]Trace: #### fullrelay
+2020-03-15 14:38:23.595807 [289] [FullrelayMsg.cpp(70) OnXMPPSetDeviceConfiguration]Trace: ####Begin___ subreq: 0052
+2020-03-15 14:38:23.597010 [289] [PtzTidings.cpp(232) SetLens]Trace: subrequest(0x00000052) value(0) step(0).
+2020-03-15 14:38:23.598431 [289] [Ptz.cpp(116) StopMove]Trace: stop to roll!
+2020-03-15 14:38:23.604368 [289] [PtzTidings.cpp(279) SetLens]Trace: set front success!
+2020-03-15 14:38:23.606236 [289] [WorkLogManager.cpp(358) WriteWorkLog]Trace: Write new work log start
+2020-03-15 14:38:23.607399 [289] [WorkLogManager.cpp(248) TruncateLog]Trace: file length(1231) is allowed!
+2020-03-15 14:38:23.609044 [289] [WorkLogManager.cpp(401) WriteWorkLog]Trace: Write new work log end, "cfig,9|set,2020-03-15_14:38:23|sub,82|res,1", 1275B
+2020-03-15 14:38:23.610462 [289] [FullrelayMsg.cpp(289) OnXMPPSetDeviceConfiguration]Trace: End___
+2020-03-15 14:38:23.693108 [253] [MemoryPool.cpp(77) alloc_cells]Trace: this(0x157f1a0) cell_size(8192) pool_bytes(16384) all_bytes(603648)
+2020-03-15 14:38:23.708474 [288] [RealStream.cpp(2588) HandleServerCmd]Trace: 173df10: receive server cmd, type is 33
+2020-03-15 14:38:23.709866 [288] [RealStream.cpp(2672) HandleServerCmd]Trace: 173df10: receive xmpp msg from applc_f9bf57de3b5e, cmdid is 3080476:1, channelno is -1, msg is {"msgTimeStamp":1584279504,"msgSession":1000115,"msgSequence":0,"msgCategory":"camera","msgContent":{"request":1793,"subRequest":82,"requestParams":{"value":1}}}
+2020-03-15 14:38:23.713669 [288] [ServerMsgProcess.cpp(49) ProcessMessageEvent]Trace: message={"msgTimeStamp":1584279504,"msgSession":1000115,"msgSequence":0,"msgCategory":"camera","msgContent":{"request":1793,"subRequest":82,"requestParams":{"value":1}}}, src_id={
+   "cmdid" : 3080476,
+   "deviceid" : "applc_f9bf57de3b5e"
+}
+, msgtype=0.
+2020-03-15 14:38:23.715973 [289] [FullrelayMsg.cpp(425) ThreadProcess]Trace: try to get message in queue immediately!
+2020-03-15 14:38:23.718121 [289] [FullrelayMsg.cpp(360) ProcessMessage]Trace: #### fullrelay
+2020-03-15 14:38:23.721177 [288] [Common.cpp(441) CustomerControlCB]Trace: no customer instance
+2020-03-15 14:38:23.719268 [289] [FullrelayMsg.cpp(70) OnXMPPSetDeviceConfiguration]Trace: ####Begin___ subreq: 0052
+2020-03-15 14:38:23.725121 [289] [PtzTidings.cpp(232) SetLens]Trace: subrequest(0x00000052) value(1) step(0).
+2020-03-15 14:38:23.727635 [289] [PtzTidings.cpp(279) SetLens]Trace: set front success!
+2020-03-15 14:38:23.729489 [289] [WorkLogManager.cpp(358) WriteWorkLog]Trace: Write new work log start
+2020-03-15 14:38:23.732246 [289] [WorkLogManager.cpp(248) TruncateLog]Trace: file length(1275) is allowed!
+2020-03-15 14:38:23.733901 [289] [WorkLogManager.cpp(401) WriteWorkLog]Trace: Write new work log end, "cfig,9|set,2020-03-15_14:38:23|sub,82|res,1", 1319B
+2020-03-15 14:38:23.735119 [289] [FullrelayMsg.cpp(289) OnXMPPSetDeviceConfiguration]Trace: End___
+2020-03-15 14:38:23.822710 [253] [MemoryPool.cpp(77) alloc_cells]Trace: this(0x157f1b8) cell_size(16384) pool_bytes(114688) all_bytes(620032)
+2020-03-15 14:38:23.846508 [288] [RealStream.cpp(2588) HandleServerCmd]Trace: 173df10: receive server cmd, type is 33
+2020-03-15 14:38:23.847878 [288] [RealStream.cpp(2672) HandleServerCmd]Trace: 173df10: receive xmpp msg from applc_f9bf57de3b5e, cmdid is 3161258:1, channelno is -1, msg is {"msgTimeStamp":1584279504,"msgSession":1000116,"msgSequence":0,"msgCategory":"camera","msgContent":{"request":1793,"subRequest":82,"requestParams":{"value":0}}}
+2020-03-15 14:38:23.849870 [288] [ServerMsgProcess.cpp(49) ProcessMessageEvent]Trace: message={"msgTimeStamp":1584279504,"msgSession":1000116,"msgSequence":0,"msgCategory":"camera","msgContent":{"request":1793,"subRequest":82,"requestParams":{"value":0}}}, src_id={
+   "cmdid" : 3161258,
+   "deviceid" : "applc_f9bf57de3b5e"
+}
+, msgtype=0.
+2020-03-15 14:38:23.852344 [289] [FullrelayMsg.cpp(425) ThreadProcess]Trace: try to get message in queue immediately!
+2020-03-15 14:38:23.854404 [289] [FullrelayMsg.cpp(360) ProcessMessage]Trace: #### fullrelay
+2020-03-15 14:38:23.855607 [289] [FullrelayMsg.cpp(70) OnXMPPSetDeviceConfiguration]Trace: ####Begin___ subreq: 0052
+2020-03-15 14:38:23.856753 [289] [PtzTidings.cpp(232) SetLens]Trace: subrequest(0x00000052) value(0) step(0).
+2020-03-15 14:38:23.861779 [289] [Ptz.cpp(116) StopMove]Trace: stop to roll!
+2020-03-15 14:38:23.864191 [289] [PtzTidings.cpp(279) SetLens]Trace: set front success!
+2020-03-15 14:38:23.866004 [289] [WorkLogManager.cpp(358) WriteWorkLog]Trace: Write new work log start
+2020-03-15 14:38:23.867126 [289] [WorkLogManager.cpp(248) TruncateLog]Trace: file length(1319) is allowed!
+2020-03-15 14:38:23.868774 [289] [WorkLogManager.cpp(401) WriteWorkLog]Trace: Write new work log end, "cfig,9|set,2020-03-15_14:38:23|sub,82|res,1", 1363B
+2020-03-15 14:38:23.871993 [288] [Common.cpp(441) CustomerControlCB]Trace: no customer instance
+2020-03-15 14:38:23.869976 [289] [FullrelayMsg.cpp(289) OnXMPPSetDeviceConfiguration]Trace: End___
+2020-03-15 14:38:23.941605 [253] [MemoryPool.cpp(77) alloc_cells]Trace: this(0x157f1b8) cell_size(16384) pool_bytes(131072) all_bytes(636416)
+2020-03-15 14:38:24.072024 [253] [MemoryPool.cpp(77) alloc_cells]Trace: this(0x157f1b8) cell_size(16384) pool_bytes(147456) all_bytes(652800)
+2020-03-15 14:38:24.196947 [253] [MemoryPool.cpp(77) alloc_cells]Trace: this(0x157f1b8) cell_size(16384) pool_bytes(163840) all_bytes(669184)
+2020-03-15 14:38:24.542184 [288] [WorkLogManager.cpp(484) GetWorkLog]Trace: Scan to get work log start
+2020-03-15 14:38:24.543479 [288] [WorkLogManager.cpp(533) GetWorkLog]Trace: item "cfig,9|set,2020-03-15_14:38:23|sub,82|res,1;" scanned
+2020-03-15 14:38:24.544697 [288] [WorkLogManager.cpp(533) GetWorkLog]Trace: item "cfig,9|set,2020-03-15_14:38:23|sub,82|res,1;" scanned
+2020-03-15 14:38:24.545824 [288] [WorkLogManager.cpp(533) GetWorkLog]Trace: item "cfig,9|set,2020-03-15_14:38:23|sub,82|res,1;" scanned
+2020-03-15 14:38:24.546939 [288] [WorkLogManager.cpp(533) GetWorkLog]Trace: item "cfig,9|set,2020-03-15_14:38:23|sub,82|res,1;" scanned
+2020-03-15 14:38:24.548057 [288] [WorkLogManager.cpp(493) GetWorkLog]Trace: read to end!
+2020-03-15 14:38:24.549193 [288] [WorkLogManager.cpp(557) GetWorkLog]Trace: to send idx array is [1351 0 0]
+2020-03-15 14:38:24.553336 [288] [WorkLogManager.cpp(559) GetWorkLog]Trace: Scan to get work log stop, 176B scanned with id 1584279504549
+2020-03-15 14:38:24.554907 [288] [RealStream.cpp(1384) CheckSendDeviceLog]Trace: requestid:29,304a2693c02415842795045540014
+2020-03-15 14:38:24.556695 [288] [RealStream.cpp(1425) ParseMsgItems]Trace: get item cfig,9|set,2020-03-15_14:38:23|sub,82|res,1
+2020-03-15 14:38:24.558256 [288] [RealStream.cpp(1425) ParseMsgItems]Trace: get item cfig,9|set,2020-03-15_14:38:23|sub,82|res,1
+2020-03-15 14:38:24.559611 [288] [RealStream.cpp(1425) ParseMsgItems]Trace: get item cfig,9|set,2020-03-15_14:38:23|sub,82|res,1
+2020-03-15 14:38:24.562336 [288] [RealStream.cpp(1425) ParseMsgItems]Trace: get item cfig,9|set,2020-03-15_14:38:23|sub,82|res,1
+2020-03-15 14:38:24.566252 [288] [RealStream.cpp(1391) CheckSendDeviceLog]Trace: work log 4_272 sended
+2020-03-15 14:38:24.568697 [288] [WorkLogManager.cpp(230) WriteIdxLog]Trace: Update idx array to [1351 0 0]
+2020-03-15 14:38:24.572308 [288] [WorkLogManager.cpp(590) WorkLogSended]Trace: After send items with id 1584279504549, sucess=1, ret=1
+2020-03-15 14:38:25.323481 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](257.93/38.57)Kbps 8.00fps, PTS(258.02/38.57)Kbps 8.00fps
+2020-03-15 14:38:25.325717 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 15936, starttime: 1084181, num: 3006, frames: 24, at 1584279505325, fisheye:0
+2020-03-15 14:38:25.328953 [288] [RealStream.cpp(2404) NonBlockingSendDataProc]Trace: 173df10[0, 0][1280*720]:SEND GOP(starttime=1081181)3000(ms), 24 video frames,150 audio frames, total size: 129732(100182)(byte), cost 257(ms), recording 0, flag:0, cur bufsize:249643 
+2020-03-15 14:38:25.356845 [288] [RealStream.cpp(2463) NonBlockingSendDataProc]Trace: 173df10[1280*720]:sending I frame, starttime 1084181[1584279505325], seq 3006, size 15936, delay 31, recording 0, ignore key 0, ignore nonkey 0, flag:0.
+2020-03-15 14:38:26.572971 [286] [RtspBufferManager.cpp(262) HandleWriteBufferSmartAVC]Trace: 24372360: streamstat: total size:25(Bytes), timespan:10000(ms), count:1.
+2020-03-15 14:38:26.574488 [286] [RtspBufferManager.cpp(262) HandleWriteBufferSmartAVC]Trace: 24383136: streamstat: total size:7629(Bytes), timespan:8000(ms), count:421.
+2020-03-15 14:38:26.610424 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:38:28.331443 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](51.48/38.61)Kbps 8.02fps, PTS(51.34/38.61)Kbps 8.00fps
+2020-03-15 14:38:28.333708 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 13146, starttime: 1087181, num: 3030, frames: 24, at 1584279508333, fisheye:0
+2020-03-15 14:38:28.337361 [288] [RealStream.cpp(2404) NonBlockingSendDataProc]Trace: 173df10[0, 0][1280*720]:SEND GOP(starttime=1084181)3000(ms), 24 video frames,150 audio frames, total size: 50356(20806)(byte), cost 114(ms), recording 0, flag:0, cur bufsize:179940 
+2020-03-15 14:38:28.368682 [288] [RealStream.cpp(2463) NonBlockingSendDataProc]Trace: 173df10[1280*720]:sending I frame, starttime 1087181[1584279508333], seq 3030, size 13146, delay 35, recording 0, ignore key 0, ignore nonkey 0, flag:0.
+2020-03-15 14:38:29.622094 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:38:31.322253 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](43.10/38.62)Kbps 8.00fps, PTS(43.10/38.62)Kbps 8.00fps
+2020-03-15 14:38:31.324489 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 13032, starttime: 1090181, num: 3054, frames: 24, at 1584279511324, fisheye:0
+2020-03-15 14:38:31.327729 [288] [RealStream.cpp(2404) NonBlockingSendDataProc]Trace: 173df10[0, 0][1280*720]:SEND GOP(starttime=1087181)3000(ms), 24 video frames,150 audio frames, total size: 47157(17607)(byte), cost 132(ms), recording 0, flag:0, cur bufsize:97295 
+2020-03-15 14:38:31.350433 [288] [RealStream.cpp(2463) NonBlockingSendDataProc]Trace: 173df10[1280*720]:sending I frame, starttime 1090181[1584279511324], seq 3054, size 13032, delay 26, recording 0, ignore key 0, ignore nonkey 0, flag:0.
+2020-03-15 14:38:31.445978 [288] [ConnectMgr.cpp(931) NonBlockingPing]Debug: 0x1742160[720p:0]: send ping package, SocketID(48)
+2020-03-15 14:38:31.502495 [288] [ConnectMgr.cpp(804) NonBlockingReadRelayServer]Debug: 0x1742160[720p:0]: pong message received, sockfd(48)
+2020-03-15 14:38:32.630316 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:38:33.154573 [377] [StreamQos.cpp(189) DoStats]Trace: 173f6d8: streamstat in 14878ms. IN(872/(v)120), OUT(976), DROP(0), BUFFERED(0)
+2020-03-15 14:38:34.320600 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](43.08/38.64)Kbps 7.99fps, PTS(43.11/38.64)Kbps 8.00fps
+2020-03-15 14:38:34.322898 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 13051, starttime: 1093181, num: 3078, frames: 24, at 1584279514322, fisheye:0
+2020-03-15 14:38:34.326057 [288] [RealStream.cpp(2404) NonBlockingSendDataProc]Trace: 173df10[0, 0][1280*720]:SEND GOP(starttime=1090181)3000(ms), 24 video frames,150 audio frames, total size: 47171(17621)(byte), cost 118(ms), recording 0, flag:0, cur bufsize:94154 
+2020-03-15 14:38:34.353537 [288] [RealStream.cpp(2463) NonBlockingSendDataProc]Trace: 173df10[1280*720]:sending I frame, starttime 1093181[1584279514322], seq 3078, size 13051, delay 31, recording 0, ignore key 0, ignore nonkey 0, flag:0.
+2020-03-15 14:38:35.640248 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:38:37.320775 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](43.80/38.65)Kbps 7.98fps, PTS(43.93/38.65)Kbps 8.00fps
+2020-03-15 14:38:37.322977 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 13009, starttime: 1096181, num: 3102, frames: 24, at 1584279517322, fisheye:0
+2020-03-15 14:38:37.326096 [288] [RealStream.cpp(2404) NonBlockingSendDataProc]Trace: 173df10[0, 0][1280*720]:SEND GOP(starttime=1093181)3000(ms), 24 video frames,150 audio frames, total size: 47492(17942)(byte), cost 124(ms), recording 0, flag:0, cur bufsize:94434 
+2020-03-15 14:38:37.348815 [288] [RealStream.cpp(2463) NonBlockingSendDataProc]Trace: 173df10[1280*720]:sending I frame, starttime 1096181[1584279517322], seq 3102, size 13009, delay 26, recording 0, ignore key 0, ignore nonkey 0, flag:0.
+2020-03-15 14:38:38.650334 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:38:40.319585 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](43.66/38.66)Kbps 8.02fps, PTS(43.56/38.66)Kbps 8.00fps
+2020-03-15 14:38:40.322657 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 13020, starttime: 1099181, num: 3126, frames: 24, at 1584279520322, fisheye:0
+2020-03-15 14:38:40.325902 [288] [RealStream.cpp(2404) NonBlockingSendDataProc]Trace: 173df10[0, 0][1280*720]:SEND GOP(starttime=1096181)3000(ms), 24 video frames,150 audio frames, total size: 47339(17789)(byte), cost 115(ms), recording 0, flag:0, cur bufsize:94618 
+2020-03-15 14:38:40.348868 [288] [RealStream.cpp(2463) NonBlockingSendDataProc]Trace: 173df10[1280*720]:sending I frame, starttime 1099181[1584279520322], seq 3126, size 13020, delay 26, recording 0, ignore key 0, ignore nonkey 0, flag:0.
+2020-03-15 14:38:41.663543 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:38:43.318974 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](43.20/38.68)Kbps 8.01fps, PTS(43.13/38.68)Kbps 8.00fps
+2020-03-15 14:38:43.322300 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 13119, starttime: 1102181, num: 3150, frames: 24, at 1584279523322, fisheye:0
+2020-03-15 14:38:43.325518 [288] [RealStream.cpp(2404) NonBlockingSendDataProc]Trace: 173df10[0, 0][1280*720]:SEND GOP(starttime=1099181)3000(ms), 24 video frames,150 audio frames, total size: 47187(17637)(byte), cost 119(ms), recording 0, flag:0, cur bufsize:94409 
+2020-03-15 14:38:43.362623 [288] [RealStream.cpp(2463) NonBlockingSendDataProc]Trace: 173df10[1280*720]:sending I frame, starttime 1102181[1584279523322], seq 3150, size 13119, delay 40, recording 0, ignore key 0, ignore nonkey 0, flag:0.
+2020-03-15 14:38:44.670302 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:38:46.318405 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](43.39/38.69)Kbps 7.99fps, PTS(43.45/38.69)Kbps 8.00fps
+2020-03-15 14:38:46.320896 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 12999, starttime: 1105181, num: 3174, frames: 24, at 1584279526320, fisheye:0
+2020-03-15 14:38:46.324046 [288] [RealStream.cpp(2404) NonBlockingSendDataProc]Trace: 173df10[0, 0][1280*720]:SEND GOP(starttime=1102181)3000(ms), 24 video frames,150 audio frames, total size: 47308(17758)(byte), cost 133(ms), recording 0, flag:0, cur bufsize:94246 
+2020-03-15 14:38:46.346768 [288] [RealStream.cpp(2463) NonBlockingSendDataProc]Trace: 173df10[1280*720]:sending I frame, starttime 1105181[1584279526320], seq 3174, size 12999, delay 26, recording 0, ignore key 0, ignore nonkey 0, flag:0.
+2020-03-15 14:38:47.680587 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:38:48.160720 [379] [StreamQos.cpp(189) DoStats]Trace: 173f6d8: streamstat in 14979ms. IN(870/(v)120), OUT(870), DROP(0), BUFFERED(0)
+2020-03-15 14:38:49.317853 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](42.95/38.70)Kbps 8.01fps, PTS(42.89/38.70)Kbps 8.00fps
+2020-03-15 14:38:49.320378 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 13025, starttime: 1108181, num: 3198, frames: 24, at 1584279529320, fisheye:0
+2020-03-15 14:38:49.323571 [288] [RealStream.cpp(2404) NonBlockingSendDataProc]Trace: 173df10[0, 0][1280*720]:SEND GOP(starttime=1105181)3000(ms), 24 video frames,150 audio frames, total size: 47087(17537)(byte), cost 123(ms), recording 0, flag:0, cur bufsize:94178 
+2020-03-15 14:38:49.359171 [288] [RealStream.cpp(2463) NonBlockingSendDataProc]Trace: 173df10[1280*720]:sending I frame, starttime 1108181[1584279529320], seq 3198, size 13025, delay 39, recording 0, ignore key 0, ignore nonkey 0, flag:0.
+2020-03-15 14:38:50.422793 [286] [RtspBufferManager.cpp(811) CreateNode]Trace: [-1:-1] idle=55,buffer=411,create=466,destroy=0, webclient
+2020-03-15 14:38:50.690333 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:38:51.543494 [288] [ConnectMgr.cpp(931) NonBlockingPing]Debug: 0x1742160[720p:0]: send ping package, SocketID(48)
+2020-03-15 14:38:51.582174 [288] [ConnectMgr.cpp(804) NonBlockingReadRelayServer]Debug: 0x1742160[720p:0]: pong message received, sockfd(48)
+2020-03-15 14:38:52.317240 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](43.00/38.71)Kbps 7.99fps, PTS(43.07/38.71)Kbps 8.00fps
+2020-03-15 14:38:52.319613 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 12887, starttime: 1111181, num: 3222, frames: 24, at 1584279532319, fisheye:0
+2020-03-15 14:38:52.323157 [288] [RealStream.cpp(2404) NonBlockingSendDataProc]Trace: 173df10[0, 0][1280*720]:SEND GOP(starttime=1108181)3000(ms), 24 video frames,150 audio frames, total size: 47154(17604)(byte), cost 144(ms), recording 0, flag:0, cur bufsize:93895 
+2020-03-15 14:38:52.346405 [288] [RealStream.cpp(2463) NonBlockingSendDataProc]Trace: 173df10[1280*720]:sending I frame, starttime 1111181[1584279532319], seq 3222, size 12887, delay 27, recording 0, ignore key 0, ignore nonkey 0, flag:0.
+2020-03-15 14:38:53.502150 [286] [RtspBufferManager.cpp(811) CreateNode]Trace: [0:0] idle=582,buffer=0,create=582,destroy=0, relay
+2020-03-15 14:38:53.504028 [286] [RtspBufferManager.cpp(811) CreateNode]Trace: [0:0] idle=50,buffer=416,create=466,destroy=0, p2plive
+2020-03-15 14:38:53.692397 [286] [RtspBufferManager.cpp(262) HandleWriteBufferSmartAVC]Trace: 24917096: streamstat: total size:7756(Bytes), timespan:8000(ms), count:428.
+2020-03-15 14:38:53.701734 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:38:55.316753 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](43.02/38.72)Kbps 8.02fps, PTS(42.93/38.73)Kbps 8.00fps
+2020-03-15 14:38:55.319045 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 13044, starttime: 1114181, num: 3246, frames: 24, at 1584279535318, fisheye:0
+2020-03-15 14:38:55.326806 [288] [RealStream.cpp(2404) NonBlockingSendDataProc]Trace: 173df10[0, 0][1280*720]:SEND GOP(starttime=1111181)3000(ms), 24 video frames,150 audio frames, total size: 47105(17555)(byte), cost 137(ms), recording 0, flag:0, cur bufsize:94069 
+2020-03-15 14:38:55.365459 [288] [RealStream.cpp(2463) NonBlockingSendDataProc]Trace: 173df10[1280*720]:sending I frame, starttime 1114181[1584279535318], seq 3246, size 13044, delay 47, recording 0, ignore key 0, ignore nonkey 0, flag:0.
+2020-03-15 14:38:56.690726 [286] [RtspBufferManager.cpp(262) HandleWriteBufferSmartAVC]Trace: 24372360: streamstat: total size:25(Bytes), timespan:10000(ms), count:1.
+2020-03-15 14:38:56.692345 [286] [RtspBufferManager.cpp(262) HandleWriteBufferSmartAVC]Trace: 24383136: streamstat: total size:7756(Bytes), timespan:8000(ms), count:428.
+2020-03-15 14:38:56.710273 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:38:58.315984 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](44.25/38.74)Kbps 8.00fps, PTS(44.26/38.74)Kbps 8.00fps
+2020-03-15 14:38:58.318287 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 13113, starttime: 1117181, num: 3270, frames: 24, at 1584279538318, fisheye:0
+2020-03-15 14:38:58.321628 [288] [RealStream.cpp(2404) NonBlockingSendDataProc]Trace: 173df10[0, 0][1280*720]:SEND GOP(starttime=1114181)3000(ms), 24 video frames,150 audio frames, total size: 47624(18074)(byte), cost 134(ms), recording 0, flag:0, cur bufsize:94595 
+2020-03-15 14:38:58.344373 [288] [RealStream.cpp(2463) NonBlockingSendDataProc]Trace: 173df10[1280*720]:sending I frame, starttime 1117181[1584279538318], seq 3270, size 13113, delay 26, recording 0, ignore key 0, ignore nonkey 0, flag:0.
+2020-03-15 14:38:59.720322 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:39:01.315546 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](44.41/38.76)Kbps 8.00fps, PTS(44.39/38.76)Kbps 8.00fps
+2020-03-15 14:39:01.317912 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 12934, starttime: 1120181, num: 3294, frames: 24, at 1584279541317, fisheye:0
+2020-03-15 14:39:01.321323 [288] [RealStream.cpp(2404) NonBlockingSendDataProc]Trace: 173df10[0, 0][1280*720]:SEND GOP(starttime=1117181)3000(ms), 24 video frames,150 audio frames, total size: 47673(18123)(byte), cost 139(ms), recording 0, flag:0, cur bufsize:94977 
+2020-03-15 14:39:01.343160 [288] [RealStream.cpp(2463) NonBlockingSendDataProc]Trace: 173df10[1280*720]:sending I frame, starttime 1120181[1584279541317], seq 3294, size 12934, delay 25, recording 0, ignore key 0, ignore nonkey 0, flag:0.
+2020-03-15 14:39:02.730521 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:39:03.170950 [381] [StreamQos.cpp(189) DoStats]Trace: 173f6d8: streamstat in 14988ms. IN(870/(v)120), OUT(870), DROP(0), BUFFERED(0)
+2020-03-15 14:39:04.314957 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](43.92/38.77)Kbps 8.00fps, PTS(43.92/38.77)Kbps 8.00fps
+2020-03-15 14:39:04.318458 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 12991, starttime: 1123181, num: 3318, frames: 24, at 1584279544318, fisheye:0
+2020-03-15 14:39:04.322153 [288] [RealStream.cpp(2404) NonBlockingSendDataProc]Trace: 173df10[0, 0][1280*720]:SEND GOP(starttime=1120181)3000(ms), 24 video frames,150 audio frames, total size: 47503(17953)(byte), cost 141(ms), recording 0, flag:0, cur bufsize:94905 
+2020-03-15 14:39:04.349364 [288] [RealStream.cpp(2463) NonBlockingSendDataProc]Trace: 173df10[1280*720]:sending I frame, starttime 1123181[1584279544318], seq 3318, size 12991, delay 31, recording 0, ignore key 0, ignore nonkey 0, flag:0.
+2020-03-15 14:39:05.741894 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:39:07.315059 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](43.15/38.78)Kbps 7.99fps, PTS(43.20/38.78)Kbps 8.00fps
+2020-03-15 14:39:07.317330 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 13002, starttime: 1126181, num: 3342, frames: 24, at 1584279547317, fisheye:0
+2020-03-15 14:39:07.320851 [288] [RealStream.cpp(2404) NonBlockingSendDataProc]Trace: 173df10[0, 0][1280*720]:SEND GOP(starttime=1123181)3000(ms), 24 video frames,150 audio frames, total size: 47209(17659)(byte), cost 159(ms), recording 0, flag:0, cur bufsize:94457 
+2020-03-15 14:39:07.343467 [288] [RealStream.cpp(2463) NonBlockingSendDataProc]Trace: 173df10[1280*720]:sending I frame, starttime 1126181[1584279547317], seq 3342, size 13002, delay 26, recording 0, ignore key 0, ignore nonkey 0, flag:0.
+2020-03-15 14:39:08.750348 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:39:10.313823 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](43.48/38.79)Kbps 8.06fps, PTS(43.42/38.79)Kbps 8.05fps
+2020-03-15 14:39:10.316018 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 13126, starttime: 1129161, num: 3366, frames: 24, at 1584279550315, fisheye:0
+2020-03-15 14:39:10.324821 [288] [RealStream.cpp(2404) NonBlockingSendDataProc]Trace: 173df10[0, 0][1280*720]:SEND GOP(starttime=1126181)2980(ms), 24 video frames,149 audio frames, total size: 46988(17635)(byte), cost 126(ms), recording 0, flag:0, cur bufsize:94435 
+2020-03-15 14:39:10.352438 [288] [RealStream.cpp(2463) NonBlockingSendDataProc]Trace: 173df10[1280*720]:sending I frame, starttime 1129161[1584279550315], seq 3366, size 13126, delay 37, recording 0, ignore key 0, ignore nonkey 0, flag:0.
+2020-03-15 14:39:10.845408 [288] [RealStream.cpp(2962) HandleClientCmd]Trace: 173df10: clientcmd package received from applc_f9bf57de3b5e
+2020-03-15 14:39:10.847463 [288] [WorkLogManager.cpp(358) WriteWorkLog]Trace: Write new work log start
+2020-03-15 14:39:10.848612 [288] [WorkLogManager.cpp(248) TruncateLog]Trace: file length(1363) is allowed!
+2020-03-15 14:39:10.850571 [288] [WorkLogManager.cpp(401) WriteWorkLog]Trace: Write new work log end, "srel,12|lve,2020-03-15_14:39:10|chn,0|strm,0|act,end|cnt,0", 1422B
+2020-03-15 14:39:10.851888 [288] [MutilStreams.cpp(1183) CheckPlayNotice]Trace: p2p play 0, relay play 0, notice play 1
+2020-03-15 14:39:10.853802 [288] [MutilStreams.cpp(1191) CheckPlayNotice]Trace: play 0===
+2020-03-15 14:39:10.855105 [288] [RealStream.cpp(2982) HandleClientCmd]Trace: 173df10: clientcmd package received with type 2
+2020-03-15 14:39:10.856531 [288] [WorkLogManager.cpp(484) GetWorkLog]Trace: Scan to get work log start
+2020-03-15 14:39:10.857738 [288] [WorkLogManager.cpp(533) GetWorkLog]Trace: item "srel,12|lve,2020-03-15_14:39:10|chn,0|strm,0|act,end|cnt,0;" scanned
+2020-03-15 14:39:10.858905 [288] [WorkLogManager.cpp(493) GetWorkLog]Trace: read to end!
+2020-03-15 14:39:10.860267 [288] [WorkLogManager.cpp(557) GetWorkLog]Trace: to send idx array is [1410 0 0]
+2020-03-15 14:39:10.861538 [288] [WorkLogManager.cpp(559) GetWorkLog]Trace: Scan to get work log stop, 59B scanned with id 1584279550860
+2020-03-15 14:39:10.862944 [288] [RealStream.cpp(1384) CheckSendDeviceLog]Trace: requestid:29,304a2693c02415842795508620015
+2020-03-15 14:39:10.864246 [288] [RealStream.cpp(1425) ParseMsgItems]Trace: get item srel,12|lve,2020-03-15_14:39:10|chn,0|strm,0|act,end|cnt,0
+2020-03-15 14:39:11.019900 [288] [RealStream.cpp(1391) CheckSendDeviceLog]Trace: work log 1_134 sended
+2020-03-15 14:39:11.114127 [288] [WorkLogManager.cpp(230) WriteIdxLog]Trace: Update idx array to [1410 0 0]
+2020-03-15 14:39:11.115746 [288] [WorkLogManager.cpp(590) WorkLogSended]Trace: After send items with id 1584279550860, sucess=1, ret=1
+2020-03-15 14:39:11.602859 [288] [ConnectMgr.cpp(931) NonBlockingPing]Debug: 0x1742160[720p:0]: send ping package, SocketID(48)
+2020-03-15 14:39:11.642673 [288] [ConnectMgr.cpp(804) NonBlockingReadRelayServer]Debug: 0x1742160[720p:0]: pong message received, sockfd(48)
+2020-03-15 14:39:11.761892 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:39:13.313244 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](43.83/38.81)Kbps 8.00fps, PTS(43.83/38.81)Kbps 8.00fps
+2020-03-15 14:39:13.315433 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 13058, starttime: 1132161, num: 3390, frames: 24, at 1584279553315, fisheye:0
+2020-03-15 14:39:13.322484 [288] [RealStream.cpp(2404) NonBlockingSendDataProc]Trace: 173df10[0, 0][1280*720]:SEND GOP(starttime=1129161)3000(ms), 24 video frames,150 audio frames, total size: 47457(17907)(byte), cost 125(ms), recording 0, flag:0, cur bufsize:94290 
+2020-03-15 14:39:13.341478 [288] [RealStream.cpp(2463) NonBlockingSendDataProc]Trace: 173df10[1280*720]:sending I frame, starttime 1132161[1584279553315], seq 3390, size 13058, delay 26, recording 0, ignore key 0, ignore nonkey 0, flag:0.
+2020-03-15 14:39:14.770482 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:39:16.312865 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](43.56/38.82)Kbps 7.97fps, PTS(43.71/38.82)Kbps 8.00fps
+2020-03-15 14:39:16.315096 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 12992, starttime: 1135161, num: 3414, frames: 24, at 1584279556314, fisheye:0
+2020-03-15 14:39:16.323346 [288] [RealStream.cpp(2404) NonBlockingSendDataProc]Trace: 173df10[0, 0][1280*720]:SEND GOP(starttime=1132161)3000(ms), 24 video frames,150 audio frames, total size: 47408(17858)(byte), cost 113(ms), recording 0, flag:0, cur bufsize:94927 
+2020-03-15 14:39:16.341373 [288] [RealStream.cpp(2463) NonBlockingSendDataProc]Trace: 173df10[1280*720]:sending I frame, starttime 1135161[1584279556314], seq 3414, size 12992, delay 27, recording 0, ignore key 0, ignore nonkey 0, flag:0.
+2020-03-15 14:39:17.090383 [292] [EventFilter.cpp(181) NotifyDetect]Trace: tag=0,  stop tagtime=1584279554000.
+2020-03-15 14:39:17.091926 [292] [RealStream.cpp(4816) SetEvent]Trace: 173df10:event(0) stop,   time=1584279554000.
+2020-03-15 14:39:17.122176 [288] [RealStream.cpp(1188) ConstructEventData]Trace: 173df10: send end event to server,type=7, value=0, event time is: 1584279554000!
+2020-03-15 14:39:17.123802 [288] [RealStream.cpp(1203) ConstructEventData]Trace: next motion 0
+2020-03-15 14:39:17.780370 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:39:18.181561 [385] [StreamQos.cpp(189) DoStats]Trace: 173f6d8: streamstat in 14999ms. IN(871/(v)120), OUT(871), DROP(0), BUFFERED(0)
+2020-03-15 14:39:19.312463 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](43.72/38.83)Kbps 8.03fps, PTS(43.57/38.83)Kbps 8.00fps
+2020-03-15 14:39:19.314641 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 13036, starttime: 1138161, num: 3438, frames: 24, at 1584279559314, fisheye:0
+2020-03-15 14:39:19.321061 [288] [RealStream.cpp(2404) NonBlockingSendDataProc]Trace: 173df10[0, 0][1280*720]:SEND GOP(starttime=1135161)3000(ms), 24 video frames,150 audio frames, total size: 47349(17799)(byte), cost 115(ms), recording 0, flag:0, cur bufsize:94551 
+2020-03-15 14:39:19.346150 [288] [RealStream.cpp(2463) NonBlockingSendDataProc]Trace: 173df10[1280*720]:sending I frame, starttime 1138161[1584279559314], seq 3438, size 13036, delay 32, recording 0, ignore key 0, ignore nonkey 0, flag:0.
+2020-03-15 14:39:20.436234 [286] [RtspBufferManager.cpp(811) CreateNode]Trace: [-1:-1] idle=53,buffer=413,create=466,destroy=0, webclient
+2020-03-15 14:39:20.793181 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:39:22.311930 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](44.32/38.85)Kbps 8.00fps, PTS(44.32/38.85)Kbps 8.00fps
+2020-03-15 14:39:22.314174 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 13040, starttime: 1141161, num: 3462, frames: 24, at 1584279562314, fisheye:0
+2020-03-15 14:39:22.317423 [288] [RealStream.cpp(2404) NonBlockingSendDataProc]Trace: 173df10[0, 0][1280*720]:SEND GOP(starttime=1138161)3000(ms), 24 video frames,150 audio frames, total size: 47654(18104)(byte), cost 137(ms), recording 0, flag:0, cur bufsize:94789 
+2020-03-15 14:39:22.339822 [288] [RealStream.cpp(2463) NonBlockingSendDataProc]Trace: 173df10[1280*720]:sending I frame, starttime 1141161[1584279562314], seq 3462, size 13040, delay 25, recording 0, ignore key 0, ignore nonkey 0, flag:0.
+2020-03-15 14:39:23.521124 [286] [RtspBufferManager.cpp(811) CreateNode]Trace: [0:0] idle=582,buffer=0,create=582,destroy=0, relay
+2020-03-15 14:39:23.523236 [286] [RtspBufferManager.cpp(811) CreateNode]Trace: [0:0] idle=48,buffer=418,create=466,destroy=0, p2plive
+2020-03-15 14:39:23.685781 [286] [RtspBufferManager.cpp(262) HandleWriteBufferSmartAVC]Trace: 24917096: streamstat: total size:7790(Bytes), timespan:8000(ms), count:430.
+2020-03-15 14:39:23.803103 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:39:25.311159 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](43.17/38.86)Kbps 7.99fps, PTS(43.23/38.86)Kbps 8.00fps
+2020-03-15 14:39:25.313435 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 13018, starttime: 1144161, num: 3486, frames: 24, at 1584279565313, fisheye:0
+2020-03-15 14:39:25.317420 [288] [RealStream.cpp(2404) NonBlockingSendDataProc]Trace: 173df10[0, 0][1280*720]:SEND GOP(starttime=1141161)3000(ms), 24 video frames,150 audio frames, total size: 47220(17670)(byte), cost 142(ms), recording 0, flag:0, cur bufsize:94635 
+2020-03-15 14:39:25.339424 [288] [RealStream.cpp(2463) NonBlockingSendDataProc]Trace: 173df10[1280*720]:sending I frame, starttime 1144161[1584279565313], seq 3486, size 13018, delay 26, recording 0, ignore key 0, ignore nonkey 0, flag:0.
+2020-03-15 14:39:26.686998 [286] [RtspBufferManager.cpp(262) HandleWriteBufferSmartAVC]Trace: 24372360: streamstat: total size:25(Bytes), timespan:10000(ms), count:1.
+2020-03-15 14:39:26.688759 [286] [RtspBufferManager.cpp(262) HandleWriteBufferSmartAVC]Trace: 24383136: streamstat: total size:7790(Bytes), timespan:8000(ms), count:430.
+2020-03-15 14:39:26.810524 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:39:28.310761 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](43.62/38.87)Kbps 8.00fps, PTS(43.62/38.87)Kbps 8.00fps
+2020-03-15 14:39:28.312965 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 13066, starttime: 1147161, num: 3510, frames: 24, at 1584279568312, fisheye:0
+2020-03-15 14:39:28.316178 [288] [RealStream.cpp(2404) NonBlockingSendDataProc]Trace: 173df10[0, 0][1280*720]:SEND GOP(starttime=1144161)3000(ms), 24 video frames,150 audio frames, total size: 47379(17829)(byte), cost 127(ms), recording 0, flag:0, cur bufsize:94416 
+2020-03-15 14:39:28.338795 [288] [RealStream.cpp(2463) NonBlockingSendDataProc]Trace: 173df10[1280*720]:sending I frame, starttime 1147161[1584279568312], seq 3510, size 13066, delay 26, recording 0, ignore key 0, ignore nonkey 0, flag:0.
+2020-03-15 14:39:29.820437 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:39:31.310787 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](44.45/38.89)Kbps 7.98fps, PTS(44.54/38.89)Kbps 8.00fps
+2020-03-15 14:39:31.312993 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 13134, starttime: 1150161, num: 3534, frames: 24, at 1584279571312, fisheye:0
+2020-03-15 14:39:31.316207 [288] [RealStream.cpp(2404) NonBlockingSendDataProc]Trace: 173df10[0, 0][1280*720]:SEND GOP(starttime=1147161)3000(ms), 24 video frames,150 audio frames, total size: 47745(18195)(byte), cost 128(ms), recording 0, flag:0, cur bufsize:94988 
+2020-03-15 14:39:31.349794 [288] [RealStream.cpp(2463) NonBlockingSendDataProc]Trace: 173df10[1280*720]:sending I frame, starttime 1150161[1584279571312], seq 3534, size 13134, delay 37, recording 0, ignore key 0, ignore nonkey 0, flag:0.
+2020-03-15 14:39:31.683992 [288] [ConnectMgr.cpp(931) NonBlockingPing]Debug: 0x1742160[720p:0]: send ping package, SocketID(48)
+2020-03-15 14:39:31.723555 [288] [ConnectMgr.cpp(804) NonBlockingReadRelayServer]Debug: 0x1742160[720p:0]: pong message received, sockfd(48)
+2020-03-15 14:39:32.830350 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:39:33.190963 [386] [StreamQos.cpp(189) DoStats]Trace: 173f6d8: streamstat in 15004ms. IN(871/(v)121), OUT(871), DROP(0), BUFFERED(0)
+2020-03-15 14:39:34.309940 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](44.70/38.90)Kbps 8.03fps, PTS(44.55/38.90)Kbps 8.00fps
+2020-03-15 14:39:34.312366 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 13182, starttime: 1153161, num: 3558, frames: 24, at 1584279574312, fisheye:0
+2020-03-15 14:39:34.315563 [288] [RealStream.cpp(2404) NonBlockingSendDataProc]Trace: 173df10[0, 0][1280*720]:SEND GOP(starttime=1150161)3000(ms), 24 video frames,150 audio frames, total size: 47746(18196)(byte), cost 143(ms), recording 0, flag:0, cur bufsize:95391 
+2020-03-15 14:39:34.342830 [288] [RealStream.cpp(2463) NonBlockingSendDataProc]Trace: 173df10[1280*720]:sending I frame, starttime 1153161[1584279574312], seq 3558, size 13182, delay 30, recording 0, ignore key 0, ignore nonkey 0, flag:0.
+2020-03-15 14:39:35.841799 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:39:37.309210 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](43.81/38.92)Kbps 8.00fps, PTS(43.81/38.92)Kbps 8.00fps
+2020-03-15 14:39:37.312367 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 13183, starttime: 1156161, num: 3582, frames: 24, at 1584279577312, fisheye:0
+2020-03-15 14:39:37.315633 [288] [RealStream.cpp(2404) NonBlockingSendDataProc]Trace: 173df10[0, 0][1280*720]:SEND GOP(starttime=1153161)3000(ms), 24 video frames,150 audio frames, total size: 47441(17891)(byte), cost 141(ms), recording 0, flag:0, cur bufsize:95111 
+2020-03-15 14:39:37.337809 [288] [RealStream.cpp(2463) NonBlockingSendDataProc]Trace: 173df10[1280*720]:sending I frame, starttime 1156161[1584279577312], seq 3582, size 13183, delay 25, recording 0, ignore key 0, ignore nonkey 0, flag:0.
+2020-03-15 14:39:38.372157 [292] [EventFilter.cpp(181) NotifyDetect]Trace: tag=0, start tagtime=1584279575000.
+2020-03-15 14:39:38.373902 [292] [RealStream.cpp(4816) SetEvent]Trace: 173df10:event(0) start,   time=1584279575000.
+2020-03-15 14:39:38.402296 [288] [RealStream.cpp(1188) ConstructEventData]Trace: 173df10: send start event to server,type=6, value=0, event time is: 1584279575000!
+2020-03-15 14:39:38.854239 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:39:40.309046 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](45.59/38.93)Kbps 8.00fps, PTS(45.59/38.93)Kbps 8.00fps
+2020-03-15 14:39:40.311760 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 13068, starttime: 1159161, num: 3606, frames: 24, at 1584279580311, fisheye:0
+2020-03-15 14:39:40.315838 [288] [RealStream.cpp(2404) NonBlockingSendDataProc]Trace: 173df10[0, 0][1280*720]:SEND GOP(starttime=1156161)3000(ms), 24 video frames,150 audio frames, total size: 48150(18600)(byte), cost 138(ms), recording 0, flag:0, cur bufsize:95398 
+2020-03-15 14:39:40.337694 [288] [RealStream.cpp(2463) NonBlockingSendDataProc]Trace: 173df10[1280*720]:sending I frame, starttime 1159161[1584279580311], seq 3606, size 13068, delay 26, recording 0, ignore key 0, ignore nonkey 0, flag:0.
+2020-03-15 14:39:40.882591 [288] [RealStream.cpp(2138) NonBlockingSendDataProc]Trace: 0x173df10: stop to send real stream data to relay.
+2020-03-15 14:39:40.884288 [288] [RealStream.cpp(2525) NonBlockingSendDataProc]Trace: 173df10: long connect will send live thumb, previous llSendThumbnail is 1584279497074, 83810ms before, m_nThumbSpan is 10000!
+2020-03-15 14:39:40.895872 [288] [RealStream.cpp(2544) NonBlockingSendDataProc]Trace: 173df10: long connect send live thumb with 7886, idx 37, ipcamtime is 1584279580884!
+2020-03-15 14:39:40.897304 [288] [RealStream.cpp(2548) NonBlockingSendDataProc]Trace: 173df10: stop video/audio sending!
+2020-03-15 14:39:40.898471 [288] [StreamQos.cpp(92) Stop]Trace: 0x173f6d8: stop__.
+2020-03-15 14:39:41.860378 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:39:43.307971 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](44.59/38.95)Kbps 8.00fps, PTS(44.59/38.95)Kbps 8.00fps
+2020-03-15 14:39:43.310385 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 13156, starttime: 1162161, num: 3630, frames: 24, at 1584279583310, fisheye:0
+2020-03-15 14:39:44.870271 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:39:46.307294 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](43.45/38.96)Kbps 8.00fps, PTS(43.45/38.96)Kbps 8.00fps
+2020-03-15 14:39:46.309520 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 13128, starttime: 1165161, num: 3654, frames: 24, at 1584279586309, fisheye:0
+2020-03-15 14:39:47.882107 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:39:49.306783 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](44.59/38.98)Kbps 7.99fps, PTS(44.62/38.98)Kbps 8.00fps
+2020-03-15 14:39:49.308979 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 13087, starttime: 1168161, num: 3678, frames: 24, at 1584279589308, fisheye:0
+2020-03-15 14:39:50.441148 [286] [RtspBufferManager.cpp(811) CreateNode]Trace: [-1:-1] idle=52,buffer=414,create=466,destroy=0, webclient
+2020-03-15 14:39:50.890296 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:39:51.154329 [288] [RealStream.cpp(2588) HandleServerCmd]Trace: 173df10: receive server cmd, type is 0
+2020-03-15 14:39:51.155885 [288] [RealStream.cpp(2609) HandleServerCmd]Trace: 173df10: server cmd get time_span 0(ms), client count 0, deviceid:applc_f9bf57de3b5e
+2020-03-15 14:39:51.751430 [288] [ConnectMgr.cpp(931) NonBlockingPing]Debug: 0x1742160[720p:0]: send ping package, SocketID(48)
+2020-03-15 14:39:52.051201 [288] [ConnectMgr.cpp(804) NonBlockingReadRelayServer]Debug: 0x1742160[720p:0]: pong message received, sockfd(48)
+2020-03-15 14:39:52.306227 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](44.81/38.99)Kbps 8.01fps, PTS(44.78/38.99)Kbps 8.00fps
+2020-03-15 14:39:52.308492 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 13067, starttime: 1171161, num: 3702, frames: 24, at 1584279592308, fisheye:0
+2020-03-15 14:39:53.555301 [286] [RtspBufferManager.cpp(811) CreateNode]Trace: [0:0] idle=162,buffer=420,create=582,destroy=0, relay
+2020-03-15 14:39:53.557085 [286] [RtspBufferManager.cpp(811) CreateNode]Trace: [0:0] idle=46,buffer=420,create=466,destroy=0, p2plive
+2020-03-15 14:39:53.805791 [286] [RtspBufferManager.cpp(262) HandleWriteBufferSmartAVC]Trace: 24917096: streamstat: total size:7917(Bytes), timespan:8000(ms), count:437.
+2020-03-15 14:39:53.900923 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:39:55.305788 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](43.48/39.00)Kbps 8.00fps, PTS(43.48/39.00)Kbps 8.00fps
+2020-03-15 14:39:55.308037 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 13038, starttime: 1174161, num: 3726, frames: 24, at 1584279595307, fisheye:0
+2020-03-15 14:39:56.804640 [286] [RtspBufferManager.cpp(262) HandleWriteBufferSmartAVC]Trace: 24372360: streamstat: total size:7917(Bytes), timespan:10000(ms), count:437.
+2020-03-15 14:39:56.806231 [286] [RtspBufferManager.cpp(262) HandleWriteBufferSmartAVC]Trace: 24383136: streamstat: total size:7917(Bytes), timespan:8000(ms), count:437.
+2020-03-15 14:39:56.910533 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:39:58.305090 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](43.65/39.02)Kbps 8.00fps, PTS(43.65/39.02)Kbps 8.00fps
+2020-03-15 14:39:58.307311 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 12992, starttime: 1177161, num: 3750, frames: 24, at 1584279598307, fisheye:0
+2020-03-15 14:39:59.923345 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:40:01.304657 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](45.08/39.03)Kbps 8.00fps, PTS(45.08/39.03)Kbps 8.00fps
+2020-03-15 14:40:01.306917 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 12871, starttime: 1180161, num: 3774, frames: 24, at 1584279601306, fisheye:0
+2020-03-15 14:40:02.930383 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:40:04.304121 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](43.50/39.04)Kbps 7.98fps, PTS(43.59/39.04)Kbps 8.00fps
+2020-03-15 14:40:04.306325 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 12884, starttime: 1183161, num: 3798, frames: 24, at 1584279604306, fisheye:0
+2020-03-15 14:40:05.940373 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:40:07.303591 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](43.49/39.05)Kbps 8.02fps, PTS(43.40/39.05)Kbps 8.00fps
+2020-03-15 14:40:07.305810 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 12934, starttime: 1186161, num: 3822, frames: 24, at 1584279607305, fisheye:0
+2020-03-15 14:40:08.950276 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:40:10.303428 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](43.59/39.07)Kbps 8.00fps, PTS(43.59/39.07)Kbps 8.00fps
+2020-03-15 14:40:10.305786 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 13033, starttime: 1189161, num: 3846, frames: 24, at 1584279610305, fisheye:0
+2020-03-15 14:40:11.870795 [288] [ConnectMgr.cpp(799) NonBlockingReadRelayServer]Debug: 0x1742160[720p]: ping message received, sockfd(48)!
+2020-03-15 14:40:11.873440 [288] [ConnectMgr.cpp(853) HandlePingMsg]Trace: 0x1742160[720p]: pong message sent, SocketID(48)
+2020-03-15 14:40:11.961515 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:40:13.302564 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](44.06/39.08)Kbps 7.99fps, PTS(44.11/39.08)Kbps 8.00fps
+2020-03-15 14:40:13.304797 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 13003, starttime: 1192161, num: 3870, frames: 24, at 1584279613304, fisheye:0
+2020-03-15 14:40:14.973338 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:40:16.301993 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](43.89/39.09)Kbps 8.00fps, PTS(43.89/39.09)Kbps 8.00fps
+2020-03-15 14:40:16.304278 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 12912, starttime: 1195161, num: 3894, frames: 24, at 1584279616304, fisheye:0
+2020-03-15 14:40:17.980639 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:40:19.301573 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](43.39/39.10)Kbps 8.00fps, PTS(43.39/39.10)Kbps 8.00fps
+2020-03-15 14:40:19.303884 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 12949, starttime: 1198161, num: 3918, frames: 24, at 1584279619303, fisheye:0
+2020-03-15 14:40:20.481200 [286] [RtspBufferManager.cpp(811) CreateNode]Trace: [-1:-1] idle=50,buffer=416,create=466,destroy=0, webclient
+2020-03-15 14:40:20.996961 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:40:22.300972 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](44.03/39.11)Kbps 7.99fps, PTS(44.10/39.11)Kbps 8.00fps
+2020-03-15 14:40:22.303242 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 13056, starttime: 1201161, num: 3942, frames: 24, at 1584279622303, fisheye:0
+2020-03-15 14:40:23.567172 [286] [RtspBufferManager.cpp(811) CreateNode]Trace: [0:0] idle=161,buffer=421,create=582,destroy=0, relay
+2020-03-15 14:40:23.568851 [286] [RtspBufferManager.cpp(811) CreateNode]Trace: [0:0] idle=45,buffer=421,create=466,destroy=0, p2plive
+2020-03-15 14:40:23.924810 [286] [RtspBufferManager.cpp(262) HandleWriteBufferSmartAVC]Trace: 24917096: streamstat: total size:8044(Bytes), timespan:8000(ms), count:444.
+2020-03-15 14:40:24.010689 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:40:25.300662 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](44.37/39.13)Kbps 8.01fps, PTS(44.29/39.13)Kbps 8.00fps
+2020-03-15 14:40:25.302921 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 13121, starttime: 1204161, num: 3966, frames: 24, at 1584279625302, fisheye:0
+2020-03-15 14:40:26.924232 [286] [RtspBufferManager.cpp(262) HandleWriteBufferSmartAVC]Trace: 24372360: streamstat: total size:8044(Bytes), timespan:10000(ms), count:444.
+2020-03-15 14:40:26.925737 [286] [RtspBufferManager.cpp(262) HandleWriteBufferSmartAVC]Trace: 24383136: streamstat: total size:8044(Bytes), timespan:8000(ms), count:444.
+2020-03-15 14:40:27.020711 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:40:28.299863 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](43.63/39.14)Kbps 8.00fps, PTS(43.63/39.14)Kbps 8.00fps
+2020-03-15 14:40:28.302500 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 13103, starttime: 1207161, num: 3990, frames: 24, at 1584279628302, fisheye:0
+2020-03-15 14:40:30.030344 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:40:31.299319 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](44.55/39.15)Kbps 8.00fps, PTS(44.55/39.15)Kbps 8.00fps
+2020-03-15 14:40:31.301624 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 12951, starttime: 1210161, num: 4014, frames: 24, at 1584279631301, fisheye:0
+2020-03-15 14:40:31.882812 [288] [ConnectMgr.cpp(931) NonBlockingPing]Debug: 0x1742160[720p:0]: send ping package, SocketID(48)
+2020-03-15 14:40:32.242374 [288] [ConnectMgr.cpp(804) NonBlockingReadRelayServer]Debug: 0x1742160[720p:0]: pong message received, sockfd(48)
+2020-03-15 14:40:33.043536 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:40:34.298773 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](42.33/39.16)Kbps 8.00fps, PTS(42.33/39.16)Kbps 8.00fps
+2020-03-15 14:40:34.301196 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 13127, starttime: 1213161, num: 4038, frames: 24, at 1584279634301, fisheye:0
+2020-03-15 14:40:36.050441 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:40:37.060441 [292] [EventFilter.cpp(181) NotifyDetect]Trace: tag=0,  stop tagtime=1584279634000.
+2020-03-15 14:40:37.062028 [292] [RealStream.cpp(4816) SetEvent]Trace: 173df10:event(0) stop,   time=1584279634000.
+2020-03-15 14:40:37.110994 [288] [RealStream.cpp(1188) ConstructEventData]Trace: 173df10: send end event to server,type=7, value=0, event time is: 1584279634000!
+2020-03-15 14:40:37.112761 [288] [RealStream.cpp(1203) ConstructEventData]Trace: next motion 0
+2020-03-15 14:40:37.298364 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](43.43/39.17)Kbps 7.99fps, PTS(43.49/39.17)Kbps 8.00fps
+2020-03-15 14:40:37.301058 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 13159, starttime: 1216161, num: 4062, frames: 24, at 1584279637300, fisheye:0
+2020-03-15 14:40:39.061985 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:40:40.297744 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](44.80/39.19)Kbps 8.01fps, PTS(44.73/39.19)Kbps 8.00fps
+2020-03-15 14:40:40.300153 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 13118, starttime: 1219161, num: 4086, frames: 24, at 1584279640299, fisheye:0
+2020-03-15 14:40:42.070240 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:40:43.297171 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](44.79/39.20)Kbps 7.99fps, PTS(44.85/39.20)Kbps 8.00fps
+2020-03-15 14:40:43.299508 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 13024, starttime: 1222161, num: 4110, frames: 24, at 1584279643299, fisheye:0
+2020-03-15 14:40:45.083058 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:40:46.296653 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](43.42/39.21)Kbps 8.01fps, PTS(43.35/39.21)Kbps 8.00fps
+2020-03-15 14:40:46.298874 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 13122, starttime: 1225161, num: 4134, frames: 24, at 1584279646298, fisheye:0
+2020-03-15 14:40:47.001806 [292] [EventFilter.cpp(181) NotifyDetect]Trace: tag=0, start tagtime=1584279644000.
+2020-03-15 14:40:47.003324 [292] [RealStream.cpp(4816) SetEvent]Trace: 173df10:event(0) start,   time=1584279644000.
+2020-03-15 14:40:47.030899 [288] [RealStream.cpp(1188) ConstructEventData]Trace: 173df10: send start event to server,type=6, value=0, event time is: 1584279644000!
+2020-03-15 14:40:47.575075 [395] [WorkLogManager.cpp(358) WriteWorkLog]Trace: Write new work log start
+2020-03-15 14:40:47.576267 [395] [WorkLogManager.cpp(248) TruncateLog]Trace: file length(1422) is allowed!
+2020-03-15 14:40:47.578086 [395] [WorkLogManager.cpp(401) WriteWorkLog]Trace: Write new work log end, "dsts,11|status,2020-03-15_14:40:47|devtime,1226936|wifi,0|cpu,2835|mem,100", 1497B
+2020-03-15 14:40:47.630981 [288] [WorkLogManager.cpp(484) GetWorkLog]Trace: Scan to get work log start
+2020-03-15 14:40:47.632410 [288] [WorkLogManager.cpp(533) GetWorkLog]Trace: item "dsts,11|status,2020-03-15_14:40:47|devtime,1226936|wifi,0|cpu,2835|mem,100;" scanned
+2020-03-15 14:40:47.633824 [288] [WorkLogManager.cpp(493) GetWorkLog]Trace: read to end!
+2020-03-15 14:40:47.634998 [288] [WorkLogManager.cpp(557) GetWorkLog]Trace: to send idx array is [1485 0 0]
+2020-03-15 14:40:47.636176 [288] [WorkLogManager.cpp(559) GetWorkLog]Trace: Scan to get work log stop, 75B scanned with id 1584279647634
+2020-03-15 14:40:47.640967 [288] [RealStream.cpp(1384) CheckSendDeviceLog]Trace: requestid:29,304a2693c02415842796476370016
+2020-03-15 14:40:47.642360 [288] [RealStream.cpp(1425) ParseMsgItems]Trace: get item dsts,11|status,2020-03-15_14:40:47|devtime,1226936|wifi,0|cpu,2835|mem,100
+2020-03-15 14:40:47.644895 [288] [RealStream.cpp(1391) CheckSendDeviceLog]Trace: work log 1_151 sended
+2020-03-15 14:40:47.646596 [288] [WorkLogManager.cpp(230) WriteIdxLog]Trace: Update idx array to [1485 0 0]
+2020-03-15 14:40:47.648021 [288] [WorkLogManager.cpp(590) WorkLogSended]Trace: After send items with id 1584279647634, sucess=1, ret=1
+2020-03-15 14:40:47.690751 [396] [ConnectMgr.cpp(103) CheckTTL]Trace: relay_connect: check ttl, cache ip count:1.
+2020-03-15 14:40:48.090268 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:40:49.296040 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](43.23/39.22)Kbps 8.00fps, PTS(43.23/39.22)Kbps 8.00fps
+2020-03-15 14:40:49.298365 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 13042, starttime: 1228161, num: 4158, frames: 24, at 1584279649298, fisheye:0
+2020-03-15 14:40:50.520832 [286] [RtspBufferManager.cpp(811) CreateNode]Trace: [-1:-1] idle=48,buffer=418,create=466,destroy=0, webclient
+2020-03-15 14:40:51.100312 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:40:52.271359 [288] [ConnectMgr.cpp(931) NonBlockingPing]Debug: 0x1742160[720p:0]: send ping package, SocketID(48)
+2020-03-15 14:40:52.425555 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](41.79/39.23)Kbps 7.64fps, PTS(43.79/39.23)Kbps 8.00fps
+2020-03-15 14:40:52.427700 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 13052, starttime: 1231161, num: 4182, frames: 24, at 1584279652427, fisheye:0
+2020-03-15 14:40:52.451154 [288] [ConnectMgr.cpp(804) NonBlockingReadRelayServer]Debug: 0x1742160[720p:0]: pong message received, sockfd(48)
+2020-03-15 14:40:53.610668 [286] [RtspBufferManager.cpp(811) CreateNode]Trace: [0:0] idle=159,buffer=423,create=582,destroy=0, relay
+2020-03-15 14:40:53.612389 [286] [RtspBufferManager.cpp(811) CreateNode]Trace: [0:0] idle=43,buffer=423,create=466,destroy=0, p2plive
+2020-03-15 14:40:54.044927 [286] [RtspBufferManager.cpp(262) HandleWriteBufferSmartAVC]Trace: 24917096: streamstat: total size:8171(Bytes), timespan:8000(ms), count:451.
+2020-03-15 14:40:54.110210 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:40:55.295054 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](46.62/39.24)Kbps 8.40fps, PTS(44.40/39.25)Kbps 8.00fps
+2020-03-15 14:40:55.297334 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 12985, starttime: 1234161, num: 4206, frames: 24, at 1584279655297, fisheye:0
+2020-03-15 14:40:57.043813 [286] [RtspBufferManager.cpp(262) HandleWriteBufferSmartAVC]Trace: 24372360: streamstat: total size:8171(Bytes), timespan:10000(ms), count:451.
+2020-03-15 14:40:57.045280 [286] [RtspBufferManager.cpp(262) HandleWriteBufferSmartAVC]Trace: 24383136: streamstat: total size:8171(Bytes), timespan:8000(ms), count:451.
+2020-03-15 14:40:57.121661 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:40:58.294433 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](44.74/39.26)Kbps 8.00fps, PTS(44.74/39.26)Kbps 8.00fps
+2020-03-15 14:40:58.297368 [286] [WorkLogManager.cpp(358) WriteWorkLog]Trace: Write new work log start
+2020-03-15 14:40:58.298512 [286] [WorkLogManager.cpp(248) TruncateLog]Trace: file length(1497) is allowed!
+2020-03-15 14:40:58.300471 [286] [WorkLogManager.cpp(401) WriteWorkLog]Trace: Write new work log end, "srel,12|stream,2020-03-15_14:40:58|chn,0|strm,0|bitrate,101", 1557B
+2020-03-15 14:40:58.301777 [286] [RealStream.cpp(3687) HandleStatistics]Debug: 173df10: streamstat bitrate 602892ms 101kbps(v 38kbps).
+2020-03-15 14:40:58.303056 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 12928, starttime: 1237161, num: 4230, frames: 24, at 1584279658296, fisheye:0
+2020-03-15 14:40:58.350895 [288] [WorkLogManager.cpp(484) GetWorkLog]Trace: Scan to get work log start
+2020-03-15 14:40:58.352270 [288] [WorkLogManager.cpp(533) GetWorkLog]Trace: item "srel,12|stream,2020-03-15_14:40:58|chn,0|strm,0|bitrate,101;" scanned
+2020-03-15 14:40:58.353528 [288] [WorkLogManager.cpp(493) GetWorkLog]Trace: read to end!
+2020-03-15 14:40:58.354799 [288] [WorkLogManager.cpp(557) GetWorkLog]Trace: to send idx array is [1545 0 0]
+2020-03-15 14:40:58.356034 [288] [WorkLogManager.cpp(559) GetWorkLog]Trace: Scan to get work log stop, 60B scanned with id 1584279658354
+2020-03-15 14:40:58.357426 [288] [RealStream.cpp(1384) CheckSendDeviceLog]Trace: requestid:29,304a2693c02415842796583570017
+2020-03-15 14:40:58.362312 [288] [RealStream.cpp(1425) ParseMsgItems]Trace: get item srel,12|stream,2020-03-15_14:40:58|chn,0|strm,0|bitrate,101
+2020-03-15 14:40:58.365040 [288] [RealStream.cpp(1391) CheckSendDeviceLog]Trace: work log 1_131 sended
+2020-03-15 14:40:58.366885 [288] [WorkLogManager.cpp(230) WriteIdxLog]Trace: Update idx array to [1545 0 0]
+2020-03-15 14:40:58.368392 [288] [WorkLogManager.cpp(590) WorkLogSended]Trace: After send items with id 1584279658354, sucess=1, ret=1
+2020-03-15 14:41:00.130298 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:41:01.294010 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](44.87/39.27)Kbps 8.00fps, PTS(44.87/39.27)Kbps 8.00fps
+2020-03-15 14:41:01.296263 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 12916, starttime: 1240161, num: 4254, frames: 24, at 1584279661296, fisheye:0
+2020-03-15 14:41:01.850846 [288] [RealStream.cpp(2588) HandleServerCmd]Trace: 173df10: receive server cmd, type is 0
+2020-03-15 14:41:01.852231 [288] [RealStream.cpp(2609) HandleServerCmd]Trace: 173df10: server cmd get time_span 10000(ms), client count 0, deviceid:
+2020-03-15 14:41:01.853839 [288] [RealStream.cpp(2525) NonBlockingSendDataProc]Trace: 173df10: long connect will send live thumb, previous llSendThumbnail is 1584279580884, 80969ms before, m_nThumbSpan is 10000!
+2020-03-15 14:41:01.866497 [288] [RealStream.cpp(2544) NonBlockingSendDataProc]Trace: 173df10: long connect send live thumb with 7886, idx 39, ipcamtime is 1584279661853!
+2020-03-15 14:41:01.922346 [288] [RealStream.cpp(2945) HandleClientCmd]Trace: 173df10: clientcmd package received from applc_f9bf57de3b5e
+2020-03-15 14:41:01.923796 [288] [MutilStreams.cpp(1183) CheckPlayNotice]Trace: p2p play 0, relay play 1, notice play 0
+2020-03-15 14:41:01.925668 [288] [MutilStreams.cpp(1191) CheckPlayNotice]Trace: play 1===
+2020-03-15 14:41:01.927694 [288] [WorkLogManager.cpp(358) WriteWorkLog]Trace: Write new work log start
+2020-03-15 14:41:01.928757 [288] [WorkLogManager.cpp(248) TruncateLog]Trace: file length(1557) is allowed!
+2020-03-15 14:41:01.930512 [288] [WorkLogManager.cpp(401) WriteWorkLog]Trace: Write new work log end, "srel,12|lve,2020-03-15_14:41:01|chn,0|strm,0|act,bgn|cnt,1", 1616B
+2020-03-15 14:41:01.931763 [288] [RealStream.cpp(2982) HandleClientCmd]Trace: 173df10: clientcmd package received with type 1
+2020-03-15 14:41:01.933162 [288] [WorkLogManager.cpp(484) GetWorkLog]Trace: Scan to get work log start
+2020-03-15 14:41:01.934442 [288] [WorkLogManager.cpp(533) GetWorkLog]Trace: item "srel,12|lve,2020-03-15_14:41:01|chn,0|strm,0|act,bgn|cnt,1;" scanned
+2020-03-15 14:41:01.935702 [288] [WorkLogManager.cpp(493) GetWorkLog]Trace: read to end!
+2020-03-15 14:41:01.936845 [288] [WorkLogManager.cpp(557) GetWorkLog]Trace: to send idx array is [1604 0 0]
+2020-03-15 14:41:01.938059 [288] [WorkLogManager.cpp(559) GetWorkLog]Trace: Scan to get work log stop, 59B scanned with id 1584279661936
+2020-03-15 14:41:01.939413 [288] [RealStream.cpp(1384) CheckSendDeviceLog]Trace: requestid:29,304a2693c02415842796619390018
+2020-03-15 14:41:01.941222 [288] [RealStream.cpp(1425) ParseMsgItems]Trace: get item srel,12|lve,2020-03-15_14:41:01|chn,0|strm,0|act,bgn|cnt,1
+2020-03-15 14:41:01.944539 [288] [RealStream.cpp(1391) CheckSendDeviceLog]Trace: work log 1_134 sended
+2020-03-15 14:41:01.946239 [288] [WorkLogManager.cpp(230) WriteIdxLog]Trace: Update idx array to [1604 0 0]
+2020-03-15 14:41:01.947726 [288] [WorkLogManager.cpp(590) WorkLogSended]Trace: After send items with id 1584279661936, sucess=1, ret=1
+2020-03-15 14:41:01.949240 [288] [RealStream.cpp(2098) NonBlockingSendDataProc]Trace: 0x173df10: start to send real stream data to relay.
+2020-03-15 14:41:01.954285 [288] [RealStream.cpp(2118) NonBlockingSendDataProc]Trace: 173df10: get latest I 17f9164...
+2020-03-15 14:41:01.955583 [288] [StreamQos.cpp(55) Start]Trace: 0x173f6d8: start__, channel = 0-0, mode=0,1,120,120
+2020-03-15 14:41:01.957139 [288] [RealStream.cpp(2176) NonBlockingSendDataProc]Trace: 173df10: enter into sending data loop
+2020-03-15 14:41:01.962267 [288] [RealStream.cpp(1814) SendRecordEndFlag]Trace: send RECORDEND_3M_RELAYCONTROL msg, dwstarttime=1159681,ipcamtime=1584279580807
+2020-03-15 14:41:01.980945 [288] [RealStream.cpp(2463) NonBlockingSendDataProc]Trace: 173df10[1280*720]:sending I frame, starttime 1240161[1584279661296], seq 4254, size 12916, delay 684, recording 0, ignore key 0, ignore nonkey 0, flag:0.
+2020-03-15 14:41:02.419208 [288] [RealStream.cpp(2588) HandleServerCmd]Trace: 173df10: receive server cmd, type is 33
+2020-03-15 14:41:02.420925 [288] [RealStream.cpp(2672) HandleServerCmd]Trace: 173df10: receive xmpp msg from applc_f9bf57de3b5e, cmdid is 5833738:1, channelno is -1, msg is {"msgTimeStamp":1584279662,"msgSession":1000117,"msgSequence":0,"msgCategory":"camera","msgContent":{"request":1793,"subRequest":152,"requestParams":{"Relay_live_count":1,"Max_count":3}}}
+2020-03-15 14:41:02.423135 [288] [ServerMsgProcess.cpp(49) ProcessMessageEvent]Trace: message={"msgTimeStamp":1584279662,"msgSession":1000117,"msgSequence":0,"msgCategory":"camera","msgContent":{"request":1793,"subRequest":152,"requestParams":{"Relay_live_count":1,"Max_count":3}}}, src_id={
+   "cmdid" : 5833738,
+   "deviceid" : "applc_f9bf57de3b5e"
+}
+, msgtype=0.
+2020-03-15 14:41:02.605071 [289] [FullrelayMsg.cpp(425) ThreadProcess]Trace: try to get message in queue immediately!
+2020-03-15 14:41:02.607448 [289] [FullrelayMsg.cpp(360) ProcessMessage]Trace: #### fullrelay
+2020-03-15 14:41:02.608779 [289] [FullrelayMsg.cpp(70) OnXMPPSetDeviceConfiguration]Trace: ####Begin___ subreq: 0098
+2020-03-15 14:41:02.611419 [288] [Common.cpp(441) CustomerControlCB]Trace: no customer instance
+2020-03-15 14:41:02.620277 [289] [VideoTidings.cpp(143) GetLiveCount]Trace: get live count,relay_live_count=1,p2p_live_count=0,max_count=3.
+2020-03-15 14:41:02.622806 [289] [WorkLogManager.cpp(358) WriteWorkLog]Trace: Write new work log start
+2020-03-15 14:41:02.623952 [289] [WorkLogManager.cpp(248) TruncateLog]Trace: file length(1616) is allowed!
+2020-03-15 14:41:02.625592 [289] [WorkLogManager.cpp(401) WriteWorkLog]Trace: Write new work log end, "cfig,9|set,2020-03-15_14:41:02|sub,152|res,1", 1661B
+2020-03-15 14:41:02.628129 [289] [FullrelayMsg.cpp(282) OnXMPPSetDeviceConfiguration]Trace: Send message to {
+   "cmdid" : 5833738,
+   "deviceid" : "applc_f9bf57de3b5e"
+}
+, type:0 : {"msgCategory":"camera","msgContent":{"response":0,"responseParams":{"Max_count":3,"P2P_live_count":0,"Relay_live_count":1},"responseRequest":1793,"responseSubRequest":152},"msgSequence":1,"msgSession":1000117,"msgTimeStamp":1584279662}
+
+2020-03-15 14:41:02.629805 [289] [MutilStreams.cpp(989) SendInfo2Server]Trace: bFullrelayMsg:1.peerid:{
+   "cmdid" : 5833738,
+   "deviceid" : "applc_f9bf57de3b5e"
+}
+.channeltype:0
+2020-03-15 14:41:02.636920 [289] [StreamMgr.cpp(206) SendXMPPMessage]Trace: bFullRelayMsg:1
+2020-03-15 14:41:02.645835 [289] [RealStream.cpp(4319) SendXMPPMessage]Trace: 173df10: to send xmpp msg(1812818) to applc_f9bf57de3b5e, cmdid is 5833738:1, timeout is 3000, breuqest 0, channelno 0, msg is {"msgCategory":"camera","msgContent":{"response":0,"responseParams":{"Max_count":3,"P2P_live_count":0,"Relay_live_count":1},"responseRequest":1793,"responseSubRequest":152},"msgSequence":1,"msgSession":1000117,"msgTimeStamp":1584279662}
+
+2020-03-15 14:41:02.669298 [288] [RealStream.cpp(3122) NonBlockingSendXmppMsgCmd]Trace: 173df10: xmpp msg 1812818 bsended 1, breleased 0
+2020-03-15 14:41:02.750419 [289] [RealStream.cpp(4333) SendXMPPMessage]Trace: 173df10: send xmpp msg 1812818 bfinished is 1, breleased is 1
+2020-03-15 14:41:02.752019 [289] [FullrelayMsg.cpp(289) OnXMPPSetDeviceConfiguration]Trace: End___
+2020-03-15 14:41:02.965185 [288] [WorkLogManager.cpp(484) GetWorkLog]Trace: Scan to get work log start
+2020-03-15 14:41:02.966474 [288] [WorkLogManager.cpp(533) GetWorkLog]Trace: item "cfig,9|set,2020-03-15_14:41:02|sub,152|res,1;" scanned
+2020-03-15 14:41:02.967689 [288] [WorkLogManager.cpp(493) GetWorkLog]Trace: read to end!
+2020-03-15 14:41:02.968828 [288] [WorkLogManager.cpp(557) GetWorkLog]Trace: to send idx array is [1649 0 0]
+2020-03-15 14:41:02.970156 [288] [WorkLogManager.cpp(559) GetWorkLog]Trace: Scan to get work log stop, 45B scanned with id 1584279662968
+2020-03-15 14:41:02.971570 [288] [RealStream.cpp(1384) CheckSendDeviceLog]Trace: requestid:29,304a2693c02415842796629710019
+2020-03-15 14:41:02.973121 [288] [RealStream.cpp(1425) ParseMsgItems]Trace: get item cfig,9|set,2020-03-15_14:41:02|sub,152|res,1
+2020-03-15 14:41:02.975086 [288] [RealStream.cpp(1391) CheckSendDeviceLog]Trace: work log 1_113 sended
+2020-03-15 14:41:02.976865 [288] [WorkLogManager.cpp(230) WriteIdxLog]Trace: Update idx array to [1649 0 0]
+2020-03-15 14:41:02.978452 [288] [WorkLogManager.cpp(590) WorkLogSended]Trace: After send items with id 1584279662968, sucess=1, ret=1
+2020-03-15 14:41:03.140262 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:41:04.293442 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](44.75/39.29)Kbps 8.00fps, PTS(44.75/39.29)Kbps 8.00fps
+2020-03-15 14:41:04.295730 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 12930, starttime: 1243161, num: 4278, frames: 24, at 1584279664295, fisheye:0
+2020-03-15 14:41:04.298958 [288] [RealStream.cpp(2404) NonBlockingSendDataProc]Trace: 173df10[0, 0][1280*720]:SEND GOP(starttime=1240161)3000(ms), 24 video frames,150 audio frames, total size: 47829(18279)(byte), cost 128(ms), recording 0, flag:0, cur bufsize:95343 
+2020-03-15 14:41:04.311249 [288] [RealStream.cpp(2463) NonBlockingSendDataProc]Trace: 173df10[1280*720]:sending I frame, starttime 1243161[1584279664295], seq 4278, size 12930, delay 16, recording 0, ignore key 0, ignore nonkey 0, flag:0.
+2020-03-15 14:41:06.150623 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:41:07.293026 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](43.84/39.30)Kbps 8.00fps, PTS(43.85/39.30)Kbps 8.00fps
+2020-03-15 14:41:07.295317 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 12920, starttime: 1246161, num: 4302, frames: 24, at 1584279667295, fisheye:0
+2020-03-15 14:41:09.176676 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:41:10.292807 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](43.15/39.31)Kbps 8.00fps, PTS(43.14/39.31)Kbps 8.00fps
+2020-03-15 14:41:10.295143 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 12938, starttime: 1249161, num: 4326, frames: 24, at 1584279670295, fisheye:0
+2020-03-15 14:41:12.190411 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:41:13.292359 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](42.63/39.31)Kbps 7.98fps, PTS(42.74/39.32)Kbps 8.00fps
+2020-03-15 14:41:13.294619 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 12914, starttime: 1252161, num: 4350, frames: 24, at 1584279673294, fisheye:0
+2020-03-15 14:41:15.201399 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:41:16.291349 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](43.14/39.32)Kbps 8.02fps, PTS(43.02/39.32)Kbps 8.00fps
+2020-03-15 14:41:16.293573 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 12850, starttime: 1255161, num: 4374, frames: 24, at 1584279676293, fisheye:0
+2020-03-15 14:41:16.961946 [402] [StreamQos.cpp(189) DoStats]Trace: 173f6d8: streamstat in 14997ms. IN(872/(v)120), OUT(239), DROP(108), BUFFERED(562)
+2020-03-15 14:41:18.210341 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:41:19.290754 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](44.83/39.34)Kbps 8.00fps, PTS(44.83/39.34)Kbps 8.00fps
+2020-03-15 14:41:19.292988 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 12969, starttime: 1258161, num: 4398, frames: 24, at 1584279679292, fisheye:0
+2020-03-15 14:41:20.522383 [286] [RtspBufferManager.cpp(811) CreateNode]Trace: [-1:-1] idle=48,buffer=418,create=466,destroy=0, webclient
+2020-03-15 14:41:21.220240 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:41:22.290270 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](43.12/39.35)Kbps 8.00fps, PTS(43.12/39.35)Kbps 8.00fps
+2020-03-15 14:41:22.292556 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 12943, starttime: 1261161, num: 4422, frames: 24, at 1584279682292, fisheye:0
+2020-03-15 14:41:23.641074 [286] [RtspBufferManager.cpp(811) CreateNode]Trace: [0:0] idle=157,buffer=425,create=582,destroy=0, relay
+2020-03-15 14:41:23.642745 [286] [RtspBufferManager.cpp(811) CreateNode]Trace: [0:0] idle=41,buffer=425,create=466,destroy=0, p2plive
+2020-03-15 14:41:24.164119 [286] [RtspBufferManager.cpp(262) HandleWriteBufferSmartAVC]Trace: 24917096: streamstat: total size:8298(Bytes), timespan:8000(ms), count:458.
+2020-03-15 14:41:24.230271 [282] [APDirectConnect.cpp(240) udpListenProcess]Trace: select timeout
+2020-03-15 14:41:25.290879 [286] [DeviceStream.cpp(279) statistics]Trace: v[0,0](44.34/39.36)Kbps 8.00fps, PTS(44.35/39.36)Kbps 8.00fps
+2020-03-15 14:41:25.293144 [286] [RealStream.cpp(3915) SetExternalStreamData]Trace: 173df10[0:0][1280*720]: Get I cpacket external, size: 13075, starttime: 1264161, num: 4446, frames: 24, at 1584279685293, fisheye:0
+2020-03-15 14:41:25.610385 [288] [ConnectMgr.cpp(1721) NonBlockingSSLWrite]Trace: 0x1742160[720p:48]:non-blocking ssl write data time out! datasize=178,leftlen=178
+2020-03-15 14:41:25.613632 [288] [WorkLogManager.cpp(358) WriteWorkLog]Trace: Write new work log start
+2020-03-15 14:41:25.614740 [288] [WorkLogManager.cpp(248) TruncateLog]Trace: file length(1661) is allowed!
+2020-03-15 14:41:25.616647 [288] [WorkLogManager.cpp(401) WriteWorkLog]Trace: Write new work log end, "srel,12|off,2020-03-15_14:41:25|by,wt|exp,timeout", 1711B
+2020-03-15 14:41:25.618113 [288] [RealStream.cpp(2447) NonBlockingSendDataProc]Error: 173df10: cannot send video/audio data, with time 20200!
+2020-03-15 14:41:25.619351 [288] [MutilStreams.cpp(838) SetConfigCb]Trace: send stream data failed, need to check network status now.
+2020-03-15 14:41:25.621810 [288] [LeCamCore.cpp(515) ExternalMessageHandle]Trace: Begin___, subtype: 6, data:0x6a4ffe50, len:4
+2020-03-15 14:41:25.623392 [288] [LeCamCore.cpp(480) DealWithMySelfOnLineStatus]Trace: status: 0
+2020-03-15 14:41:25.624852 [288] [DeviceStatus.cpp(479) StateCbk2App]Trace: status 0x0107: STATUS_LOGOUTTED, data: 0
+2020-03-15 14:41:26.051396 [288] [DeviceStatus.cpp(457) DevOnStatus]Trace: DevOnStatus: status(0x107) data(0) done.
+2020-03-15 14:41:26.052783 [288] [LeCamCore.cpp(600) ExternalMessageHandle]Trace: End___
+2020-03-15 14:41:26.054077 [288] [RealStream.cpp(3171) CheckRelayConnected]Trace: 173df10: notify online 0...
+2020-03-15 14:41:26.055259 [288] [StreamQos.cpp(92) Stop]Trace: 0x173f6d8: stop__.
+2020-03-15 14:41:26.056435 [288] [ConnectMgr.cpp(1357) ShutdownConnection]Trace: 0x1742160[720p:48]: ShutdownConnection SocketID
+
+--------------------- dump of ps ----------------------------
+  PID USER       VSZ STAT COMMAND
+    1 root      1116 S    {linuxrc} init
+    2 root         0 SW   [kthreadd]
+    3 root         0 SW   [ksoftirqd/0]
+    5 root         0 SW   [kworker/u:0]
+    6 root         0 SW<  [khelper]
+    7 root         0 SW<  [netns]
+    8 root         0 SW   [sync_supers]
+    9 root         0 SW   [bdi-default]
+   10 root         0 SW<  [kblockd]
+   11 root         0 SW   [khubd]
+   12 root         0 SW   [kworker/0:1]
+   13 root         0 SW<  [cfg80211]
+   15 root         0 SW<  [rpciod]
+   16 root         0 SW   [kswapd0]
+   17 root         0 SWN  [ksmd]
+   18 root         0 SW   [fsnotify_mark]
+   19 root         0 SW<  [nfsiod]
+   20 root         0 SW<  [crypto]
+   33 root         0 SW   [mtdblock0]
+   34 root         0 SW   [mtdblock1]
+   35 root         0 SW   [mtdblock2]
+   36 root         0 SW   [mtdblock3]
+   37 root         0 SW   [mtdblock4]
+   38 root         0 SW   [kworker/u:2]
+   41 root         0 SW   [mmcqd/0]
+   42 root         0 SW<  [deferwq]
+   76 root         0 SWN  [jffs2_gcd_mtd4]
+  100 root         0 SW   [gk_debug]
+  101 root         0 SW   [encoder]
+  144 root         0 SW   [flush-179:0]
+  154 root       628 S    /home/tees -s -v -b 20 -e ps -e ifconfig; route -n -
+  181 root         0 SW   [RTW_CMD_THREAD]
+  209 root       584 S    /home/rsyscall.goke
+  214 root      1120 S    {start.sh} /bin/sh /home/start.sh
+  215 root      230m S    /p2pcam/p2pcam
+  238 root      1156 S    wpa_supplicant -B -iwlan0 -Dwext -c /home/wpa_suppli
+  245 root      1120 S    /usr/sbin/telnetd
+  250 root         0 SW   [kworker/0:2]
+  394 root      1116 S    /bin/login --
+  397 root      1124 S    -sh
+  408 root      1112 S    sh -c ps
+  409 root      1116 R    ps
+
+--------------------- dump of ifconfig; route -n ----------------------------
+eth0      Link encap:Ethernet  HWaddr 30:4A:26:93:C0:24  
+          UP BROADCAST PROMISC MULTICAST  MTU:1450  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+          Interrupt:1 
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          UP LOOPBACK RUNNING  MTU:16436  Metric:1
+          RX packets:44 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:44 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:3362 (3.2 KiB)  TX bytes:3362 (3.2 KiB)
+
+wlan0     Link encap:Ethernet  HWaddr 30:4A:26:93:C0:24  
+          inet addr:192.168.0.10  Bcast:192.168.0.255  Mask:255.255.255.0
+          UP BROADCAST RUNNING MULTICAST  MTU:1450  Metric:1
+          RX packets:4789 errors:0 dropped:672 overruns:0 frame:0
+          TX packets:4348 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:618307 (603.8 KiB)  TX bytes:2323689 (2.2 MiB)
+
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+0.0.0.0         192.168.0.1     0.0.0.0         UG    0      0        0 wlan0
+192.168.0.0     0.0.0.0         255.255.255.0   U     0      0        0 wlan0
+224.0.0.0       0.0.0.0         240.0.0.0       U     0      0        0 wlan0
+
+--------------------- dump of wpa_cli status ----------------------------
+Selected interface 'wlan0'
+bssid=64:d1:a3:3b:84:9b
+ssid=TeamKevin
+id=0
+mode=station
+pairwise_cipher=NONE
+group_cipher=NONE
+key_mgmt=NONE
+wpa_state=COMPLETED
+ip_address=192.168.0.10
+address=30:4a:26:93:c0:24
+
+--------------------- dump of mount ----------------------------
+rootfs on / type rootfs (rw)
+/dev/root on / type squashfs (ro,relatime)
+proc on /proc type proc (rw,relatime)
+tmpfs on /dev type tmpfs (rw,relatime)
+tmpfs on /tmp type tmpfs (rw,relatime)
+sysfs on /sys type sysfs (rw,relatime)
+tmpfs on /tmp type tmpfs (rw,relatime)
+devpts on /dev/pts type devpts (rw,relatime,mode=600,ptmxmode=000)
+/dev/mtdblock3 on /p2pcam type squashfs (ro,relatime)
+/dev/mtdblock4 on /home type jffs2 (rw,relatime)
+/dev/mmcblk0p1 on /tmp/mnt/mmc01/0 type vfat (rw,noatime,fmask=0022,dmask=0022,codepage=cp437,iocharset=iso8859-1,shortname=mixed,errors=continue)
+
+--------------------- dump of uptime ----------------------------
+ 14:41:26 up 21 min,  load average: 2.35, 1.80, 1.24
+
+--------------------- dump of df ----------------------------
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/root                 1152      1152         0 100% /
+tmpfs                    15908         0     15908   0% /dev
+tmpfs                    15908       300     15608   2% /tmp
+tmpfs                    15908       300     15608   2% /tmp
+/dev/mtdblock3            1920      1920         0 100% /p2pcam
+/dev/mtdblock4            2496      2184       312  88% /home
+/dev/mmcblk0p1        31147648    226672  30920976   1% /tmp/mnt/mmc01/0
+
+--------------------- dump of netstat -napt ----------------------------
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 0.0.0.0:8001            0.0.0.0:*               LISTEN      215/p2pcam
+tcp        0      0 0.0.0.0:3201            0.0.0.0:*               LISTEN      154/tees
+tcp        0      0 0.0.0.0:554             0.0.0.0:*               LISTEN      215/p2pcam
+tcp        0      0 0.0.0.0:843             0.0.0.0:*               LISTEN      215/p2pcam
+tcp        0      0 0.0.0.0:6670            0.0.0.0:*               LISTEN      215/p2pcam
+tcp        0      0 127.0.0.1:9008          0.0.0.0:*               LISTEN      215/p2pcam
+tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      215/p2pcam
+tcp        0      0 0.0.0.0:23              0.0.0.0:*               LISTEN      245/telnetd
+tcp        0      0 0.0.0.0:5050            0.0.0.0:*               LISTEN      215/p2pcam
+tcp        0      0 0.0.0.0:7101            0.0.0.0:*               LISTEN      215/p2pcam
+tcp        0      0 0.0.0.0:7103            0.0.0.0:*               LISTEN      215/p2pcam
+tcp        0      0 192.168.0.10:23         217.105.48.37:62057     ESTABLISHED 245/telnetd
+tcp        0  53472 192.168.0.10:51568      47.91.72.48:50920       FIN_WAIT1   -
+
+--------------------- dump of free ----------------------------
+             total         used         free       shared      buffers
+Mem:         31816        30768         1048            0         1156
+-/+ buffers:              29612         2204
+Swap:            0            0            0
+
+---------------------------- Dump of log -----------------------------
+rage/wsdl" xmlns:ter="http://www.onvif.org/ver10/error" xmlns:dn="http://www.onvif.org/ver10/network/wsdl" xmlns:tns1="http://www.onvif.org/ver10/topics" xmlns:tmd="http://www.onvif.org/ver10/deviceIO/wsdl" xmlns:gte="http://www.onvif.org/ver10/gtextension/wsdl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl" xmlns:wsoap12="http://schemas.xmlsoap.org/wsdl/soap12" xmlns:http="http://schemas.xmlsoap.org/wsdl/http" xmlns:d="http://schemas.xmlsoap.org/ws/2005/04/discovery" xmlns:wsadis="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:xop="http://www.w3.org/2004/08/xop/include" xmlns:wsnt="http://docs.oasis-open.org/wsn/b-2" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wstop="http://docs.oasis-open.org/wsn/t-1" xmlns:wsrf-bf="http://docs.oasis-open.org/wsrf/bf-2" xmlns:wsntw="http://docs.oasis-open.org/wsn/bw-2" xmlns:wsrf-rw="http://docs.oasis-open.org/wsrf/rw-2" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsrf-r="http://docs.oasis-open.org/wsrf/r-2" xmlns:tnsn="http://www.eventextension.com/2011/event/topics"><env:Header><wsadis:MessageID>urn:uuid:1df2e14e-1dd2-11b2-8323-304a2693c024</wsadis:MessageID>
+<wsadis:RelatesTo>urn:uuid:f5d31a95-f269-4a26-899f-ecad6b4b5b3f</wsadis:RelatesTo>
+<wsadis:To>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</wsadis:To>
+<wsadis:Action>http://schemas.xmlsoap.org/ws/2005/04/discovery/ProbeMat
+[E0,0][E0,1]sendUnicastProbeMatch_onvifV10 len = 0
+ conten= <?xml version="1.0" encoding="UTF-8"?>
+<env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:soapenc="http://www.w3.org/2003/05/soap-encoding" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tt="http://www.onvif.org/ver10/schema" xmlns:tds="http://www.onvif.org/ver10/device/wsdl" xmlns:trt="http://www.onvif.org/ver10/media/wsdl" xmlns:timg="http://www.onvif.org/ver20/imaging/wsdl" xmlns:tev="http://www.onvif.org/ver10/events/wsdl" xmlns:tptz="http://www.onvif.org/ver20/ptz/wsdl" xmlns:tan="http://www.onvif.org/ver20/analytics/wsdl" xmlns:tst="http://www.onvif.org/ver10/storage/wsdl" xmlns:ter="http://www.onvif.org/ver10/error" xmlns:dn="http://www.onvif.org/ver10/network/wsdl" xmlns:tns1="http://www.onvif.org/ver10/topics" xmlns:tmd="http://www.onvif.org/ver10/deviceIO/wsdl" xmlns:gte="http://www.onvif.org/ver10/gtextension/wsdl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl" xmlns:wsoap12="http://schemas.xmlsoap.org/wsdl/soap12" xmlns:http="http://schemas.xmlsoap.org/wsdl/http" xmlns:d="http://schemas.xmlsoap.org/ws/2005/04/discovery" xmlns:wsadis="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:xop="http://www.w3.org/2004/08/xop/include" xmlns:wsnt="http://docs.oasis-open.org/wsn/b-2" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wstop="http://docs.oasis-open.org/wsn/t-1" xmlns:wsrf-bf="http://docs.oasis-open.org/wsrf/bf-2" xmlns:wsntw="http://docs.oasis-open.org/wsn/bw-2" xmlns:wsrf-rw="http://docs.oasis-open.org/wsrf/rw-2" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsrf-r="http://docs.oasis-open.org/wsrf/r-2" xmlns:tnsn="http://www.eventextension.com/2011/event/topics"><env:Header><wsadis:MessageID>urn:uuid:1df2e14e-1dd2-11b2-8323-304a2693c024</wsadis:MessageID>
+<wsadis:RelatesTo>urn:uuid:c8c70f55-512d-4a44-be03-33816be359b2</wsadis:RelatesTo>
+<wsadis:To>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</wsadis:To>
+<wsadis:Action>http://schemas.xmlsoap.org/ws/2005/04/discovery/ProbeMat
+sendUnicastProbeMatch_onvifV10 len = 0
+ conten= <?xml version="1.0" encoding="UTF-8"?>
+<env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:soapenc="http://www.w3.org/2003/05/soap-encoding" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tt="http://www.onvif.org/ver10/schema" xmlns:tds="http://www.onvif.org/ver10/device/wsdl" xmlns:trt="http://www.onvif.org/ver10/media/wsdl" xmlns:timg="http://www.onvif.org/ver20/imaging/wsdl" xmlns:tev="http://www.onvif.org/ver10/events/wsdl" xmlns:tptz="http://www.onvif.org/ver20/ptz/wsdl" xmlns:tan="http://www.onvif.org/ver20/analytics/wsdl" xmlns:tst="http://www.onvif.org/ver10/storage/wsdl" xmlns:ter="http://www.onvif.org/ver10/error" xmlns:dn="http://www.onvif.org/ver10/network/wsdl" xmlns:tns1="http://www.onvif.org/ver10/topics" xmlns:tmd="http://www.onvif.org/ver10/deviceIO/wsdl" xmlns:gte="http://www.onvif.org/ver10/gtextension/wsdl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl" xmlns:wsoap12="http://schemas.xmlsoap.org/wsdl/soap12" xmlns:http="http://schemas.xmlsoap.org/wsdl/http" xmlns:d="http://schemas.xmlsoap.org/ws/2005/04/discovery" xmlns:wsadis="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:xop="http://www.w3.org/2004/08/xop/include" xmlns:wsnt="http://docs.oasis-open.org/wsn/b-2" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wstop="http://docs.oasis-open.org/wsn/t-1" xmlns:wsrf-bf="http://docs.oasis-open.org/wsrf/bf-2" xmlns:wsntw="http://docs.oasis-open.org/wsn/bw-2" xmlns:wsrf-rw="http://docs.oasis-open.org/wsrf/rw-2" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsrf-r="http://docs.oasis-open.org/wsrf/r-2" xmlns:tnsn="http://www.eventextension.com/2011/event/topics"><env:Header><wsadis:MessageID>urn:uuid:1df2e14e-1dd2-11b2-8323-304a2693c024</wsadis:MessageID>
+<wsadis:RelatesTo>urn:uuid:c8c70f55-512d-4a44-be03-33816be359b2</wsadis:RelatesTo>
+<wsadis:To>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</wsadis:To>
+<wsadis:Action>http://schemas.xmlsoap.org/ws/2005/04/discovery/ProbeMat
+sendUnicastProbeMatch_onvifV10 len = 0
+ conten= <?xml version="1.0" encoding="UTF-8"?>
+<env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:soapenc="http://www.w3.org/2003/05/soap-encoding" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tt="http://www.onvif.org/ver10/schema" xmlns:tds="http://www.onvif.org/ver10/device/wsdl" xmlns:trt="http://www.onvif.org/ver10/media/wsdl" xmlns:timg="http://www.onvif.org/ver20/imaging/wsdl" xmlns:tev="http://www.onvif.org/ver10/events/wsdl" xmlns:tptz="http://www.onvif.org/ver20/ptz/wsdl" xmlns:tan="http://www.onvif.org/ver20/analytics/wsdl" xmlns:tst="http://www.onvif.org/ver10/storage/wsdl" xmlns:ter="http://www.onvif.org/ver10/error" xmlns:dn="http://www.onvif.org/ver10/network/wsdl" xmlns:tns1="http://www.onvif.org/ver10/topics" xmlns:tmd="http://www.onvif.org/ver10/deviceIO/wsdl" xmlns:gte="http://www.onvif.org/ver10/gtextension/wsdl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl" xmlns:wsoap12="http://schemas.xmlsoap.org/wsdl/soap12" xmlns:http="http://schemas.xmlsoap.org/wsdl/http" xmlns:d="http://schemas.xmlsoap.org/ws/2005/04/discovery" xmlns:wsadis="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:xop="http://www.w3.org/2004/08/xop/include" xmlns:wsnt="http://docs.oasis-open.org/wsn/b-2" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wstop="http://docs.oasis-open.org/wsn/t-1" xmlns:wsrf-bf="http://docs.oasis-open.org/wsrf/bf-2" xmlns:wsntw="http://docs.oasis-open.org/wsn/bw-2" xmlns:wsrf-rw="http://docs.oasis-open.org/wsrf/rw-2" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsrf-r="http://docs.oasis-open.org/wsrf/r-2" xmlns:tnsn="http://www.eventextension.com/2011/event/topics"><env:Header><wsadis:MessageID>urn:uuid:1df2e14e-1dd2-11b2-8323-304a2693c024</wsadis:MessageID>
+<wsadis:RelatesTo>urn:uuid:c8c70f55-512d-4a44-be03-33816be359b2</wsadis:RelatesTo>
+<wsadis:To>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</wsadis:To>
+<wsadis:Action>http://schemas.xmlsoap.org/ws/2005/04/discovery/ProbeMat
+sendUnicastProbeMatch_onvifV10 len = 0
+ conten= <?xml version="1.0" encoding="UTF-8"?>
+<env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:soapenc="http://www.w3.org/2003/05/soap-encoding" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tt="http://www.onvif.org/ver10/schema" xmlns:tds="http://www.onvif.org/ver10/device/wsdl" xmlns:trt="http://www.onvif.org/ver10/media/wsdl" xmlns:timg="http://www.onvif.org/ver20/imaging/wsdl" xmlns:tev="http://www.onvif.org/ver10/events/wsdl" xmlns:tptz="http://www.onvif.org/ver20/ptz/wsdl" xmlns:tan="http://www.onvif.org/ver20/analytics/wsdl" xmlns:tst="http://www.onvif.org/ver10/storage/wsdl" xmlns:ter="http://www.onvif.org/ver10/error" xmlns:dn="http://www.onvif.org/ver10/network/wsdl" xmlns:tns1="http://www.onvif.org/ver10/topics" xmlns:tmd="http://www.onvif.org/ver10/deviceIO/wsdl" xmlns:gte="http://www.onvif.org/ver10/gtextension/wsdl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl" xmlns:wsoap12="http://schemas.xmlsoap.org/wsdl/soap12" xmlns:http="http://schemas.xmlsoap.org/wsdl/http" xmlns:d="http://schemas.xmlsoap.org/ws/2005/04/discovery" xmlns:wsadis="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:xop="http://www.w3.org/2004/08/xop/include" xmlns:wsnt="http://docs.oasis-open.org/wsn/b-2" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wstop="http://docs.oasis-open.org/wsn/t-1" xmlns:wsrf-bf="http://docs.oasis-open.org/wsrf/bf-2" xmlns:wsntw="http://docs.oasis-open.org/wsn/bw-2" xmlns:wsrf-rw="http://docs.oasis-open.org/wsrf/rw-2" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsrf-r="http://docs.oasis-open.org/wsrf/r-2" xmlns:tnsn="http://www.eventextension.com/2011/event/topics"><env:Header><wsadis:MessageID>urn:uuid:1df2e14e-1dd2-11b2-8323-304a2693c024</wsadis:MessageID>
+<wsadis:RelatesTo>urn:uuid:c8c70f55-512d-4a44-be03-33816be359b2</wsadis:RelatesTo>
+<wsadis:To>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</wsadis:To>
+<wsadis:Action>http://schemas.xmlsoap.org/ws/2005/04/discovery/ProbeMat
+sendUnicastProbeMatch_onvifV10 len = 0
+ conten= <?xml version="1.0" encoding="UTF-8"?>
+<env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:soapenc="http://www.w3.org/2003/05/soap-encoding" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tt="http://www.onvif.org/ver10/schema" xmlns:tds="http://www.onvif.org/ver10/device/wsdl" xmlns:trt="http://www.onvif.org/ver10/media/wsdl" xmlns:timg="http://www.onvif.org/ver20/imaging/wsdl" xmlns:tev="http://www.onvif.org/ver10/events/wsdl" xmlns:tptz="http://www.onvif.org/ver20/ptz/wsdl" xmlns:tan="http://www.onvif.org/ver20/analytics/wsdl" xmlns:tst="http://www.onvif.org/ver10/storage/wsdl" xmlns:ter="http://www.onvif.org/ver10/error" xmlns:dn="http://www.onvif.org/ver10/network/wsdl" xmlns:tns1="http://www.onvif.org/ver10/topics" xmlns:tmd="http://www.onvif.org/ver10/deviceIO/wsdl" xmlns:gte="http://www.onvif.org/ver10/gtextension/wsdl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl" xmlns:wsoap12="http://schemas.xmlsoap.org/wsdl/soap12" xmlns:http="http://schemas.xmlsoap.org/wsdl/http" xmlns:d="http://schemas.xmlsoap.org/ws/2005/04/discovery" xmlns:wsadis="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:xop="http://www.w3.org/2004/08/xop/include" xmlns:wsnt="http://docs.oasis-open.org/wsn/b-2" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wstop="http://docs.oasis-open.org/wsn/t-1" xmlns:wsrf-bf="http://docs.oasis-open.org/wsrf/bf-2" xmlns:wsntw="http://docs.oasis-open.org/wsn/bw-2" xmlns:wsrf-rw="http://docs.oasis-open.org/wsrf/rw-2" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsrf-r="http://docs.oasis-open.org/wsrf/r-2" xmlns:tnsn="http://www.eventextension.com/2011/event/topics"><env:Header><wsadis:MessageID>urn:uuid:1df2e14e-1dd2-11b2-8323-304a2693c024</wsadis:MessageID>
+<wsadis:RelatesTo>urn:uuid:c8c70f55-512d-4a44-be03-33816be359b2</wsadis:RelatesTo>
+<wsadis:To>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</wsadis:To>
+<wsadis:Action>http://schemas.xmlsoap.org/ws/2005/04/discovery/ProbeMat
+sendUnicastProbeMatch_onvifV10 len = 0
+ conten= <?xml version="1.0" encoding="UTF-8"?>
+<env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:soapenc="http://www.w3.org/2003/05/soap-encoding" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tt="http://www.onvif.org/ver10/schema" xmlns:tds="http://www.onvif.org/ver10/device/wsdl" xmlns:trt="http://www.onvif.org/ver10/media/wsdl" xmlns:timg="http://www.onvif.org/ver20/imaging/wsdl" xmlns:tev="http://www.onvif.org/ver10/events/wsdl" xmlns:tptz="http://www.onvif.org/ver20/ptz/wsdl" xmlns:tan="http://www.onvif.org/ver20/analytics/wsdl" xmlns:tst="http://www.onvif.org/ver10/storage/wsdl" xmlns:ter="http://www.onvif.org/ver10/error" xmlns:dn="http://www.onvif.org/ver10/network/wsdl" xmlns:tns1="http://www.onvif.org/ver10/topics" xmlns:tmd="http://www.onvif.org/ver10/deviceIO/wsdl" xmlns:gte="http://www.onvif.org/ver10/gtextension/wsdl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl" xmlns:wsoap12="http://schemas.xmlsoap.org/wsdl/soap12" xmlns:http="http://schemas.xmlsoap.org/wsdl/http" xmlns:d="http://schemas.xmlsoap.org/ws/2005/04/discovery" xmlns:wsadis="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:xop="http://www.w3.org/2004/08/xop/include" xmlns:wsnt="http://docs.oasis-open.org/wsn/b-2" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wstop="http://docs.oasis-open.org/wsn/t-1" xmlns:wsrf-bf="http://docs.oasis-open.org/wsrf/bf-2" xmlns:wsntw="http://docs.oasis-open.org/wsn/bw-2" xmlns:wsrf-rw="http://docs.oasis-open.org/wsrf/rw-2" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsrf-r="http://docs.oasis-open.org/wsrf/r-2" xmlns:tnsn="http://www.eventextension.com/2011/event/topics"><env:Header><wsadis:MessageID>urn:uuid:1df2e14e-1dd2-11b2-8323-304a2693c024</wsadis:MessageID>
+<wsadis:RelatesTo>urn:uuid:c8c70f55-512d-4a44-be03-33816be359b2</wsadis:RelatesTo>
+<wsadis:To>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</wsadis:To>
+<wsadis:Action>http://schemas.xmlsoap.org/ws/2005/04/discovery/ProbeMat
+sendUnicastProbeMatch_onvifV10 len = 0
+ conten= <?xml version="1.0" encoding="UTF-8"?>
+<env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:soapenc="http://www.w3.org/2003/05/soap-encoding" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tt="http://www.onvif.org/ver10/schema" xmlns:tds="http://www.onvif.org/ver10/device/wsdl" xmlns:trt="http://www.onvif.org/ver10/media/wsdl" xmlns:timg="http://www.onvif.org/ver20/imaging/wsdl" xmlns:tev="http://www.onvif.org/ver10/events/wsdl" xmlns:tptz="http://www.onvif.org/ver20/ptz/wsdl" xmlns:tan="http://www.onvif.org/ver20/analytics/wsdl" xmlns:tst="http://www.onvif.org/ver10/storage/wsdl" xmlns:ter="http://www.onvif.org/ver10/error" xmlns:dn="http://www.onvif.org/ver10/network/wsdl" xmlns:tns1="http://www.onvif.org/ver10/topics" xmlns:tmd="http://www.onvif.org/ver10/deviceIO/wsdl" xmlns:gte="http://www.onvif.org/ver10/gtextension/wsdl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl" xmlns:wsoap12="http://schemas.xmlsoap.org/wsdl/soap12" xmlns:http="http://schemas.xmlsoap.org/wsdl/http" xmlns:d="http://schemas.xmlsoap.org/ws/2005/04/discovery" xmlns:wsadis="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:xop="http://www.w3.org/2004/08/xop/include" xmlns:wsnt="http://docs.oasis-open.org/wsn/b-2" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wstop="http://docs.oasis-open.org/wsn/t-1" xmlns:wsrf-bf="http://docs.oasis-open.org/wsrf/bf-2" xmlns:wsntw="http://docs.oasis-open.org/wsn/bw-2" xmlns:wsrf-rw="http://docs.oasis-open.org/wsrf/rw-2" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsrf-r="http://docs.oasis-open.org/wsrf/r-2" xmlns:tnsn="http://www.eventextension.com/2011/event/topics"><env:Header><wsadis:MessageID>urn:uuid:1df2e14e-1dd2-11b2-8323-304a2693c024</wsadis:MessageID>
+<wsadis:RelatesTo>urn:uuid:c8c70f55-512d-4a44-be03-33816be359b2</wsadis:RelatesTo>
+<wsadis:To>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</wsadis:To>
+<wsadis:Action>http://schemas.xmlsoap.org/ws/2005/04/discovery/ProbeMat
+[E0,0]thumb..[E0,1]GetConnectedWifi: -----ssid: TeamKevin
+getMemUse = 100
+[E0,0][E0,1]OnNotice(LiveStart)
+[E0,0][E0,1]thumb..[E0,0][E0,1]sendUnicastProbeMatch_onvifV10 len = 0
+ conten= <?xml version="1.0" encoding="UTF-8"?>
+<env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:soapenc="http://www.w3.org/2003/05/soap-encoding" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tt="http://www.onvif.org/ver10/schema" xmlns:tds="http://www.onvif.org/ver10/device/wsdl" xmlns:trt="http://www.onvif.org/ver10/media/wsdl" xmlns:timg="http://www.onvif.org/ver20/imaging/wsdl" xmlns:tev="http://www.onvif.org/ver10/events/wsdl" xmlns:tptz="http://www.onvif.org/ver20/ptz/wsdl" xmlns:tan="http://www.onvif.org/ver20/analytics/wsdl" xmlns:tst="http://www.onvif.org/ver10/storage/wsdl" xmlns:ter="http://www.onvif.org/ver10/error" xmlns:dn="http://www.onvif.org/ver10/network/wsdl" xmlns:tns1="http://www.onvif.org/ver10/topics" xmlns:tmd="http://www.onvif.org/ver10/deviceIO/wsdl" xmlns:gte="http://www.onvif.org/ver10/gtextension/wsdl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl" xmlns:wsoap12="http://schemas.xmlsoap.org/wsdl/soap12" xmlns:http="http://schemas.xmlsoap.org/wsdl/http" xmlns:d="http://schemas.xmlsoap.org/ws/2005/04/discovery" xmlns:wsadis="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:xop="http://www.w3.org/2004/08/xop/include" xmlns:wsnt="http://docs.oasis-open.org/wsn/b-2" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wstop="http://docs.oasis-open.org/wsn/t-1" xmlns:wsrf-bf="http://docs.oasis-open.org/wsrf/bf-2" xmlns:wsntw="http://docs.oasis-open.org/wsn/bw-2" xmlns:wsrf-rw="http://docs.oasis-open.org/wsrf/rw-2" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsrf-r="http://docs.oasis-open.org/wsrf/r-2" xmlns:tnsn="http://www.eventextension.com/2011/event/topics"><env:Header><wsadis:MessageID>urn:uuid:1df2e14e-1dd2-11b2-8323-304a2693c024</wsadis:MessageID>
+<wsadis:RelatesTo>urn:uuid:4fabef7b-9897-4190-829b-3a56b6f4aff6</wsadis:RelatesTo>
+<wsadis:To>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</wsadis:To>
+<wsadis:Action>http://schemas.xmlsoap.org/ws/2005/04/discovery/ProbeMat
+[OnStatus]--------status: 0x106
+[OnStatus]--------logout server success!
+sendUnicastProbeMatch_onvifV10 len = 0
+ conten= <?xml version="1.0" encoding="UTF-8"?>
+<env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:soapenc="http://www.w3.org/2003/05/soap-encoding" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tt="http://www.onvif.org/ver10/schema" xmlns:tds="http://www.onvif.org/ver10/device/wsdl" xmlns:trt="http://www.onvif.org/ver10/media/wsdl" xmlns:timg="http://www.onvif.org/ver20/imaging/wsdl" xmlns:tev="http://www.onvif.org/ver10/events/wsdl" xmlns:tptz="http://www.onvif.org/ver20/ptz/wsdl" xmlns:tan="http://www.onvif.org/ver20/analytics/wsdl" xmlns:tst="http://www.onvif.org/ver10/storage/wsdl" xmlns:ter="http://www.onvif.org/ver10/error" xmlns:dn="http://www.onvif.org/ver10/network/wsdl" xmlns:tns1="http://www.onvif.org/ver10/topics" xmlns:tmd="http://www.onvif.org/ver10/deviceIO/wsdl" xmlns:gte="http://www.onvif.org/ver10/gtextension/wsdl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl" xmlns:wsoap12="http://schemas.xmlsoap.org/wsdl/soap12" xmlns:http="http://schemas.xmlsoap.org/wsdl/http" xmlns:d="http://schemas.xmlsoap.org/ws/2005/04/discovery" xmlns:wsadis="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:xop="http://www.w3.org/2004/08/xop/include" xmlns:wsnt="http://docs.oasis-open.org/wsn/b-2" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wstop="http://docs.oasis-open.org/wsn/t-1" xmlns:wsrf-bf="http://docs.oasis-open.org/wsrf/bf-2" xmlns:wsntw="http://docs.oasis-open.org/wsn/bw-2" xmlns:wsrf-rw="http://docs.oasis-open.org/wsrf/rw-2" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsrf-r="http://docs.oasis-open.org/wsrf/r-2" xmlns:tnsn="http://www.eventextension.com/2011/event/topics"><env:Header><wsadis:MessageID>urn:uuid:1df2e14e-1dd2-11b2-8323-304a2693c024</wsadis:MessageID>
+<wsadis:RelatesTo>urn:uuid:4fabef7b-9897-4190-829b-3a56b6f4aff6</wsadis:RelatesTo>
+<wsadis:To>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</wsadis:To>
+<wsadis:Action>http://schemas.xmlsoap.org/ws/2005/04/discovery/ProbeMat

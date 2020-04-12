@@ -1,0 +1,46 @@
+# ps
+  PID USER       VSZ STAT COMMAND
+    1 root      1116 S    {linuxrc} init
+    2 root         0 SW   [kthreadd]
+    3 root         0 SW   [ksoftirqd/0]
+    5 root         0 SW   [kworker/u:0]
+    6 root         0 SW<  [khelper]
+    7 root         0 SW<  [netns]
+    8 root         0 SW   [sync_supers]
+    9 root         0 SW   [bdi-default]
+   10 root         0 SW<  [kblockd]
+   11 root         0 SW   [khubd]
+   12 root         0 SW   [kworker/0:1]
+   13 root         0 SW<  [cfg80211]
+   15 root         0 SW<  [rpciod]
+   16 root         0 SW   [kswapd0]
+   17 root         0 SWN  [ksmd]
+   18 root         0 SW   [fsnotify_mark]
+   19 root         0 SW<  [nfsiod]
+   20 root         0 SW<  [crypto]
+   33 root         0 SW   [mtdblock0]
+   34 root         0 SW   [mtdblock1]
+   35 root         0 SW   [mtdblock2]
+   36 root         0 SW   [mtdblock3]
+   37 root         0 SW   [mtdblock4]
+   38 root         0 SW   [kworker/u:2]
+   41 root         0 SW   [mmcqd/0]
+   42 root         0 SW<  [deferwq]
+   76 root         0 SWN  [jffs2_gcd_mtd4]
+  100 root         0 SW   [gk_debug]
+  101 root         0 SW   [encoder]
+  144 root         0 SW   [flush-179:0]
+  154 root       628 S    /home/tees -s -v -b 20 -e ps -e ifconfig; route -n -e wpa_cli status -e mount -e uptime -e df -e netstat -napt -e free -a /tmp/closelicamera.log -o
+  181 root         0 SW   [RTW_CMD_THREAD]
+  209 root       584 S    /home/rsyscall.goke
+  214 root      1120 S    {start.sh} /bin/sh /home/start.sh
+  215 root      230m S    /p2pcam/p2pcam
+  238 root      1156 S    wpa_supplicant -B -iwlan0 -Dwext -c /home/wpa_supplicant.conf
+  245 root      1124 R    /usr/sbin/telnetd
+  250 root         0 SW   [kworker/0:2]
+  397 root      1124 S    -sh
+  427 root      1124 S    -sh
+  513 root      1116 S    /bin/login --
+  518 root      1112 S    /bin/login
+  519 root      1116 R    ps
+ 

@@ -1,0 +1,10 @@
+# df
+Filesystem                Size      Used Available Use% Mounted on
+/dev/root                 1.1M      1.1M         0 100% /
+tmpfs                    15.5M     80.0K     15.5M   1% /dev
+tmpfs                    15.5M    304.0K     15.2M   2% /tmp
+tmpfs                    15.5M    304.0K     15.2M   2% /tmp
+/dev/mtdblock3            1.9M      1.9M         0 100% /p2pcam
+/dev/mtdblock4            2.4M      2.1M    312.0K  88% /home
+/dev/mmcblk0p1           29.7G    235.0M     29.5G   1% /tmp/mnt/mmc01/0
+ 

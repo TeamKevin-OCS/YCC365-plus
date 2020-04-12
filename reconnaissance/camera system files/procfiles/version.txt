@@ -1,0 +1,2 @@
+# cat /proc/version
+Linux version 3.4.43-gk (rd@ubuntu) (gcc version 4.6.1 (crosstool-NG 1.18.0) ) #45 PREEMPT Mon Jun 17 17:06:05 CST 2019
